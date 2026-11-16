@@ -59,7 +59,12 @@ and "Model engines" correctly yields no designation. A second filter rejects
 parts that are mostly dash characters, since directives embed ASCII tables whose
 rule lines survive whitespace normalisation.
 
-**Commit.** `fix(applicability): temper the model run so it cannot swallow a table`
+**Honest note on the history.** Caught while the parser was still unstaged, so
+the fix landed inside `feat(applicability): parse paragraph (c) into an
+applicability tree` rather than as a separate `fix:` commit. The reasoning is
+preserved in a comment above `MODEL_RUN`, which names both the first and the
+second version of the bug. Writing a `fix:` commit after the fact to make the
+history look better would have been the dishonest option.
 
 ---
 
