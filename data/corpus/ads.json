@@ -1,0 +1,1374 @@
+[
+ {
+  "documentNumber": "2026-23007",
+  "title": "Airworthiness Directives; Bell Textron Canada Limited Helicopters",
+  "publicationDate": "2026-11-12",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/11/12/2026-23007/airworthiness-directives-bell-textron-canada-limited-helicopters",
+  "applicability": "This AD applies to Bell Textron Canada Limited Model 429 helicopters, certificated in any category, as identified in Transport Canada AD CF-2025-60R1, dated January 28, 2026 (Transport Canada AD CF-2025-60R1)."
+ },
+ {
+  "documentNumber": "2026-22907",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes; Correction",
+  "publicationDate": "2026-11-10",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/11/10/2026-22907/airworthiness-directives-airbus-sas-airplanes-correction",
+  "applicability": "This AD applies to all Airbus SAS airplanes specified in paragraphs (c)(1) and (2) of this AD, certificated in any category. (1) Model A330-243, A330-243F, A330-341, A330-342, A330-343, A330-841, and A330-941 airplanes. (2) Model A340-211, A340-212, A340-213, A340-311, A340-312, A340-313, A340-541, and A340-642 airplanes."
+ },
+ {
+  "documentNumber": "2026-22897",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-11-10",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/11/10/2026-22897/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS Model A350-941 airplanes, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025-0150, dated July 14, 2025 (EASA AD 2025-0150)."
+ },
+ {
+  "documentNumber": "2026-22817",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-11-09",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/11/09/2026-22817/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 787-8, 787-9, and 787-10 airplanes, certificated in any category, as identified in Boeing Alert Requirements Bulletin B787-81205-SB340062-00 RB, Issue 001, dated December 23, 2024."
+ },
+ {
+  "documentNumber": "2026-22785",
+  "title": "Airworthiness Directives; Lycoming Engines",
+  "publicationDate": "2026-11-09",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/11/09/2026-22785/airworthiness-directives-lycoming-engines",
+  "applicability": "This AD applies to Lycoming Engines (Lycoming) Model engines identified in table 1 to paragraph (c) of this AD with an installed piston pin having part number (P/N) LW-13445 that was manufactured between January 7, 2021 to December 15, 2025. If the date of manufacture for the piston pin cannot be determined, this AD is applicable. If the current piston pins (P/N LW-13445) were installed prior to January 7, 2021, this AD is not applicable. Table 1 to Paragraph (c)--Lycoming Model Engines ------------------------------------------------------------------------ Engine series Engine model ------------------------------------------------------------------------ O-235........................ -C1, -C1A, -C1B, -C1C, -C2A, -C2B, -C2C, E1, -E1B, -E2A, -E2B, -F1, -F1B, -F2A, - F2B, -G1, -G1B, -G2A, -G2B, -H2C, -J2A, J2B, -K2A, -K2B, -K2C, -L2A, -L2C, -M1, M2C, -M3C, -N2A, -N2C, -P1, -P2A, -P2C, P3C. O-320........................ -A1A, -A1B, -A2A, -A2B, -A2C, -A2D, -A3A, -A3B, -A3C, -B1A, -B1B, -B2A, -B2B, - B2C, -B2D, -B2E, -B3A, -B3B, -B3C, -D1A, -D1B, -D1C, -D1D, -D1F, -D2A, -D2B, - D2C, -D2F, -D2J, -D3G, -E1A, -E1B, -E1C, -E1F, -E1J, -E2A, -E2B, -E2C, -E2D, - E2F, -E2G, -E2H, -E3D, -E3H. IO-320....................... -B1A, -B1C, -B1D, -B1E, -B2A, -C1A,-C1B, D1A, -D1B, -D1C, -E1A, -E1B, -E2A,-E2B. AIO-320...................... -A1B, -B1B, -C1B. LIO-320...................... -B1A, -C1A. AEIO-320..................... -D1B, -D2B, -E1A, -E1B, -E2A, -E2B. VO-435....................... -A1A (O-435-21), -A1B (O-435-6), -A1C (O- 435-23, -23A, -23B, -23C), -A1D (O-435- 6A), -A1E, -A1F, -B1A. TVO-435...................... -A1A, -B1A (O-435-25A), -B1B, -C1A, -D1A, -D1B, -E1A, -F1A, -G1A, -G1B. O-540........................ -J1A5D, -J1B5D, -J1C5D, -J1D5D, -J2A5D, - J2B5D, -J2C5D, -J2D5D, -J3A5, -J3A5D, - J3C5D, -L3C5D. IO-540....................... -AB1A5, -J4A5, -W1A5, -W1A5D, -W3A5D. ------------------------------------------------------------------------"
+ },
+ {
+  "documentNumber": "2026-22780",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-11-09",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/11/09/2026-22780/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model EC130B4 helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-22776",
+  "title": "Airworthiness Directives; Airbus Helicopters Deutschland GmbH (AHD) Helicopters",
+  "publicationDate": "2026-11-09",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/11/09/2026-22776/airworthiness-directives-airbus-helicopters-deutschland-gmbh-ahd-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Deutschland GmbH (AHD) Model EC135P1, EC135P2, EC135P2+, EC135P3, EC135T1, EC135T2, EC135T2+, EC135T3, and EC635T2+ helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-22774",
+  "title": "Airworthiness Directives; Rolls-Royce Deutschland Ltd & Co KG Engines",
+  "publicationDate": "2026-11-09",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/11/09/2026-22774/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines",
+  "applicability": "This AD applies to all Rolls-Royce Deutschland Ltd & Co KG Model BR700-725A1-12 engines."
+ },
+ {
+  "documentNumber": "2026-22318",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-11-02",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/11/02/2026-22318/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 787-8, 787-9, and 787-10 airplanes, certificated in any category, as identified in Boeing Alert Requirements Bulletin B787-81205-SB570053-00 RB, Issue 001, dated November 5, 2025."
+ },
+ {
+  "documentNumber": "2026-22317",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-11-02",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/11/02/2026-22317/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 747-400 and -8 series airplanes, certificated in any category, as identified in Boeing Alert Requirements Bulletin 747-28A2373 RB, dated November 6, 2025."
+ },
+ {
+  "documentNumber": "2026-22310",
+  "title": "Airworthiness Directives; Diamond Aircraft Industries Inc. Airplanes",
+  "publicationDate": "2026-11-02",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/11/02/2026-22310/airworthiness-directives-diamond-aircraft-industries-inc-airplanes",
+  "applicability": "This AD applies to all Diamond Aircraft Industries Inc. (DAI) Model DA 40, DA 40 F, and DA 40 NG airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-22307",
+  "title": "Airworthiness Directives; BRP-Rotax GmbH & Co KG (Formerly BRP-Powertrain GMBH & CO KG and Bombardier-Rotax GmbH) Engines",
+  "publicationDate": "2026-11-02",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/11/02/2026-22307/airworthiness-directives-brp-rotax-gmbh-and-co-kg-formerly-brp-powertrain-gmbh-and-co-kg-and",
+  "applicability": "This AD applies to all BRP-Rotax GmbH & Co KG (formerly BRP- POWERTRAIN GMBH & CO KG and Bombardier-Rotax GmbH) Model 915 iSc2 C24, 915 iSc3 C24, 916 iSc2 A, 916 iSc2 C24, 916 iSc3 A, and 916 iSc3 C24 engines."
+ },
+ {
+  "documentNumber": "2026-21902",
+  "title": "Airworthiness Directives; Ontic Engineering and Manufacturing, Inc. (Type Certificate Previously Held by Swearingen, Fairchild Aircraft, and M7 Aerospace) Airplanes",
+  "publicationDate": "2026-10-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/27/2026-21902/airworthiness-directives-ontic-engineering-and-manufacturing-inc-type-certificate-previously-held-by",
+  "applicability": "This AD applies to Ontic Engineering and Manufacturing, Inc. (type certificate previously held by Swearingen, Fairchild Aircraft, and M7 Aerospace) model and serial number airplanes, certificated in any category, as identified in paragraphs (c)(1) and (2) of this AD. (1) Group 1 airplanes: Model SA226-T, SA226-AT, SA226-T(B), SA226-TC, SA227-AC (C-26A), SA227-AT, SA227-BC (C-26A), SA227-PC, and SA227-TT (300) airplanes, all serial numbers with a pitch trim actuator Simmonds-Precision part number (P/N) DL5040M5, DL5040M6, or DL5040M8 installed. (2) Group 2 airplanes: Model SA227-CC and SA227-DC (C-26B), all serial numbers with a pitch trim actuator Simmonds-Precision P/N DL5040M5, DL5040M6, or DL5040M8 installed."
+ },
+ {
+  "documentNumber": "2026-21864",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-10-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/27/2026-21864/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 757-200 and -300 series airplanes, certificated in any category, equipped with passenger service unit (PSU)-mounted video monitors."
+ },
+ {
+  "documentNumber": "2026-21863",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-10-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/27/2026-21863/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 737-8, 737-9, and 737-8200 airplanes, certificated in any category, as identified in Boeing Alert Requirements Bulletin 737-57A1358 RB, dated November 17, 2025."
+ },
+ {
+  "documentNumber": "2026-21862",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-10-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/27/2026-21862/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 737-700, -700C, - 800, and -900ER series airplanes, certificated in any category, as identified in Boeing Alert Requirements Bulletin 737-57A1359 RB, Revision 1, dated June 25, 2026."
+ },
+ {
+  "documentNumber": "2026-21861",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-10-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/27/2026-21861/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS Model A330-941 airplanes, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025-0208, dated September 24, 2025 (EASA AD 2025-0208)."
+ },
+ {
+  "documentNumber": "2026-21856",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-10-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/27/2026-21856/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model AS350B2, AS350B3, AS355N, [[Page 67448]] AS355NP, and EC130B4 helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-21855",
+  "title": "Airworthiness Directives; Airbus Helicopters Deutschland GmbH (AHD) Helicopters",
+  "publicationDate": "2026-10-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/27/2026-21855/airworthiness-directives-airbus-helicopters-deutschland-gmbh-ahd-helicopters",
+  "applicability": "This AD applies to Airbus Helicopters Deutschland GmbH (AHD) Model EC135P1, EC135P2, EC135P2+, EC135P3, EC135T1, EC135T2, EC135T2+, EC135T3, and EC635T2+ helicopters, certificated in any category, all serial numbers (S/N) up to 1999; and Model MBB-BK 117 C-2 and MBB-BK 117 D-2 helicopters, certificated in any category, all S/Ns. Note 1 to paragraph (c): Helicopters with an EC135P3H designation are Model EC135P3 helicopters. Helicopters with an EC135T3H designation are Model EC135T3 helicopters. Note 2 to paragraph (c): Helicopters with an MBB-BK 117 C-2e designation are Model MBB-BK 117 C-2 helicopters."
+ },
+ {
+  "documentNumber": "2026-21854",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-10-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/27/2026-21854/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters SA 365 N helicopters, certified in any category."
+ },
+ {
+  "documentNumber": "2026-21686",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes; Correction",
+  "publicationDate": "2026-10-23",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/23/2026-21686/airworthiness-directives-the-boeing-company-airplanes-correction",
+  "applicability": "This AD applies to The Boeing Company Model 787-8, 787-9, and 787-10 airplanes, certificated in any category, as identified in Boeing Alert Requirements Bulletin B787-81205-SB270055-00 RB, Issue 002, dated November 25, 2024."
+ },
+ {
+  "documentNumber": "2026-21664",
+  "title": "Airworthiness Directives; MD Helicopters, LLC Helicopters",
+  "publicationDate": "2026-10-23",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/23/2026-21664/airworthiness-directives-md-helicopters-llc-helicopters",
+  "applicability": "This AD applies to MD Helicopters, LLC (MDHI) Model 369D, 369E, 369F, 369FF, 369H, and 500N helicopters, certificated in any category, with an installed main transmission drive shaft coupling (coupling) part number 369H5660 with serial numbers 8564-0001 through 8564-0308."
+ },
+ {
+  "documentNumber": "2026-21590",
+  "title": "Airworthiness Directives; General Electric Company Engines",
+  "publicationDate": "2026-10-22",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/22/2026-21590/airworthiness-directives-general-electric-company-engines",
+  "applicability": "This AD applies to the General Electric Company (GE) Model engines identified in paragraphs (c)(1) and (2) of this AD. (1) CF34-8C1, CF34-8C5, CF34-8C5A1, CF34-8C5A2, and CF34-8C5B1 engines with an electronic engine control (EEC) full authority digital electronic control (FADEC) part number (P/N) 4120T00P29, 4120T00P30, 4120T00P37, 4120T00P38, 4120T00P45, 4120T00P46, 4120T00P53, 4120T00P54, 4120T00P57, or 4120T00P58 installed. (2) CF34-8E2, CF34-8E2A1, CF34-8E5, CF34-8E5A1, CF34-8E5A2, CF34-8E5A2HA, CF34-8E6, and CF34-8E6A1 engines with an EEC FADEC P/N 4120T00P42 (VIN 111E9320G43), P/N 4120T00P44 (VIN 111E9320G45), P/N 4120T00P48 (VIN 111E9320G49), P/N 4120T00P50 (VIN 111E9320G51), or P/N 4120T00P60 (VIN 111E9320G61) installed."
+ },
+ {
+  "documentNumber": "2026-21333",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-10-19",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/19/2026-21333/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 737-600, -700, - 700C, -800, -900, and -900ER series airplanes, certificated in any category, as identified in Boeing Alert Requirements Bulletin 737- 55A1104 RB, dated June 12, 2025."
+ },
+ {
+  "documentNumber": "2026-21332",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-10-19",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/19/2026-21332/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 737-600, -700, - 700C, -800, -900, and -900ER series airplanes, certificated in any category, equipped with passenger service unit (PSU)-mounted video monitors."
+ },
+ {
+  "documentNumber": "2026-21331",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-10-19",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/19/2026-21331/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to all Airbus SAS Model A330-841 and -941 airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-21326",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-10-19",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/19/2026-21326/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 787-8, 787-9, and 787-10 airplanes, certificated in any category, equipped with Rolls Royce Deutschland Ltd & Co KG Model Trent 1000-AE3, 1000-CE3, 1000- D3, 1000-G3, 1000-H3, 1000-J3, and 1000-K3 engines."
+ },
+ {
+  "documentNumber": "2026-21325",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-10-19",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/19/2026-21325/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to all Airbus SAS airplanes specified in paragraphs (c)(1) and (2) of this AD, certificated in any category. (1) Model A330-243, A330-243F, A330-341, A330-342, A330-343, A330-841, and A330-941 airplanes. (2) Model A340-211, A340-212, A340-213, A340-311, A340-312, A340-313, A340-541, and A340-642 airplanes."
+ },
+ {
+  "documentNumber": "2026-21290",
+  "title": "Airworthiness Directives; Pratt & Whitney Division Engines",
+  "publicationDate": "2026-10-19",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/19/2026-21290/airworthiness-directives-pratt-and-whitney-division-engines",
+  "applicability": "This AD applies to all Pratt & Whitney Division (PW) Model PW4052, PW4056, PW4060, PW4060A, PW4060C, PW4062, PW4062A, PW4152, PW4156, PW4156A, PW4158, PW4460, and PW4462 engines."
+ },
+ {
+  "documentNumber": "2026-21278",
+  "title": "Airworthiness Directives; Rolls-Royce Deutschland Ltd & Co KG Engines",
+  "publicationDate": "2026-10-19",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/19/2026-21278/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines",
+  "applicability": "This AD applies to all Rolls-Royce Deutschland Ltd & Co KG Model BR700-715A1-30, BR700-715B1-30, and BR700-715C1-30 engines."
+ },
+ {
+  "documentNumber": "2026-21010",
+  "title": "Airworthiness Directives; Bombardier, Inc., Airplanes",
+  "publicationDate": "2026-10-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/14/2026-21010/airworthiness-directives-bombardier-inc-airplanes",
+  "applicability": "This AD applies to Bombardier, Inc., Model BD-700-2A12 airplanes, certificated in any category, as identified in Transport Canada AD CF-2025-49, dated October 1, 2025 (Transport Canada AD CF- 2025-49)."
+ },
+ {
+  "documentNumber": "2026-20869",
+  "title": "Airworthiness Directives; Rolls-Royce Deutschland Ltd & Co KG Engines",
+  "publicationDate": "2026-10-13",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/13/2026-20869/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines",
+  "applicability": "This AD applies to all Rolls-Royce Deutschland Ltd & Co KG Model RB211 Trent 768-60, 772-60, and 772B-60 engines."
+ },
+ {
+  "documentNumber": "2026-20818",
+  "title": "Airworthiness Directives; Elixir Aircraft",
+  "publicationDate": "2026-10-13",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/13/2026-20818/airworthiness-directives-elixir-aircraft",
+  "applicability": "This AD applies to all Elixir Aircraft Model Elixir airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-20722",
+  "title": "Airworthiness Directives; Airbus Helicopters Deutschland GmbH (AHD) Helicopters",
+  "publicationDate": "2026-10-09",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/09/2026-20722/airworthiness-directives-airbus-helicopters-deutschland-gmbh-ahd-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Deutschland GmbH (AHD) Model MBB-BK 117 C-1 helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-20680",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-10-08",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/08/2026-20680/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 787-8, 787-9, and 787-10 airplanes, certificated in any category, as identified in Boeing Alert Requirements Bulletin B787-81205-SB270055-00 RB, Issue 002, dated November 25, 2024."
+ },
+ {
+  "documentNumber": "2026-20666",
+  "title": "Airworthiness Directives; Engine Alliance Engines",
+  "publicationDate": "2026-10-08",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/08/2026-20666/airworthiness-directives-engine-alliance-engines",
+  "applicability": "This AD applies to Engine Alliance (EA) Model GP7270, GP7272, and GP7277 engines, certificated in any category, having a high- pressure turbine (HPT) interstage seal serial number (S/N) specified in Appendix-A of EA Alert Service Bulletin EAGP7-A72-479, dated September 4, 2026 (EA ASB EAGP7-A72-479)."
+ },
+ {
+  "documentNumber": "2026-20120",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-10-01",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/01/2026-20120/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "(1) This AD applies to all The Boeing Company Model 757-300 series airplanes, certificated in any category. (2) Installation of Supplemental Type Certificate (STC) ST01518SE does not affect the ability to accomplish the actions required by this AD. Therefore, for airplanes on which STC ST01518SE is installed, a ``change in product'' alternative method of compliance (AMOC) approval request is not necessary to comply with the requirements of 14 CFR 39.17."
+ },
+ {
+  "documentNumber": "2026-20119",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-10-01",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/01/2026-20119/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS Model A350-941 and -1041 airplanes, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025-0073, dated April 3, 2025 (EASA AD 2025-0073)."
+ },
+ {
+  "documentNumber": "2026-20103",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-10-01",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/01/2026-20103/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to Airbus Helicopters Model AS350B, AS350BA, AS350B1, AS350B2, AS350B3, AS350D, AS355E, AS355F, AS355F1, AS355F2, AS355N, AS355NP, EC120B, and EC130B4 helicopters, certificated in any category, as identified in European Union Aviation Safety Agency AD 2025-0159, dated July 24, 2025 (EASA AD 2025-0159). Note 1 to paragraph (c): Helicopters with AS350B3e designation are Model AS350B3 helicopters."
+ },
+ {
+  "documentNumber": "2026-20100",
+  "title": "Airworthiness Directives; Leonardo S.p.a. Helicopters",
+  "publicationDate": "2026-10-01",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/01/2026-20100/airworthiness-directives-leonardo-spa-helicopters",
+  "applicability": "This AD applies to Leonardo S.p.a. Model AB139 and AW139 helicopters, certificated in any category, as identified in European Union Aviation Safety Agency AD 2026-0165, dated August 18, 2026 (EASA AD 2026-0165)."
+ },
+ {
+  "documentNumber": "2026-20098",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-10-01",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/10/01/2026-20098/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model AS355E, AS355F, AS355F1, AS355F2, and AS355N helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-19956",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-09-29",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/29/2026-19956/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 787-8 and 787-9 airplanes, certificated in any category, equipped with Rolls-Royce Deutschland Ltd & Co KG Model Trent 1000-A, Trent 1000-A2, Trent 1000-AE, Trent 1000-AE2, Trent 1000-C, Trent 1000-C2, Trent 1000-CE, Trent 1000-CE2, Trent 1000-D, Trent 1000-D2, Trent 1000-E, Trent 1000-G, Trent 1000-G2, Trent 1000-H, Trent 1000-H2, Trent 1000-J2, Trent 1000-K2, and Trent 1000-L2 engines."
+ },
+ {
+  "documentNumber": "2026-19891",
+  "title": "Airworthiness Directives; MD Helicopters, LLC Helicopters",
+  "publicationDate": "2026-09-29",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/29/2026-19891/airworthiness-directives-md-helicopters-llc-helicopters",
+  "applicability": "This AD applies to all MD Helicopters, LLC Model 369, 369A, 369D, 369E, 369F, 369FF, 369H, 369HE, 369HM, 369HS, 500N, and 600N helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-19762",
+  "title": "Airworthiness Directives; Safran Helicopter Engines, S.A. Engines",
+  "publicationDate": "2026-09-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/28/2026-19762/airworthiness-directives-safran-helicopter-engines-sa-engines",
+  "applicability": "This AD applies to all Safran Helicopter Engines, S.A. Model Arrius 2B2 engines."
+ },
+ {
+  "documentNumber": "2026-19761",
+  "title": "Airworthiness Directives; Hélicoptères Guimbal Helicopters",
+  "publicationDate": "2026-09-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/28/2026-19761/airworthiness-directives-hlicoptres-guimbal-helicopters",
+  "applicability": "This AD applies to H[eacute]licopt[egrave]res Guimbal (HG) Model Cabri G2 helicopters having serial numbers (S/N) 1003 to 1389, except S/N 1383 and 1388, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-19760",
+  "title": "Airworthiness Directives; Costruzioni Aeronautiche Tecnam S.P.A. Airplanes",
+  "publicationDate": "2026-09-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/28/2026-19760/airworthiness-directives-costruzioni-aeronautiche-tecnam-spa-airplanes",
+  "applicability": "This AD applies to Costruzioni Aeronautiche Tecnam S.P.A. (Tecnam) Model P2006T airplanes, certificated in any category, serial numbers (S/N) 001 through 434 and S/N 442."
+ },
+ {
+  "documentNumber": "2026-19758",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-09-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/28/2026-19758/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to Airbus Helicopters Model EC 130 T2 helicopters, certificated in any category, that were delivered before September 23, 2024."
+ },
+ {
+  "documentNumber": "2026-19757",
+  "title": "Airworthiness Directives; Airbus Helicopters Deutschland GmbH (AHD) Helicopters",
+  "publicationDate": "2026-09-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/28/2026-19757/airworthiness-directives-airbus-helicopters-deutschland-gmbh-ahd-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Deutschland GmbH (AHD) Model EC135P1, EC135P2, EC135P2+, EC135P3, EC135T1, EC135T2, EC135T2+, EC135T3, and EC635T2+ helicopters. Note 1 to paragraph (c): Helicopters with an EC135P3H designation are Model EC135P3 helicopters. Helicopters with an EC135T3H designation are Model EC135T3 helicopters."
+ },
+ {
+  "documentNumber": "2026-19754",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-09-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/28/2026-19754/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 787-8, 787-9, and 787-10 airplanes, certificated in any category, as identified in Boeing Alert Requirements Bulletin B787-81205-SB530108-00 RB, Issue 001, dated November 5, 2025."
+ },
+ {
+  "documentNumber": "2026-19751",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-09-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/28/2026-19751/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to all The Boeing Company Model 777-200, -200LR, -300, -300ER, and 777F series airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-19172",
+  "title": "Airworthiness Directives; Rolls-Royce Deutschland Ltd. & Co. KG Engines",
+  "publicationDate": "2026-09-18",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/18/2026-19172/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines",
+  "applicability": "This AD applies to all Rolls-Royce Deutschland Ltd. & Co. KG Model RB211 Trent 768-60, 772-60, and 772B-60 engines."
+ },
+ {
+  "documentNumber": "2026-19171",
+  "title": "Airworthiness Directives; Rolls-Royce Deutschland Ltd. & Co. KG Engines",
+  "publicationDate": "2026-09-18",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/18/2026-19171/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines",
+  "applicability": "This AD applies to all Rolls-Royce Deutschland Ltd. & Co. KG Model RB211-Trent 875-17, 877-17, 884-17, 884B-17, 892-17, 892B-17, and 895-17 engines."
+ },
+ {
+  "documentNumber": "2026-19084",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-09-17",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/17/2026-19084/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to all Airbus SAS Model A330-243, A330-243F, A330-341, A330-342, and A330-343 airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-19083",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-09-17",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/17/2026-19083/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "(1) This AD applies to The Boeing Company Model 767-300F series airplanes, certificated in any category, as identified in Boeing Alert Requirements Bulletin 767-53A0337 RB, dated October 17, 2025. [[Page 58809]] (2) Installation of Supplemental Type Certificate (STC) ST01920SE does not affect the ability to accomplish the actions required by this AD. Therefore, for airplanes on which STC ST01920SE is installed, a ``change in product'' alternative method of compliance (AMOC) approval request is not necessary to comply with the requirements of 14 CFR 39.17."
+ },
+ {
+  "documentNumber": "2026-19082",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-09-17",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/17/2026-19082/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 737-8, 737-9, and 737-8200 airplanes, certificated in any category, as identified in Boeing Alert Requirements Bulletin 737-53A1420 RB, dated February 13, 2025."
+ },
+ {
+  "documentNumber": "2026-19052",
+  "title": "Airworthiness Directives; Bell Textron Canada Limited Helicopters",
+  "publicationDate": "2026-09-17",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/17/2026-19052/airworthiness-directives-bell-textron-canada-limited-helicopters",
+  "applicability": "This AD applies to Bell Textron Canada Limited Model 505 helicopters, certificated in any category, as identified in Transport Canada AD CF-2026-01, dated January 12, 2026 (Transport Canada AD CF-2026-01)"
+ },
+ {
+  "documentNumber": "2026-18927",
+  "title": "Airworthiness Directives; MD Helicopters, LLC Helicopters",
+  "publicationDate": "2026-09-15",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/15/2026-18927/airworthiness-directives-md-helicopters-llc-helicopters",
+  "applicability": "This AD applies to all MD Helicopters, LLC Model 369, 369A, 369D, 369E, 369F, 369FF, 369H, 369HE, 369HM, 369HS, 500N, and 600N helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-18848",
+  "title": "Airworthiness Directives; Pilatus Aircraft Ltd. Airplanes",
+  "publicationDate": "2026-09-15",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/15/2026-18848/airworthiness-directives-pilatus-aircraft-ltd-airplanes",
+  "applicability": "This AD applies to Pilatus Aircraft Ltd. Model PC-24 airplanes, certificated in any category, as identified in European Union Aviation Safety Agency AD 2026-0008, dated January 15, 2026 (EASA AD 2026-0008)."
+ },
+ {
+  "documentNumber": "2026-18602",
+  "title": "Airworthiness Directives; Dassault Aviation Airplanes",
+  "publicationDate": "2026-09-11",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/11/2026-18602/airworthiness-directives-dassault-aviation-airplanes",
+  "applicability": "This AD applies to all Dassault Aviation Model FALCON 2000 airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-18601",
+  "title": "Airworthiness Directives; Dassault Aviation Airplanes",
+  "publicationDate": "2026-09-11",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/11/2026-18601/airworthiness-directives-dassault-aviation-airplanes",
+  "applicability": "This AD applies to Dassault Aviation Model FALCON 2000EX airplanes, certificated in any category, with an original airworthiness certificate or original export certificate of airworthiness issued on or before January 15, 2026."
+ },
+ {
+  "documentNumber": "2026-18600",
+  "title": "Airworthiness Directives; Gulfstream Aerospace LP (Type Certificate Previously Held by Israel Aircraft Industries, Ltd.) Airplanes",
+  "publicationDate": "2026-09-11",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/11/2026-18600/airworthiness-directives-gulfstream-aerospace-lp-type-certificate-previously-held-by-israel-aircraft",
+  "applicability": "This AD applies to all Gulfstream Aerospace (Type Certificate previously held by Israel Aircraft Industries, Ltd.) LP Model Gulfstream G150 airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-18559",
+  "title": "Airworthiness Directives; Rolls-Royce Deutschland Ltd & Co KG Engines",
+  "publicationDate": "2026-09-11",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/11/2026-18559/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines",
+  "applicability": "This AD applies to all Rolls-Royce Deutschland Ltd & Co KG (RRD) Model RB211 Trent 768-60, 772-60, and 772B-60 engines, with a low- pressure compressor (LPC) blade having part number (P/N) FK23411, FK25441, FK25968, FW11901, FW15393, FW23643, FW23741, FW23744, KH23403, KH23404, or LV11570, installed."
+ },
+ {
+  "documentNumber": "2026-18423",
+  "title": "Airworthiness Directives; International Aero Engines AG Engines; Correction",
+  "publicationDate": "2026-09-10",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/10/2026-18423/airworthiness-directives-international-aero-engines-ag-engines-correction",
+  "applicability": "This AD applies to International Aero Engines AG (IAE AG) Model V2522-A5, V2524-A5, V2525-D5, V2527-A5, V2527E-A5, V2527M-A5, V2528- D5, V2530-A5, V2531-E5, and V2533-A5 engines with a 3rd stage high- pressure compressor (HPC) rotor blade having part number (P/N) 6A8353 or P/N 6A8688 installed."
+ },
+ {
+  "documentNumber": "2026-18055",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-09-03",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/03/2026-18055/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS Model A350-1041 airplanes, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025-0106, dated May 7, 2025 (EASA AD 2025-0106)."
+ },
+ {
+  "documentNumber": "2026-18053",
+  "title": "Airworthiness Directives; ATR-GIE Avions de Transport Régional Airplanes",
+  "publicationDate": "2026-09-03",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/03/2026-18053/airworthiness-directives-atr-gie-avions-de-transport-rgional-airplanes",
+  "applicability": "This AD applies to ATR-GIE Avions de Transport R[eacute]gional Model ATR42-500 airplanes, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025- 0135, dated June 26, 2025 (EASA AD 2025-0135)."
+ },
+ {
+  "documentNumber": "2026-18052",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-09-03",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/03/2026-18052/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS airplanes specified in paragraphs (c)(1) through (4), certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2026-0142, dated July 20, 2026 (EASA AD 2026-0142). (1) Model A318-112 airplanes. (2) Model A319-115, -132, and -133 airplanes. (3) Model A320-214, -216, -232, -233, -251N, and -271N airplanes. (4) Model A321-211, -213, -231, -271N, -251NX, -253NX, and - 271NX airplanes."
+ },
+ {
+  "documentNumber": "2026-18019",
+  "title": "Airworthiness Directives; Pratt & Whitney Division Engines",
+  "publicationDate": "2026-09-03",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/09/03/2026-18019/airworthiness-directives-pratt-and-whitney-division-engines",
+  "applicability": "This AD applies to all Pratt & Whitney Division (PW) Model PW4074D, PW4077D, PW4084D, PW4090, and PW4090-3 engines."
+ },
+ {
+  "documentNumber": "2026-17639",
+  "title": "Airworthiness Directives; Pilatus Aircraft Ltd. Airplanes",
+  "publicationDate": "2026-08-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/28/2026-17639/airworthiness-directives-pilatus-aircraft-ltd-airplanes",
+  "applicability": "This AD applies to Pilatus Aircraft Ltd. Model PC-12/47E airplanes, manufacturer serial numbers 2001 through 2999, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-17615",
+  "title": "Airworthiness Directives; Bell Textron Canada Limited Helicopters",
+  "publicationDate": "2026-08-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/28/2026-17615/airworthiness-directives-bell-textron-canada-limited-helicopters",
+  "applicability": "This AD applies to Bell Textron Canada Limited Model 222 helicopters, certificated in any category, as identified in Transport Canada Emergency AD CF-2026-39, dated [[Page 55449]] August 10, 2026 (Transport Canada Emergency AD CF-2026-39)."
+ },
+ {
+  "documentNumber": "2026-17584",
+  "title": "Airworthiness Directives; Lycoming Engines",
+  "publicationDate": "2026-08-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/28/2026-17584/airworthiness-directives-lycoming-engines",
+  "applicability": "This AD applies to Lycoming Engines Model O-235, -A, -AP, -B, - BP, -C, -C1, -C1A, -C1B, -C1C, -C2A, -C2B, -C2C, -E1, -E1B, -E2A, - E2B, -F1, -F1B, -F2A, -F2B, -G1, -G1B, O-235-G2A, O-235-G2B, O-235- H2C, O-235-J2A, O-235-J2B, O-235-K2A, O-235-K2B, -K2C, -L2A, -L2C, - M1, -M2C, -M3C, -N2A, -N2C, -P1, -P2A, -P2C, and -P3C; O-540-A1A, - A1A5, -A1B5, -A1C5, -A1D, -A1D5, -A2B, -A3D5, -A4A5, -A4B5, -A4C5, - A4D5, -A4E5, -B1A5, -B1B5, -B1D5, -B2A5, -B2B5, -B2C5, -B4A5, -B4B5, -D1A5, -E4A5, -E4B5, -E4C5, -F1A5, -F1B5, -G1A5, -G2A5, -H1A5, - H1A5D, -H1B5D, -H2A5, -H2A5D, -H2B5D, -J1A5D, -J1B5D, -J1C5D, - J1D5D, -J2A5D, -J2B5D, -J2C5D, -J2D5D, -J3A5, -J3A5D, -J3C5D, and - L3C5D; IO-540-A1A5, -AA1A5, -AA1B5, -AB1A5, -AE1A5, -AC1A5, -AF1A5, -B1B5, -AG1A5, -B1A5, -B1C5, -C1B5, -C1C5, -C2C, -C4B5, -C4B5D, - C4C5, -C4D5, -C4D5D, -D4A5, -D4B5, -D4C5, -E1A5, -E1B5, -E1C5, - G1A5, -G1B5, -G1C5, -G1D5, -G1E5, -G1F5, -J4A5, -K1A5, -K1A5D, - K1B5, -K1B5D, -K1C5, -K1D5, -K1E5, -K1E5D, -K1F5, -K1F5D, -K1G5, - K1G5D, -K1H5, -K1J5, -K1J5D, -K1K5, -K2A5, -L1A5, -L1A5D, -L1B5D, - L1C5, -M1A5, -M1A5D, -M1B5D, -M1C5, -M2A5D, -N1A5, -P1A5, -R1A5, - S1A5, -T4A5D, -T4B5, -T4B5D, -T4C5D, -U1A5D, -U1B5D, -V4A5, -V4A5D, -W1A5, -W1A5D, and -W3A5D engines with a serial number listed in Table 2 or Table 3 of Lycoming Mandatory Service Bulletin No. (MSB) 667A, dated March 12, 2026 (Lycoming MSB 667A), and an installed piston pin having part number (P/N) LW-13445 with an FAA Form 8130-3 from the original equipment manufacturer for production dated between January 7, 2021 to December 15, 2025. If the production date on the FAA Form 8130-3 cannot be determined, or if the FAA Form 8130-3 is not available, this AD is applicable."
+ },
+ {
+  "documentNumber": "2026-17583",
+  "title": "Airworthiness Directives; Various Helicopters",
+  "publicationDate": "2026-08-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/28/2026-17583/airworthiness-directives-various-helicopters",
+  "applicability": "This AD applies to all helicopters identified in paragraphs (c)(1) through (4) of this AD, certificated in any category. (1) Airbus Helicopters Model H160-B, EC225LP, AS 365 N3, and AS332L2 helicopters. (2) Airbus Helicopters Deutschland GmbH Model EC135P1, EC135P2, EC135P2+, EC135P3, EC135T1, EC135T2, EC135T2+, EC135T3, and EC635T2+ helicopters. (3) Airbus Helicopters Deutschland GmbH Model MBB-BK 117 C-2, MBB-BK 117 D-2, and MBB-BK 117 D-3 helicopters. Note 1 to paragraph (c)(3): Helicopters with a Model MBB-BK 117 C-2e designation are Model MBB-BK 117 C-2 helicopters. (4) Leonardo S.p.A. Model AB139, AW109SP, AW139, AW169, and AW189 helicopters."
+ },
+ {
+  "documentNumber": "2026-17582",
+  "title": "Airworthiness Directives; Rolls-Royce Deutschland Ltd & Co KG Engines",
+  "publicationDate": "2026-08-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/28/2026-17582/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines",
+  "applicability": "This AD applies to all Rolls-Royce Deutschland Ltd & Co KG Model Trent7000-72 and Trent7000-72C engines."
+ },
+ {
+  "documentNumber": "2026-17581",
+  "title": "Airworthiness Directives; Leonardo S.p.A. Helicopters",
+  "publicationDate": "2026-08-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/28/2026-17581/airworthiness-directives-leonardo-spa-helicopters",
+  "applicability": "This AD applies to Leonardo S.p.A. Model A109A, A109A II, A109C, A109K2, A109E, A109S, A119, AW109SP and AW119 MKII helicopters, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025-0148, dated July 11, 2025 (EASA AD 2025-0148)."
+ },
+ {
+  "documentNumber": "2026-17553",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-08-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/27/2026-17553/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 787-8, 787-9, and 787-10 airplanes, certificated in any category, as identified in Boeing Alert Requirements Bulletin B787-81205-SB570048-00 RB, Issue 001, dated August 11, 2025."
+ },
+ {
+  "documentNumber": "2026-17552",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-08-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/27/2026-17552/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS Model A320-211, -212, -214, -216, -231, -232, and -233 airplanes; and Model A321-111, -112, -131, - 211, -212, -213, -231, and -232 airplanes, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025-0193, dated September 8, 2025 (EASA AD 2025-0193), having an extended service goal (ESG) in the airworthiness limitations section of the instructions for continued airworthiness."
+ },
+ {
+  "documentNumber": "2026-17551",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-08-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/27/2026-17551/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to all Airbus SAS airplanes, certificated in any category, as identified in paragraphs (c)(1) through (4) of this AD. (1) Model A318-111, -112, -121, and -122 airplanes. (2) Model A319-111, -112, -113, -114, -115, -131, -132, -133, - 151N, -153N, -171N, and -173N airplanes. (3) Model A320-211, -212, -214, -216, -231, -232, -233, -251N, - 252N, -253N, -271N, -272N, and -273N airplanes. (4) Model A321-111, -112, -131, -211, -212, -213, -231, -232, - 251N, -252N, [[Page 55247]] -253N, -271N, -272N, -251NX, -252NX, -253NX, -271NX, -272NX, -253NY, and -271NY airplanes."
+ },
+ {
+  "documentNumber": "2026-16954",
+  "title": "Airworthiness Directives; International Aero Engines AG Engines",
+  "publicationDate": "2026-08-20",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/20/2026-16954/airworthiness-directives-international-aero-engines-ag-engines",
+  "applicability": "This AD applies to International Aero Engines AG (IAE AG) Model V2522-A5, V2524-A5, V2525-D5, V2527-A5, V2527E-A5, V2527M-A5, V2528- D5, V2530-A5, V2531-E5, and V2533-A5 engines with a 3rd stage high- pressure compressor (HPC) rotor blade having part number (P/N) 6A8353 or P/N 6A8688 installed."
+ },
+ {
+  "documentNumber": "2026-16672",
+  "title": "Airworthiness Directives; Air Tractor, Inc. Airplanes",
+  "publicationDate": "2026-08-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/14/2026-16672/airworthiness-directives-air-tractor-inc-airplanes",
+  "applicability": "This AD applies to Air Tractor, Inc. Model AT-802 and AT-802A airplanes, all serial numbers, certificated in any category, that have Wipaire, Inc. Supplemental Type Certificate (STC) No. SA01795CH installed."
+ },
+ {
+  "documentNumber": "2026-16659",
+  "title": "Airworthiness Directives; Gulfstream Aerospace LP (Type Certificate Previously Held by Israel Aircraft Industries, Ltd.) Airplanes",
+  "publicationDate": "2026-08-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/14/2026-16659/airworthiness-directives-gulfstream-aerospace-lp-type-certificate-previously-held-by-israel-aircraft",
+  "applicability": "This AD applies to all Gulfstream Aerospace LP (Type Certificate Previously Held by Israel Aircraft Industries, Ltd.) Model Gulfstream 200 and Galaxy airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-16657",
+  "title": "Airworthiness Directives; ATR-GIE Avions de Transport Régional Airplanes",
+  "publicationDate": "2026-08-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/14/2026-16657/airworthiness-directives-atr-gie-avions-de-transport-rgional-airplanes",
+  "applicability": "This AD applies to ATR-GIE Avions de Transport R[eacute]gional Model ATR42-500 and ATR72-212A airplanes, certificated in any category, as identified in ATR Service Bulletin ATR42-55-0020, Revision 03, dated January 31, 2025; ATR Service Bulletin ATR72-55- 1013, Revision 03, dated January 31, 2025; ATR Service Bulletin ATR42-55-0025, dated February 3, 2025; or ATR Service Bulletin ATR72-55-1018, dated February 3, 2025; as applicable."
+ },
+ {
+  "documentNumber": "2026-16655",
+  "title": "Airworthiness Directives; Pratt & Whitney Canada Corp. Engines",
+  "publicationDate": "2026-08-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/14/2026-16655/airworthiness-directives-pratt-and-whitney-canada-corp-engines",
+  "applicability": "This AD applies to all Pratt & Whitney Canada Corp. Model PW210A, PW210A1, and PW210S engines."
+ },
+ {
+  "documentNumber": "2026-16641",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-08-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/14/2026-16641/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model EC130T2 helicopters, certificated in any category, as identified in European Union Aviation Safety Agency AD 2024-0144, dated July 19, 2024 (EASA AD 2024-0144). [[Page 52496]]"
+ },
+ {
+  "documentNumber": "2026-16636",
+  "title": "Airworthiness Directives; Rolls-Royce Deutschland Ltd & Co KG Engines",
+  "publicationDate": "2026-08-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/14/2026-16636/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines",
+  "applicability": "This AD applies to all Rolls-Royce Deutschland Ltd & Co KG Model Trent 1000-A2, Trent 1000-AE2, Trent 1000-C2, Trent 1000-CE2, Trent 1000-D2, Trent 1000-E2, Trent 1000-G2, Trent 1000-H2, Trent 1000-J2, Trent 1000-K2, and Trent 1000-L2 engines."
+ },
+ {
+  "documentNumber": "2026-16512",
+  "title": "Airworthiness Directives; BRP-Rotax GmbH & Co KG (Formerly BRP-Powertrain GMBH & CO KG and Bombardier-Rotax GmbH) Engines and Various Aircraft",
+  "publicationDate": "2026-08-13",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/13/2026-16512/airworthiness-directives-brp-rotax-gmbh-and-co-kg-formerly-brp-powertrain-gmbh-and-co-kg-and",
+  "applicability": "This AD applies to BRP-Rotax GmbH & Co KG (formerly BRP- POWERTRAIN GMBH & CO KG and Bombardier-Rotax GmbH) (Rotax) Model 912 F2, 912 F3, 912 F4, 912 iSc2 Sport, 912 iSc3 Sport, 912 S2, 912 S3, 912 S4, 914 F2, 914 F3, and 914 F4 engines; and Model 912 A1, 912 A2, and 912 A3 engines installed on the aircraft identified in Table 1 to paragraph (c) of this AD that were included as part of the aircraft's type certification basis; with an installed propeller gearbox that meets the criteria of paragraphs (c)(1) or (2) of this AD. Table 1 to Paragraph (c)--Airplanes With Affected Engines ------------------------------------------------------------------------ Type certificate holder Aircraft model Engine model ------------------------------------------------------------------------ Aeromot-Industria Mecanico- AMT-200 (Super 912 A2. Metalurgica Ltda. Ximango). Diamond Aircraft Industries..... HK 36 R ``SUPER 912 A1. DIMONA''. Diamond Aircraft Industries GmbH HK 36 TC & HK 36 912 A3. TS. [[Page 52239]] Diamond Aircraft Industries Inc. DA20-A1........... 912 A3. HOAC-Austria.................... DV 20 KATANA...... 912 A3. Magnaghi Aeronautica S.p.A...... Sky Arrow 650 TC.. 912 A2. SCHEIBE-AIRCRAFT-GMBH........... SF 25C............ 912 A2 or 912 A3. ------------------------------------------------------------------------ (1) Installed initially (on delivery) on engines with a propeller gearbox installed having a serial number identified in Chapter 4) Appendix, paragraph 4.1) Gearbox installed on engines, of Rotax Alert Service Bulletin ASB-2026-001R00, dated June 22, 2026 (Rotax Alert Service Bulletin ASB-2026-001R00); or (2) Delivered as a spare part with a propeller gearbox installed having a serial number identified in Chapter 4) Appendix, paragraph 4.2) Gearbox supplied as spare parts, of Rotax Alert Service Bulletin ASB-2026-001R00."
+ },
+ {
+  "documentNumber": "2026-16507",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-08-13",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/13/2026-16507/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model AS350B2 helicopters as specified in European Union Aviation Safety Agency AD 2025-0263, dated November 26, 2025; corrected December 9, 2025 (EASA AD 2025-0263)."
+ },
+ {
+  "documentNumber": "2026-16506",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-08-13",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/13/2026-16506/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model EC 155 B and EC 155 B1 helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-16505",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-08-13",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/13/2026-16505/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model AS355E, AS355F, AS355F1, AS355F2, and AS355N helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-16504",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-08-13",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/13/2026-16504/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 767-300 and -300F series airplanes, certificated in any category, provisioned for blended winglets modified in accordance with Supplemental Type Certificate (STC) ST01920SE, with or without winglets installed."
+ },
+ {
+  "documentNumber": "2026-16047",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-08-06",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/06/2026-16047/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters, certificated in any category, identified in paragraphs (c)(1) through (3) of this AD. (1) Model AS350B, AS350BA, AS350B1, AS350B2, and AS350B3 helicopters, with a helicopter manufacture date before May 15, 2023. (2) Model AS350D helicopters, with a helicopter manufacture date before May 15, 2023, except helicopters equipped with a Lycoming engine. (3) Model EC130B4 and EC130T2 helicopters, with a helicopter manufacture date before February 13, 2023. Note 1 to paragraph (c)(1): Helicopters with AS350B3e designation are Model AS350B3 helicopters."
+ },
+ {
+  "documentNumber": "2026-16043",
+  "title": "Airworthiness Directives; Bell Textron Canada Limited Helicopters",
+  "publicationDate": "2026-08-06",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/06/2026-16043/airworthiness-directives-bell-textron-canada-limited-helicopters",
+  "applicability": "This AD applies to Bell Textron Canada Limited Model 505 helicopters, certificated in any category, as identified in Transport Canada AD CF-2025-34, dated July 3, 2025 (Transport Canada AD CF-2025-34)."
+ },
+ {
+  "documentNumber": "2026-15978",
+  "title": "Airworthiness Directives; Various Helicopters",
+  "publicationDate": "2026-08-06",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/06/2026-15978/airworthiness-directives-various-helicopters",
+  "applicability": "This AD applies to various helicopters, certificated in any category, identified in paragraphs (c)(1) through (7) of this AD, with a main rotor shaft (MRS) part number S6135-20640-001, S6135- 20640-002, or S6137-23040-001, installed. (1) Model CH-3E helicopters; current type certificate holders include but are not limited to, Glacier Helicopter, Inc. and Siller Helicopters. (2) Sikorsky Aircraft Corporation Model S-61A, S-61D, S-61E, and S-61V helicopters. (3) Sikorsky Aircraft Model S-61L, S-61N, S-61NM (serial number (S/N) 61454), and S-61R helicopters. (4) Model S-61L helicopters; current type certificate holders include but are not limited to, Carson Helicopters. (5) Model SH-3A helicopters; current type certificate holders include but are not limited to, Siller Helicopters. (6) Model SH-3H helicopters; current type certificate holders include but are not limited to, Carson Helicopters and Croman Corporation. (7) Model USAF CH-3C, CH-3E, HH-3C, and HH-3E helicopters; current type certificate holders include but are not limited to, Reynolds Aviation."
+ },
+ {
+  "documentNumber": "2026-15936",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-08-06",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/06/2026-15936/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 737-8, 737-9, and 737-8200 airplanes, certificated in any category, as identified in Boeing Alert Requirements Bulletin 737-53A1408 RB, dated December 20, 2024."
+ },
+ {
+  "documentNumber": "2026-15825",
+  "title": "Airworthiness Directives; Diamond Aircraft Industries Inc. Airplanes",
+  "publicationDate": "2026-08-04",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/08/04/2026-15825/airworthiness-directives-diamond-aircraft-industries-inc-airplanes",
+  "applicability": "This AD applies to all Diamond Aircraft Industries Inc. Model DA20-C1 airplanes, certificated in any category, that have an Artex emergency locator transmitter (ELT) 1000 installed."
+ },
+ {
+  "documentNumber": "2026-15467",
+  "title": "Airworthiness Directives; Pilatus Aircraft Ltd. Airplanes",
+  "publicationDate": "2026-07-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/30/2026-15467/airworthiness-directives-pilatus-aircraft-ltd-airplanes",
+  "applicability": "This AD applies to Pilatus Aircraft Ltd Model PC-12/47E airplanes, manufacturer serial numbers 1720 and 2001 through 2999, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-15466",
+  "title": "Airworthiness Directives; Stemme GmbH Gliders",
+  "publicationDate": "2026-07-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/30/2026-15466/airworthiness-directives-stemme-gmbh-gliders",
+  "applicability": "This AD applies to all Stemme GmbH Model Stemme S 12 gliders, certificated in any category. Note 1 to paragraph (c): All of the affected airplanes were produced and delivered with the affected copper sealing rings installed."
+ },
+ {
+  "documentNumber": "2026-15455",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-07-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/30/2026-15455/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS airplanes identified in paragraphs (c)(1) and (2) of this AD, certificated in any category, modified in accordance with FAA Supplemental Type Certificate (STC) ST04038NY. (1) Model A330-201, -202, -203, -223, and -243 airplanes. (2) Model A330-301, -302, -303, -321, -322, -323, -341, -342, and -343 airplanes."
+ },
+ {
+  "documentNumber": "2026-15412",
+  "title": "Airworthiness Directives; MHI RJ Aviation ULC (Type Certificate Previously Held by Bombardier, Inc.) Airplanes",
+  "publicationDate": "2026-07-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/30/2026-15412/airworthiness-directives-mhi-rj-aviation-ulc-type-certificate-previously-held-by-bombardier-inc",
+  "applicability": "This AD applies to all MHI RJ Aviation ULC (Type Certificate previously held by Bombardier, Inc.) airplanes identified in paragraphs (c)(1) through (4) of this AD, certificated in any category. (1) Model CL-600-2C10 (Regional Jet Series 700, 701 & 702) airplanes. (2) Model CL-600-2C11 (Regional Jet Series 550) airplanes. (3) Model CL-600-2D15 (Regional Jet Series 705) airplanes. (4) Model CL-600-2D24 (Regional Jet Series 900) airplanes."
+ },
+ {
+  "documentNumber": "2026-15411",
+  "title": "Airworthiness Directives; Airbus Canada Limited Partnership (Type Certificate Previously Held by C Series Aircraft Limited Partnership (CSALP); Bombardier, Inc.) Airplanes",
+  "publicationDate": "2026-07-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/30/2026-15411/airworthiness-directives-airbus-canada-limited-partnership-type-certificate-previously-held-by-c",
+  "applicability": "This AD applies to Airbus Canada Limited Partnership (Type Certificate previously held by C Series Aircraft Limited Partnership (CSALP); Bombardier, Inc.) Model BD-500-1A10 and BD-500-1A11 airplanes, certificated in any category, as identified in Transport Canada AD CF-2025-12, dated March 4, 2025 (Transport Canada AD CF- 2025-12)."
+ },
+ {
+  "documentNumber": "2026-15410",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-07-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/30/2026-15410/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to all Airbus SAS Model A330-841 and Model A330- 941 airplanes."
+ },
+ {
+  "documentNumber": "2026-15409",
+  "title": "Airworthiness Directives; Bombardier, Inc., Airplanes",
+  "publicationDate": "2026-07-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/30/2026-15409/airworthiness-directives-bombardier-inc-airplanes",
+  "applicability": "This AD applies to Bombardier, Inc. Model BD-700-1A10 and BD- 700-1A11 airplanes, certificated in any category, as identified in Transport Canada AD CF-2022-53, dated September 8, 2022 (Transport Canada AD CF-2022-53)."
+ },
+ {
+  "documentNumber": "2026-15370",
+  "title": "Airworthiness Directives; Leonardo S.p.a. Helicopters",
+  "publicationDate": "2026-07-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/30/2026-15370/airworthiness-directives-leonardo-spa-helicopters",
+  "applicability": "This AD applies to all Leonardo S.p.a. Model AW189 helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-15369",
+  "title": "Airworthiness Directives; Safran Helicopter Engines, S.A. (Type Certificate Previously Held by Turbomeca, S.A.) Engines",
+  "publicationDate": "2026-07-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/30/2026-15369/airworthiness-directives-safran-helicopter-engines-sa-type-certificate-previously-held-by-turbomeca",
+  "applicability": "This AD applies to all Safran Helicopter Engines, S.A. (type certificate previously [[Page 47946]] held by Turbomeca S.A.) Model Arriel 2E engines."
+ },
+ {
+  "documentNumber": "2026-15365",
+  "title": "Airworthiness Directives; Bell Textron Canada Limited Helicopters",
+  "publicationDate": "2026-07-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/30/2026-15365/airworthiness-directives-bell-textron-canada-limited-helicopters",
+  "applicability": "This AD applies to Bell Textron Canada Limited Model 505 helicopters, certificated in any category, as identified in Transport Canada AD CF-2025-32, dated July 2, 2025 (Transport Canada AD CF-2025-32)."
+ },
+ {
+  "documentNumber": "2026-15308",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-07-29",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/29/2026-15308/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to all Airbus SAS airplanes identified in paragraphs (c)(1) through (3) of this AD, certificated in any category. (1) Model A319-151N, -153N, -171N, and -173N airplanes. (2) Model A320-251N, -252N, -253N, -271N, -272N, and -273N airplanes. (3) Model A321-251N, -252N, -253N, -271N, -272N, -251NX, -252NX, -253NX, -271NX, -272NX, -253NY, and -271NY airplanes."
+ },
+ {
+  "documentNumber": "2026-15239",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-07-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/28/2026-15239/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to all The Boeing Company Model 777-200, -200LR, - 300, -300ER, and 777F series airplanes, certificated in any category. 0"
+ },
+ {
+  "documentNumber": "2026-15006",
+  "title": "Airworthiness Directives; Textron Aviation Inc. Airplanes",
+  "publicationDate": "2026-07-24",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/24/2026-15006/airworthiness-directives-textron-aviation-inc-airplanes",
+  "applicability": "This AD applies to Textron Aviation Inc. Model B300 and B300C airplanes, certificated in any category, identified in Textron Mandatory Service Letter MTL-57-04, Revision 1, dated March 27, 2025, including airplanes identified in paragraphs (c)(1) through (3) of this AD, except for any airplane that has had a wing evaluation performed by Textron Aviation Special Missions and been issued a serial number specific aircraft limitations manual and structural inspection and repair manual supplements. (1) Model B300 airplanes (heavy weight) having Kit 130-4402 installed (effective for serial numbers (S/Ns) FL-91, FL-381, FL- 383, FL-387, FL-391 and on). (2) Model B300 (heavy weight) and B300C (non-extended range) airplanes having Kit 130-4030 installed (effective for S/Ns FL-381, FL-383 and on, and FM-12 and on). (3) Model B300 (increased gross weight with extended-range fuel tank) airplanes having Kit 130-4014 (effective for S/Ns FL-1 and on and FM-1 and on)."
+ },
+ {
+  "documentNumber": "2026-15004",
+  "title": "Airworthiness Directives; Stemme GmbH Gliders",
+  "publicationDate": "2026-07-24",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/24/2026-15004/airworthiness-directives-stemme-gmbh-gliders",
+  "applicability": "This AD applies to all Stemme GmbH TSA-M Model S6-RT and Stemme S 12 gliders, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-14511",
+  "title": "Airworthiness Directives; Diamond Aircraft Industries GmbH",
+  "publicationDate": "2026-07-17",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/17/2026-14511/airworthiness-directives-diamond-aircraft-industries-gmbh",
+  "applicability": "This AD applies to all Diamond Aircraft Industries GmbH (DAI) Model DA 42, DA 42 M-NG, and DA 42 NG airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-14481",
+  "title": "Airworthiness Directives; Bell Textron Canada Limited Helicopters",
+  "publicationDate": "2026-07-17",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/17/2026-14481/airworthiness-directives-bell-textron-canada-limited-helicopters",
+  "applicability": "This AD applies to Bell Textron Canada Limited Model 407 helicopters, certificated in any category, with a pilot cyclic stick tube assembly part number (P/N) 206-001-342-101 or P/N 206-001-342- 101FM installed."
+ },
+ {
+  "documentNumber": "2026-14478",
+  "title": "Airworthiness Directives; General Electric Company Engines",
+  "publicationDate": "2026-07-17",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/17/2026-14478/airworthiness-directives-general-electric-company-engines",
+  "applicability": "This AD applies to all General Electric Company (GE) engines listed in paragraphs (c)(1) and (2) of this AD with a fuel tube hose installed having a part number (P/N) identified in table 1 to paragraph (c) of this AD. (1) GEnx-1B engines: Model GEnx-1B64, GEnx-1B64/P1, GEnx-1B64/ P2, GEnx-1B67, GEnx-1B67/P1, GEnx-1B67/P2, GEnx-1B70, GEnx-1B70/75/ P1, GEnx-1B70/75/P2, GEnx-1B70/P1, GEnx-1B70/P2, GEnx-1B70C/P1, GEnx-1B70C/P2, GEnx-1B74/75/P1, GEnx-1B74/75/P2, GEnx-1B76/P2, and GEnx-1B76A/P2. (2) GEnx-2B engines: Model GEnx-2B67, GEnx-2B67B, and GEnx-2B67/ P. [[Page 44747]] Table 1 to Paragraph (c)--Affected Fuel Tube Hoses ------------------------------------------------------------------------ Engine model Part name P/N ------------------------------------------------------------------------ GEnx-1B........................ Fuel cooled oil cooler 2426M07P01 (FCOC) fuel return hose manifold. FCOC fuel cooling inlet 2426M08P01 tube hose. GEnx-2B........................ Heat exchanger fuel 2477M34P01 tube hose. Heat exchanger inlet 2477M35P01 fuel tube hose. ------------------------------------------------------------------------"
+ },
+ {
+  "documentNumber": "2026-14110",
+  "title": "Airworthiness Directives; Bombardier, Inc., Airplanes",
+  "publicationDate": "2026-07-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/14/2026-14110/airworthiness-directives-bombardier-inc-airplanes",
+  "applicability": "This AD applies to Bombardier, Inc., airplanes identified in paragraphs (c)(1) through (3) of this AD, certificated in any category. (1) All Model CL-600-1A11 (600), CL-600-2A12 (601), and CL-600- 2B16 (601-3A and 601-3R Variants) airplanes. (2) Model CL-600-2B16 (604 Variant) airplanes, serial numbers (S/Ns) 5301 through 5665 inclusive and S/Ns 5701 through 6049 inclusive. (3) Model CL-600-2B16 (604 Variant) airplanes, S/Ns 6050 through 6192 inclusive."
+ },
+ {
+  "documentNumber": "2026-14109",
+  "title": "Airworthiness Directives; Textron Aviation Inc. Airplanes",
+  "publicationDate": "2026-07-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/14/2026-14109/airworthiness-directives-textron-aviation-inc-airplanes",
+  "applicability": "This AD applies to Textron Aviation Inc. Model 408 airplanes, serial numbers -0012 through -0051, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-14090",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-07-13",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/13/2026-14090/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to all The Boeing Company Model 737-8, 737-9, and 737-8200 airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-13983",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-07-10",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/10/2026-13983/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to all Airbus SAS airplanes identified in paragraphs (c)(1) through (3) of this AD, certificated in any category. (1) Model A319-151N, -153N, -171N, and -173N airplanes. (2) Model A320-251N, -252N, -253N, -271N, -272N, and -273N airplanes. (3) Model A321-251N, -251NX, -252N, -252NX, -253N, -253NX, - 253NY, -271N, -271NX, -271NY, -272N, and -272NX airplanes."
+ },
+ {
+  "documentNumber": "2026-13982",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-07-10",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/10/2026-13982/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to all Airbus SAS airplanes specified in paragraphs (c)(1) through (6) of this AD, certificated in any category. (1) Model A319-111, -112, -113, -114, -115, -131, -132, and -133 airplanes. (2) Model A320-211, -212, -214, -216, -231, -232, -233, -251N, - 252N, -253N, -271N, -272N, and -273N airplanes. (3) Model A321-211, -212, -213, -231, -232, -251N, -251NX, - 252N, -252NX, -253N, -253NX, -253NY, -271N, -271NX, -271NY, -272N, and -272NX airplanes. (4) Model A330-201, -202, -203, -223, -243, -301, -302, -303, - 321, -322, -323, -341, -342, -343, -841, and -941 airplanes. (5) Model A350-941 and -1041 airplanes. (6) Model A380-841, -842, and -861 airplanes."
+ },
+ {
+  "documentNumber": "2026-13981",
+  "title": "Airworthiness Directives; Bombardier, Inc., Airplanes",
+  "publicationDate": "2026-07-10",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/10/2026-13981/airworthiness-directives-bombardier-inc-airplanes",
+  "applicability": "This AD applies to Bombardier, Inc., Model BD-700-2A12 airplanes, certificated in any category, as identified in Transport Canada AD CF-2025-46, dated September 2, 2025 (Transport Canada AD CF-2025-46)."
+ },
+ {
+  "documentNumber": "2026-13979",
+  "title": "Airworthiness Directives; CFM International, S.A. Engines",
+  "publicationDate": "2026-07-10",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/10/2026-13979/airworthiness-directives-cfm-international-sa-engines",
+  "applicability": "This AD applies to CFM International, S.A. Model LEAP-1A23, LEAP-1A24, LEAP-1A24E1, LEAP-1A26, LEAP-1A26CJ, LEAP-1A26E1, LEAP- 1A29, LEAP-1A29CJ, LEAP-1A30, LEAP-1A32, LEAP-1A33, LEAP-1A33B2, and LEAP-1A35A engines with an installed high-pressure turbine (HPT) rotor stage 1 blade, having part number (P/N) 2747M92P01, P/N 2553M91G03, P/N 2553M91G05, P/N 2553M91G06, P/N 2553M91G07, or P/N 2553M91G08 that has accumulated more than 1,100 South Asia takeoffs, and has accumulated 2,500 part cycles since new (PCSN) for Group 1 engines, or 5,100 PCSN for Group 2 engines."
+ },
+ {
+  "documentNumber": "2026-13977",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-07-10",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/10/2026-13977/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model AS350B2, AS350B3, EC120B, and EC130B4 helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-13685",
+  "title": "Airworthiness Directives; Bell Textron Canada Limited Helicopters",
+  "publicationDate": "2026-07-07",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/07/2026-13685/airworthiness-directives-bell-textron-canada-limited-helicopters",
+  "applicability": "This AD applies to Bell Textron Canada Limited (Bell) Model 430 helicopters, serial numbers 49001 through 49129 inclusive, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-13655",
+  "title": "Airworthiness Directives; Airbus Canada Limited Partnership (Type Certificate Previously Held by C Series Aircraft Limited Partnership (CSALP); Bombardier, Inc.) Airplanes",
+  "publicationDate": "2026-07-07",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/07/2026-13655/airworthiness-directives-airbus-canada-limited-partnership-type-certificate-previously-held-by-c",
+  "applicability": "This AD applies to all Airbus Canada Limited Partnership (Type Certificate previously held by C Series Aircraft Limited Partnership (CSALP); Bombardier, Inc.) Model BD-500-1A10 and BD-500-1A11 airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-13540",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-07-06",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/06/2026-13540/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to Airbus Helicopters Model H160-B helicopters, certificated in any category, as identified in European Union Aviation Safety Agency AD 2025-0161, dated July 29, 2025 (EASA AD 2025-0161)."
+ },
+ {
+  "documentNumber": "2026-13538",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-07-06",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/06/2026-13538/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to Airbus Helicopters Model H160-B helicopters, certificated in any category, modified by Supplemental Type Certificate (STC) SR00223IB having a date of issuance of the original airworthiness certificate or date of issuance of the original export certificate of airworthiness on or before October 3, 2024."
+ },
+ {
+  "documentNumber": "2026-13481",
+  "title": "Airworthiness Directives; Rolls-Royce Deutschland Ltd & Co KG Engines",
+  "publicationDate": "2026-07-02",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/02/2026-13481/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines",
+  "applicability": "This AD applies to certain Rolls-Royce Deutschland Ltd & Co KG Model Trent XWB-75, Trent XWB-79, Trent XWB-79B, Trent XWB-84, and Trent XWB-97 engines, as identified in European Union Aviation Safety Agency (EASA) AD 2025-0128R1, dated June 17, 2025 (EASA AD 2025-0128R1)."
+ },
+ {
+  "documentNumber": "2026-13476",
+  "title": "Airworthiness Directives; Gulfstream Aerospace Corporation Airplanes",
+  "publicationDate": "2026-07-02",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/02/2026-13476/airworthiness-directives-gulfstream-aerospace-corporation-airplanes",
+  "applicability": "This AD applies to Gulfstream Aerospace Corporation airplanes, certificated in any category, identified in paragraphs (c)(1) and (2) of this AD. (1) Model GVIII-G700 airplanes, serial numbers (S/Ns) 87002 through 87049 inclusive, 87053, and 87076. (2) Model GVIII-G800 airplanes, S/Ns 88002 through 88014 inclusive."
+ },
+ {
+  "documentNumber": "2026-13475",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-07-02",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/02/2026-13475/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company airplanes, certificated in any category, as specified in paragraphs (c)(1) and (2) of this AD. (1) Model 787-8 and 787-9 airplanes as identified in Boeing Special Attention Requirements Bulletin B787-81205-SB250253-00 RB, Issue 002, dated July 11, 2024. (2) Model 787-10 airplanes as identified in Boeing Requirements Bulletin B787-81205-SB250254-00 RB, Issue 001, dated February 22, 2021."
+ },
+ {
+  "documentNumber": "2026-13474",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-07-02",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/02/2026-13474/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 747-8F series airplanes, certificated in any category, identified as Group 3 in Boeing Alert Requirements Bulletin 747-53A2907 RB, Revision 1, dated March 14, 2025."
+ },
+ {
+  "documentNumber": "2026-13241",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-07-01",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/07/01/2026-13241/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to all The Boeing Company Model 737-8, 737-9, and 737-8200 airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-13218",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-06-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/30/2026-13218/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to all The Boeing Company airplanes identified in paragraphs (c)(1) and (2) of this AD, certificated in any category. (1) Model 757-200, -200PF, -200CB, and -300 series airplanes. (2) Model 767-200, -300, -300F, -400ER, and -2C series airplanes."
+ },
+ {
+  "documentNumber": "2026-13217",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-06-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/30/2026-13217/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to all The Boeing Company Model 787-8, 787-9, and 787-10 airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-13216",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-06-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/30/2026-13216/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to all The Boeing Company Model 747-8 and -8F series airplanes, and Model 777-200, -200LR, -300, -300ER, and 777F series airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-13208",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-06-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/30/2026-13208/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to all The Boeing Company Model 737-8, 737-9, and 737-8200 airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-13207",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-06-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/30/2026-13207/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to all The Boeing Company Model 747-100, -100B, - 100B SUD, -200B, -200C, -200F, -300, -400, -400D, and -400F series airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-13206",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-06-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/30/2026-13206/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to all The Boeing Company Model 737-100, -200, - 200C, -300, -400, -500, -600, -700, -700C, -800, -900, and -900ER series airplanes, certificated in any category, except for Model 737-200 and -200C series airplanes equipped with an SP-77 flight control system."
+ },
+ {
+  "documentNumber": "2026-13205",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-06-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/30/2026-13205/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to all The Boeing Company airplanes identified in paragraphs (c)(1) through (9) of this AD, certificated in any category. (1) Model 707-100 Long Body, -200, -100B Long Body, and -100B Short Body series airplanes, and Model 707-300, -300B, -300C, and - 400 series airplanes. (2) Model 717-200 airplanes. (3) Model 727, 727C, 727-100, 727-100C, 727-200, and 727-200F series airplanes. (4) Model DC-8-11, DC-8-12, DC-8-21, DC-8-31, DC-8-32, DC-8-33, DC-8-41, DC-8-42, DC-8-43, DC-8-51, DC-8-52, DC-8-53, DC-8-55, DC- 8F-54, DC-8F-55, DC-8-61, DC-8-62, DC-8-63, DC-8-61F, DC-8-62F, DC- 8-63F, DC-8-71, DC-8-72, DC-8-73, DC-8-71F, DC-8-72F, and DC-8-73F airplanes. (5) Model DC-9-11, DC-9-12, DC-9-13, DC-9-14, DC-9-15, DC-9-15F, DC-9-21, DC-9-31, DC-9-32, DC-9-32 (VC-9C), DC-9-32F, DC-9-32F (C- 9A, C-9B), DC-9-33F, DC-9-34, DC-9-34F, DC-9-41, and DC-9-51 airplanes. (6) Model DC-10-10, DC-10-10F, DC-10-15, DC-10-30, DC-10-30F (KC-10A and KDC-10), DC-10-40, and DC-10-40F airplanes. (7) Model MD-10-10F and MD-10-30F airplanes. (8) Model MD-11 and MD-11F airplanes. (9) Model DC-9-81 (MD-81), DC-9-82 (MD-82), DC-9-83 (MD-83), DC- 9-87 (MD-87), MD-88, and MD-90-30 airplanes."
+ },
+ {
+  "documentNumber": "2026-13162",
+  "title": "Airworthiness Directives; Transport and Commuter Category Airplanes",
+  "publicationDate": "2026-06-30",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/30/2026-13162/airworthiness-directives-transport-and-commuter-category-airplanes",
+  "applicability": "This AD applies to all transport and commuter category airplanes equipped with a radio (also known as radar) altimeter. These radio altimeters are installed on various transport and commuter category airplanes including, but not limited to, the airplanes for which the design approval holder is identified in paragraphs (c)(1) through (18) of this AD. (1) Airbus Canada Limited Partnership (2) Airbus SAS (3) ATR-GIE Avions de Transport R[eacute]gional (4) BAE Systems (Operations) Limited (5) Bombardier Inc. (6) Dassault Aviation (7) De Havilland Aircraft of Canada Limited (8) Embraer S.A. (including type certificates previously held by Yabor[atilde] Ind[uacute]stria Aeron[aacute]utica S.A., which are now held by Embraer S.A.) (9) Fokker Services B.V. (10) Gulfstream Aerospace Corporation (11) Gulfstream Aerospace LP (12) Lockheed Martin Corporation/Lockheed Martin Aeronautics Company (13) MHI RJ Aviation ULC (14) Pilatus Aircraft Limited (15) Saab AB, Support and Services (16) Textron Aviation Inc. (17) The Boeing Company (18) Viking Air Limited"
+ },
+ {
+  "documentNumber": "2026-13064",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-06-29",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/29/2026-13064/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model H160-B helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-13063",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-06-29",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/29/2026-13063/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model AS332C, AS332C1, AS332L, and AS332L1 helicopters, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2021- 0139R1, dated May 10, 2023 (EASA AD 2021-0139R1)."
+ },
+ {
+  "documentNumber": "2026-13062",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-06-29",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/29/2026-13062/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS Model A321-251NX, -252NX, -253NX, -271NX, and -272NX airplanes, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025- 0067, dated March 28, 2025 (EASA AD 2025-0067)."
+ },
+ {
+  "documentNumber": "2026-13060",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-06-29",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/29/2026-13060/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to Airbus Helicopters Model AS350B, AS350BA, AS350B1, AS350B2, AS350B3, and AS350D helicopters, certificated in any category. Note 1 to paragraph (c): Helicopters with AS350B3e designation are Model AS350B3 helicopters."
+ },
+ {
+  "documentNumber": "2026-13058",
+  "title": "Airworthiness Directives; Pratt & Whitney Canada Corp. Engines",
+  "publicationDate": "2026-06-29",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/29/2026-13058/airworthiness-directives-pratt-and-whitney-canada-corp-engines",
+  "applicability": "This AD applies to all Pratt & Whitney Canada Corp. (P&WC) Model PW210A, PW210A1, and PW210S engines."
+ },
+ {
+  "documentNumber": "2026-12052",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-06-16",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/16/2026-12052/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model AS350B, AS350BA, AS350B1, and AS350D helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-12051",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-06-16",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/16/2026-12051/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model AS355E, AS355F, AS355F1, AS355F2, AS355N, and AS355NP helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-12050",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-06-16",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/16/2026-12050/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to Airbus Helicopters Model AS350B2, AS350B3, EC130B4, and EC130T2 helicopters, certificated in any category. Note 1 to paragraph (c): Helicopters with AS350B3e designation are Model AS350B3 helicopters."
+ },
+ {
+  "documentNumber": "2026-12048",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-06-16",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/16/2026-12048/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model AS350B, AS350BA, AS350B1, AS350B2, AS350B3, AS350D, AS355E, AS355F, AS355F1, AS355F2, AS355N, and AS355NP helicopters, certificated in any category. Note 1 to paragraph (c): Helicopters with AS350B3e designation are Model AS350B3 helicopters."
+ },
+ {
+  "documentNumber": "2026-11976",
+  "title": "Airworthiness Directives; Bombardier, Inc., Airplanes",
+  "publicationDate": "2026-06-15",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/15/2026-11976/airworthiness-directives-bombardier-inc-airplanes",
+  "applicability": "This AD applies to Bombardier, Inc., Model BD-700-1A10, BD-700- 1A11, and Model BD-700-2A12 airplanes, certificated in any category, as identified in Transport Canada AD CF-2025-41, dated August 20, 2025 (Transport Canada AD CF-2025-41)."
+ },
+ {
+  "documentNumber": "2026-11975",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-06-15",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/15/2026-11975/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to all Airbus SAS Model A350-941 and -1041 airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-11974",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-06-15",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/15/2026-11974/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 787-8, 787-9, and 787-10 airplanes, certificated in any category, as identified in Boeing Alert Requirements Bulletin B787-81205-SB220004-00 RB, Issue 001, dated April 22, 2025."
+ },
+ {
+  "documentNumber": "2026-11965",
+  "title": "Airworthiness Directives; Rolls-Royce Deutschland Ltd & Co KG Engines",
+  "publicationDate": "2026-06-15",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/15/2026-11965/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines",
+  "applicability": "This AD applies to all Rolls-Royce Deutschland Ltd & Co KG (RRD) Trent 1000-AE3, Trent 1000-CE3, Trent 1000-D3, Trent 1000-G3, Trent 1000-H3, Trent 1000-J3, Trent 1000-K3, Trent 1000-L3, Trent 1000-M3, Trent 1000-N3, Trent 1000-P3, Trent 1000-Q3, and Trent 1000-R3 model engines."
+ },
+ {
+  "documentNumber": "2026-11560",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-06-09",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/09/2026-11560/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model AS350B, AS350B1, AS350B2, AS350B3, AS350BA, AS350D, AS355E, AS355F, AS355F1, AS355F2, AS355N, AS355NP, EC130B4, and EC130T2 helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-11528",
+  "title": "Airworthiness Directives; Pilatus Aircraft Ltd. Airplanes",
+  "publicationDate": "2026-06-09",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/09/2026-11528/airworthiness-directives-pilatus-aircraft-ltd-airplanes",
+  "applicability": "This AD applies to Pilatus Aircraft Ltd. Model PC-12/47E airplanes, manufacturer serial numbers 1720 and 2001 through 2476, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-11511",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-06-09",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/09/2026-11511/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS Model A350-941 airplanes, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025-0209, dated September 24, 2025 (EASA AD 2025-0209)."
+ },
+ {
+  "documentNumber": "2026-11510",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-06-09",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/09/2026-11510/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS airplanes identified in paragraphs (c)(1) through (4) of this AD, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025- 0111, dated May 14, 2025 (EASA AD 2025-0111). (1) Model A318-111, -112, -121, and -122 airplanes. [[Page 34746]] (2) Model A319-111, -112, -113, -114, -115, -131, -132, -133, - 151N, -153N, -171N, and -173N airplanes. (3) Model A320-211, -212, -214, -216, -231, -232, -233, -251N, - 252N, -253N, -271N, -272N, and -273N airplanes. (4) Model A321-111, -112, -131, -211, -212, -213, -231, -232, - 251N, -251NX, -252N, -252NX, -253N, -253NX, -253NY, -271N, -271NX, - 271NY, -272N, and -272NX airplanes."
+ },
+ {
+  "documentNumber": "2026-11506",
+  "title": "Airworthiness Directives; Hélicoptères Guimbal Helicopters",
+  "publicationDate": "2026-06-09",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/09/2026-11506/airworthiness-directives-hlicoptres-guimbal-helicopters",
+  "applicability": "This AD applies to all H[eacute]licopt[egrave]res Guimbal (HG) Model Cabri G2 helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-11217",
+  "title": "Airworthiness Directives; De Havilland Aircraft of Canada Limited (Type Certificate Previously Held by Bombardier, Inc.) Airplanes",
+  "publicationDate": "2026-06-04",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/04/2026-11217/airworthiness-directives-de-havilland-aircraft-of-canada-limited-type-certificate-previously-held-by",
+  "applicability": "This AD applies to all De Havilland Aircraft of Canada Limited (Type Certificate previously held by Bombardier, Inc.) airplanes, certificated in any category, identified in paragraphs (c)(1) through (4) of this AD. (1) Model DHC-8-101, -102, -103, and -106 airplanes. (2) Model DHC-8-201 and -202 airplanes. (3) Model DHC-8-301, -311, and -315 airplanes. (4) Model DHC-8-400, -401, and -402 airplanes."
+ },
+ {
+  "documentNumber": "2026-11216",
+  "title": "Airworthiness Directives; Dassault Aviation Airplanes",
+  "publicationDate": "2026-06-04",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/04/2026-11216/airworthiness-directives-dassault-aviation-airplanes",
+  "applicability": "This AD applies to Dassault Aviation Model FALCON 7X airplanes, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025-0092, dated April 23, 2025 (EASA AD 2025-0092). Note 1 to paragraph (c): Model FALCON 7X airplanes with Dassault modification M1000 incorporated are commonly referred [[Page 33604]] to as ``Model FALCON 8X'' as a marketing designation."
+ },
+ {
+  "documentNumber": "2026-11215",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-06-04",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/04/2026-11215/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS Model A350-941 airplanes, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025-0210, dated September 24, 2025 (EASA AD 2025-0210)."
+ },
+ {
+  "documentNumber": "2026-11185",
+  "title": "Airworthiness Directives; Various Helicopters",
+  "publicationDate": "2026-06-04",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/04/2026-11185/airworthiness-directives-various-helicopters",
+  "applicability": "This AD applies to the helicopters identified in paragraphs (c)(1) through (7) of this AD, certificated in any category. (1) Carson Helicopters, Inc. Model S-61L and SH-3H helicopters. (2) Croman Corporation Model SH-3H helicopters. (3) Glacier Helicopter, Inc. Model CH-3E helicopters. (4) Reynolds Aviation Model USAF CH-3C, CH-3E, HH-3C, and HH-3E helicopters. (5) Sikorsky Aircraft Corporation Model S-61A, S-61D, S-61E, and S-61V helicopters. (6) Sikorsky Aircraft Model S-61L, S-61N, S-61NM, and S-61R helicopters. (7) Siller Helicopters Model CH-3E and SH-3A helicopters."
+ },
+ {
+  "documentNumber": "2026-11179",
+  "title": "Airworthiness Directives; Rolls-Royce Deutschland Ltd & Co KG Engines",
+  "publicationDate": "2026-06-04",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/04/2026-11179/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg-engines",
+  "applicability": "This AD applies to all Rolls-Royce Deutschland Ltd & Co KG Model Trent 1000-AE3, Trent 1000-CE3, Trent 1000-D3, Trent 1000-G3, Trent 1000-H3, Trent 1000-J3, Trent 1000-K3, Trent 1000-L3, Trent 1000-M3, Trent 1000-N3, Trent 1000-P3, Trent 1000-Q3, and Trent 1000-R3 engines."
+ },
+ {
+  "documentNumber": "2026-11178",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-06-04",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/04/2026-11178/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to Airbus Helicopters Model H160-B helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-11175",
+  "title": "Airworthiness Directives; Airbus Helicopters Deutschland GmbH Helicopters",
+  "publicationDate": "2026-06-04",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/04/2026-11175/airworthiness-directives-airbus-helicopters-deutschland-gmbh-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Deutschland GmbH (AHD) Model MBB-BK 117 D-3 helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-11174",
+  "title": "Airworthiness Directives; Airbus Helicopters",
+  "publicationDate": "2026-06-04",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/04/2026-11174/airworthiness-directives-airbus-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Model H160-B helicopters, certificated in any category, modified by Supplemental Type Certificate (STC) SR00223IB."
+ },
+ {
+  "documentNumber": "2026-10854",
+  "title": "Airworthiness Directives; Embraer S.A. Airplanes",
+  "publicationDate": "2026-06-01",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/06/01/2026-10854/airworthiness-directives-embraer-sa-airplanes",
+  "applicability": "This AD applies to Embraer S.A. Model EMB-505 airplanes, as identified in Ag[ecirc]ncia Nacional de Avia[ccedil][atilde]o Civil (ANAC) AD 2025-04-01, effective April 15, 2025 (ANAC AD 2025-04-01), certificated in any category."
+ },
+ {
+  "documentNumber": "2026-10806",
+  "title": "Airworthiness Directives; Goodrich Cabin Attendant Seats",
+  "publicationDate": "2026-05-29",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/29/2026-10806/airworthiness-directives-goodrich-cabin-attendant-seats",
+  "applicability": "This AD applies to Goodrich cabin attendant seats, part numbers 2057-11XXXXXX with floor seating option, except for 2057-1 hard point mounted seats; 2201-1XXYY and -2XXYY; 2157-7XXXXXXX and - 9XXXXXXX; and 2071-2XXXX and -A2XXXX. These seats are installed on the Airbus SAS airplanes, certificated in any category, listed in paragraphs (c)(1) and (2) of this AD. (1) Model A330-201, -202, -203, -223, -243, -223F, -243F, -301, -302, -303, -321, -322, -323, -341, -342, -343, -743L, -841, and - 941 airplanes. (2) Model A340-211, -212, -213, -311, -312, -313, -541, -542, - 641, and -642 airplanes."
+ },
+ {
+  "documentNumber": "2026-10803",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-05-29",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/29/2026-10803/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to all The Boeing Company Model 747-100, -100B, -100B SUD, -200B, -200C, -200F, -300, -400, -400D, -400F, 747SP, and 747SR series airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-10802",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-05-29",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/29/2026-10802/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS airplanes identified in paragraphs (c)(1) through (5) of this AD, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025- 0071, dated March 31, 2025 (EASA AD 2025-0071). (1) Model A330-201, -202, -203, -223, and -243 airplanes. (2) Model A330-223F and -243F airplanes. (3) Model A330-301, -302, -303, -321, -322, -323, -341, -342, and -343 airplanes. (4) Model A330-841 airplanes. (5) Model A330-941 airplanes."
+ },
+ {
+  "documentNumber": "2026-10801",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-05-29",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/29/2026-10801/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS Model A318-111, -112, -121, and - 122 airplanes; Model A319-111, -112, -113, -114, -115, -131, -132, and -133 airplanes; Model A320-211, -212, -214, -216, -231, -232, and -233 airplanes; and Model A321-111, -112, -131, -211, -212, - 213, -231, and -232 airplanes; certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025- 0207R1, dated October 30, 2025 (EASA AD 2025-0207R1)."
+ },
+ {
+  "documentNumber": "2026-10800",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-05-29",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/29/2026-10800/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to all Airbus SAS Model A319-111, -112, -113, - 114, -115, -131, -132, -133, -151N, -153N, -171N, and -173N airplanes; Model A320-211, -212, -214, -216, -231, -232, -233, - 251N, -252N, -253N, -271N, -272N, and -273N airplanes; and Model A321-111, -112, -131, -211, -212, -213, -231, -232, -251N, -252N, - 253N, -271N, -272N, -251NX, -252NX, -253NX, -271NX, and -272NX airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-10799",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-05-29",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/29/2026-10799/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS airplanes specified in paragraphs (c)(1) through (4), certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025-0078, dated April 9, 2025 (EASA AD 2025-0078). (1) Model A318-111, -112, and -122 airplanes. (2) Model A319-111, -112, -113, -114, -115, -131, -132, and -133 airplanes. (3) Model A320-211, -212, -214, -216, -232, -233, -251N, -252N, -253N, -271N, -272N, and -273N airplanes. (4) Model A321-211, -212, -213, -231, -232, -251N, 252N, -253N, -271N, -272N, -251NX, -252NX, -253NX, -271NX, and -272NX airplanes."
+ },
+ {
+  "documentNumber": "2026-10606",
+  "title": "Airworthiness Directives; Honda Aircraft Company LLC Airplanes",
+  "publicationDate": "2026-05-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/28/2026-10606/airworthiness-directives-honda-aircraft-company-llc-airplanes",
+  "applicability": "This AD applies to Honda Aircraft Company LLC (Honda) Model HA- 420 airplanes, serial numbers 42000012 through 42000230, certificated in any category. [[Page 31651]]"
+ },
+ {
+  "documentNumber": "2026-10594",
+  "title": "Airworthiness Directives; Rolls-Royce Deutschland Ltd & Co KG",
+  "publicationDate": "2026-05-28",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/28/2026-10594/airworthiness-directives-rolls-royce-deutschland-ltd-and-co-kg",
+  "applicability": "This AD applies to Rolls-Royce Deutschland Ltd & Co KG (RRD) Model RB211 Trent 768-60, 772-60, and 772B-60 engines as identified in European Union Aviation Safety Agency (EASA) 2018-0291R1, dated February 24, 2025 (EASA AD 2018-0291R1)."
+ },
+ {
+  "documentNumber": "2026-10491",
+  "title": "Airworthiness Directives; Airbus Canada Limited Partnership (Type Certificate Previously Held by C Series Aircraft Limited Partnership (CSALP); Bombardier, Inc.) Airplanes",
+  "publicationDate": "2026-05-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/27/2026-10491/airworthiness-directives-airbus-canada-limited-partnership-type-certificate-previously-held-by-c",
+  "applicability": "This AD applies to Airbus Canada Limited Partnership (Type Certificate previously held by C Series Aircraft Limited Partnership (CSALP); Bombardier, Inc.) Model BD-500-1A10 and BD-500-1A11 airplanes, certificated in any category, as identified in Transport Canada AD CF-2025-24, dated April 29, 2025 (Transport Canada AD CF- 2025-24)."
+ },
+ {
+  "documentNumber": "2026-10490",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-05-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/27/2026-10490/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS Model A320-251N, -252N, -253N, - 271N, -272N, and -273N airplanes, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025- 0065, dated March 27, 2025 (EASA AD 2025-0065)."
+ },
+ {
+  "documentNumber": "2026-10489",
+  "title": "Airworthiness Directives; Airbus Canada Limited Partnership (Type Certificate Previously Held by C Series Aircraft Limited Partnership (CSALP); Bombardier, Inc.) Airplanes",
+  "publicationDate": "2026-05-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/27/2026-10489/airworthiness-directives-airbus-canada-limited-partnership-type-certificate-previously-held-by-c",
+  "applicability": "This AD applies to all Airbus Canada Limited Partnership Model BD-500-1A10 and BD-500-1A11 airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-10488",
+  "title": "Airworthiness Directives; ATR-GIE Avions de Transport Régional Airplanes",
+  "publicationDate": "2026-05-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/27/2026-10488/airworthiness-directives-atr-gie-avions-de-transport-rgional-airplanes",
+  "applicability": "This AD applies to ATR-GIE Avions de Transport R[eacute]gional Model ATR72-101, -102, -201, -202, -211, -212, and -212A airplanes, certificated in any category, with an original airworthiness certificate or original export certificate of airworthiness issued on or before November 22, 2024."
+ },
+ {
+  "documentNumber": "2026-10487",
+  "title": "Airworthiness Directives; ATR-GIE Avions de Transport Régional Airplanes",
+  "publicationDate": "2026-05-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/27/2026-10487/airworthiness-directives-atr-gie-avions-de-transport-rgional-airplanes",
+  "applicability": "This AD applies to ATR--GIE Avions de Transport R[eacute]gional Model ATR42-500 airplanes, certificated in any category, with an original airworthiness certificate or original export certificate of airworthiness issued on or before November 22, 2024."
+ },
+ {
+  "documentNumber": "2026-10486",
+  "title": "Airworthiness Directives; Airbus Canada Limited Partnership (Type Certificate Previously Held by C Series Aircraft Limited Partnership (CSALP); Bombardier, Inc.) Airplanes",
+  "publicationDate": "2026-05-27",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/27/2026-10486/airworthiness-directives-airbus-canada-limited-partnership-type-certificate-previously-held-by-c",
+  "applicability": "This AD applies to Airbus Canada Limited Partnership (Type Certificate previously held by C Series Aircraft Limited Partnership (CSALP); Bombardier, Inc.) Model BD-500-1A10 and BD-500-1A11 airplanes, certificated in any category, as identified in Transport Canada AD CF-2025-09, dated February 24, 2025 (Transport Canada AD CF-2025-09)."
+ },
+ {
+  "documentNumber": "2026-10360",
+  "title": "Airworthiness Directives; Pratt & Whitney RTX Corporation (Type Certificate Previously Held by Pratt & Whitney Division United Technologies Corporation) Engines",
+  "publicationDate": "2026-05-22",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/22/2026-10360/airworthiness-directives-pratt-and-whitney-rtx-corporation-type-certificate-previously-held-by-pratt",
+  "applicability": "This AD applies to certain Pratt & Whitney RTX Corporation (type certificate previously held by Pratt & Whitney Division United Technologies Corporation) (PW) Model PW4074, PW4074D, PW4077, PW4077D, PW4084D, PW4090, and PW4090-3 engines."
+ },
+ {
+  "documentNumber": "2026-10272",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-05-22",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/22/2026-10272/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to all Airbus SAS airplanes identified in paragraphs (c)(1) through (4) of this AD, certificated in any category. (1) Model A330-201, -202, -203, -223, and -243 airplanes. (2) Model A330-223F and -243F airplanes. (3) Model A330-301, -302, -303, -321, -322, -323, -341, -342, and -343 airplanes. (4) Model A330-841 airplanes and A330-941 airplanes."
+ },
+ {
+  "documentNumber": "2026-10271",
+  "title": "Airworthiness Directives; Bombardier, Inc., Airplanes",
+  "publicationDate": "2026-05-22",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/22/2026-10271/airworthiness-directives-bombardier-inc-airplanes",
+  "applicability": "This AD applies to Bombardier, Inc., Model BD-700-1A10 and BD- 700-1A11 airplanes, certificated in any category, as identified in Transport Canada AD CF-2025-28, dated June 10, 2025 (Transport Canada AD CF-2025-28)."
+ },
+ {
+  "documentNumber": "2026-10270",
+  "title": "Airworthiness Directives; Embraer S.A. (Type Certificate Previously Held by Yaborã Indústria Aeronáutica S.A.; Embraer S.A.) Airplanes",
+  "publicationDate": "2026-05-22",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/22/2026-10270/airworthiness-directives-embraer-sa-type-certificate-previously-held-by-yabor-indstria-aeronutica-sa",
+  "applicability": "This AD applies to Embraer S.A. (Type Certificate previously held by Yabor[atilde] Ind[uacute]stria Aeron[aacute]utica S.A.; Embraer S.A.) Model ERJ 190-100 ECJ airplanes, certificated in any category, as identified in Ag[ecirc]ncia Nacional de Avia[ccedil][atilde]o Civil (ANAC) AD 2024-07-01, effective July 31, 2024 (ANAC AD 2024-07-01)."
+ },
+ {
+  "documentNumber": "2026-10170",
+  "title": "Airworthiness Directives; Leonardo S.p.a. Helicopters",
+  "publicationDate": "2026-05-21",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/21/2026-10170/airworthiness-directives-leonardo-spa-helicopters",
+  "applicability": "This AD applies to all Leonardo S.p.a. Model AB139, AW139, and AW189 helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-10167",
+  "title": "Airworthiness Directives; Bell Textron Canada Limited Helicopters",
+  "publicationDate": "2026-05-21",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/21/2026-10167/airworthiness-directives-bell-textron-canada-limited-helicopters",
+  "applicability": "This AD applies to Bell Textron Canada Limited Model 407 helicopters, serial numbers 54300 through 54752, 54805 through 54999, and 56300 through 56366 and 56368, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-09663",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-05-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/14/2026-09663/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS airplanes identified in paragraphs (c)(1) through (4) of this AD, certificated in any category, with an original airworthiness certificate or original export certificate of airworthiness issued on or before November 4, 2024. (1) Model A318-111, -112, -121, and -122 airplanes. (2) Model A319-111, -112, -113, -114, -115, -131, -132, -133, - 151N, -153N, -171N, and -173N airplanes. (3) Model A320-211, -212, -214, -216, -231, -232, -233, -251N, - 252N, -253N, -271N, -272N, and -273N airplanes. (4) Model A321-111, -112, -131, -211, -212, -213, -231, -232, - 251N, -252N, -253N, -271N, -272N, -251NX, -252NX, -253NX, -253NY, - 271NX, and -272NX airplanes."
+ },
+ {
+  "documentNumber": "2026-09662",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-05-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/14/2026-09662/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS Model airplanes specified in paragraphs (c)(1) through (3) of this AD, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025-0066, dated March 28, 2025 (EASA AD 2025-0066). (1) Model A319-111, -112, -113, -114, -115, -131, -132, and -133 airplanes. [[Page 27185]] (2) Model A320-211, -212, -214, -216, -231, -232, -233, -251N, - 252N, -253N, -271N, -272N, and -273N airplanes. (3) Model A321-211, -212, -213, -231, -232, -251N, -251NX, - 252N, -252NX, -253N, -253NX, -271N, -271NX, -272N, and -272NX airplanes."
+ },
+ {
+  "documentNumber": "2026-09661",
+  "title": "Airworthiness Directives; Dassault Aviation Airplanes",
+  "publicationDate": "2026-05-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/14/2026-09661/airworthiness-directives-dassault-aviation-airplanes",
+  "applicability": "This AD applies to Dassault Aviation Model FAN JET FALCON and FAN JET FALCON SERIES C, D, E, F, and G airplanes, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025-0125, dated May 28, 2025; corrected June 3, 2025 (EASA AD 2025-0125)."
+ },
+ {
+  "documentNumber": "2026-09660",
+  "title": "Airworthiness Directives; Dassault Aviation Airplanes",
+  "publicationDate": "2026-05-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/14/2026-09660/airworthiness-directives-dassault-aviation-airplanes",
+  "applicability": "This AD applies to Dassault Aviation Model MYSTERE-FALCON 20-C5, 20-D5, 20-E5, and 20-F5 airplanes, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025- 0126, dated May 28, 2025 (EASA AD 2025-0126)."
+ },
+ {
+  "documentNumber": "2026-09659",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-05-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/14/2026-09659/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to all Airbus SAS Model A350-941 and -1041 airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-09658",
+  "title": "Airworthiness Directives; ATR-GIE Avions de Transport Régional Airplanes",
+  "publicationDate": "2026-05-14",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/14/2026-09658/airworthiness-directives-atr-gie-avions-de-transport-rgional-airplanes",
+  "applicability": "This AD applies to all ATR--GIE Avions de Transport R[eacute]gional Model ATR42-200, -300, and -320 airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-09536",
+  "title": "Airworthiness Directives; Dassault Aviation Airplanes",
+  "publicationDate": "2026-05-13",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/13/2026-09536/airworthiness-directives-dassault-aviation-airplanes",
+  "applicability": "This AD applies to Dassault Aviation Model FAN JET FALCON, FAN JET FALCON SERIES C, D, E, F, and G airplanes, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2025-0124, dated May 28, 2025 (EASA AD 2025-0124)."
+ },
+ {
+  "documentNumber": "2026-09535",
+  "title": "Airworthiness Directives; The Boeing Company Airplanes",
+  "publicationDate": "2026-05-13",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/13/2026-09535/airworthiness-directives-the-boeing-company-airplanes",
+  "applicability": "This AD applies to The Boeing Company Model 737-100, -200, - 200C, -300, -400, and -500 series airplanes, certificated in any category, as identified in Boeing Alert Service Bulletin 737- 53A1409, Revision 1, dated October 27, 2023."
+ },
+ {
+  "documentNumber": "2026-09521",
+  "title": "Airworthiness Directives; Airbus Helicopters Deutschland GmbH (AHD) Helicopters",
+  "publicationDate": "2026-05-13",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/13/2026-09521/airworthiness-directives-airbus-helicopters-deutschland-gmbh-ahd-helicopters",
+  "applicability": "This AD applies to all Airbus Helicopters Deutschland GmbH (AHD) Model MBB-BK 117 C-2 and MBB-BK 117 D-2 helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-09520",
+  "title": "Airworthiness Directives; Leonardo S.p.A. Helicopters",
+  "publicationDate": "2026-05-13",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/13/2026-09520/airworthiness-directives-leonardo-spa-helicopters",
+  "applicability": "This AD applies to all Leonardo S.p.A., Model AB139 and AW139 helicopters, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-09516",
+  "title": "Airworthiness Directives; Leonardo S.p.A. Helicopters",
+  "publicationDate": "2026-05-13",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/13/2026-09516/airworthiness-directives-leonardo-spa-helicopters",
+  "applicability": "This AD applies to Leonardo S.p.A. Model A109E and A109S helicopters, certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2024-0004, dated January 5, 2024 (EASA AD 2024-0004)."
+ },
+ {
+  "documentNumber": "2026-09172",
+  "title": "Airworthiness Directives; Embraer S.A. Airplanes",
+  "publicationDate": "2026-05-08",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/08/2026-09172/airworthiness-directives-embraer-sa-airplanes",
+  "applicability": "This AD applies to all Embraer S.A. Model EMB-545 and EMB-550 airplanes, certificated in any category."
+ },
+ {
+  "documentNumber": "2026-09171",
+  "title": "Airworthiness Directives; Airbus SAS Airplanes",
+  "publicationDate": "2026-05-08",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/08/2026-09171/airworthiness-directives-airbus-sas-airplanes",
+  "applicability": "This AD applies to Airbus SAS Model A319-153N airplanes; Model A320-251N, -252N, and -271N airplanes; and Model A321-251NX, -252NX, -271NX and -272NX airplanes; certificated in any category, as identified in European Union Aviation Safety Agency (EASA) AD 2026- 0055R1, dated April 14, 2026 (EASA AD 2026-0055R1)."
+ },
+ {
+  "documentNumber": "2026-09170",
+  "title": "Airworthiness Directives; Gulfstream Aerospace LP Airplanes",
+  "publicationDate": "2026-05-08",
+  "sourceUrl": "https://www.federalregister.gov/documents/2026/05/08/2026-09170/airworthiness-directives-gulfstream-aerospace-lp-airplanes",
+  "applicability": "This AD applies to Gulfstream Aerospace LP Model Gulfstream G280 airplanes, certificated in any category, as identified in Civil Aviation Authority of Israel (CAAI) AD ISR I-27-2025-03-06 R1, dated August 28, 2025 (CAAI AD ISR I-27-2025-03-06 R1)."
+ }
+]
