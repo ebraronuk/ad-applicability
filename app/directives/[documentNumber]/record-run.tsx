@@ -35,7 +35,7 @@ export function RecordRun({ documentNumber }: { readonly documentNumber: string 
         const message =
           body && typeof body === "object" && "error" in body && typeof body.error === "string"
             ? body.error
-            : `The server answered ${response.status}.`;
+            : `Sunucu ${response.status} döndü.`;
         setState({ status: "failed", message });
         return;
       }
@@ -43,7 +43,7 @@ export function RecordRun({ documentNumber }: { readonly documentNumber: string 
     } catch {
       setState({
         status: "failed",
-        message: "Could not reach the application server. Is `npm run dev` still running?",
+        message: "Uygulama sunucusuna ulaşılamadı. `npm run dev` hâlâ çalışıyor mu?",
       });
     }
   }
@@ -51,19 +51,19 @@ export function RecordRun({ documentNumber }: { readonly documentNumber: string 
   return (
     <div className="stack">
       <button type="button" onClick={record} disabled={state.status === "saving"}>
-        {state.status === "saving" ? "Recording…" : "Bu değerlendirmeyi kaydet"}
+        {state.status === "saving" ? "Kaydediliyor…" : "Bu değerlendirmeyi kaydet"}
       </button>
 
       {state.status === "saving" && (
-        <p className="muted" role="status">
-          Writing one row per aircraft, in a single transaction.
+        <p className="muted small" role="status">
+          Uçak başına bir satır, tek bir işlemde yazılıyor.
         </p>
       )}
 
       {state.status === "saved" && (
         <p className="notice notice-ok" role="status">
-          Recorded as run #{state.run.runId}. It holds {state.run.affected} aircraft that this run
-          did not clear.
+          #{state.run.runId} numaralı kayıt oluşturuldu. İçinde, bu koşumun temize çıkarmadığı{" "}
+          {state.run.affected} uçak var.
         </p>
       )}
 

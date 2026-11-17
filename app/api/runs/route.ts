@@ -41,10 +41,10 @@ export async function POST(request: Request): Promise<Response> {
     const body: unknown = await request.json();
     documentNumber = body && typeof body === "object" ? Reflect.get(body, "documentNumber") : null;
   } catch {
-    return json({ error: "Expected a JSON body with a documentNumber." }, 400);
+    return json({ error: "Gövdede bir documentNumber bekleniyordu." }, 400);
   }
   if (typeof documentNumber !== "string") {
-    return json({ error: "Expected a JSON body with a documentNumber." }, 400);
+    return json({ error: "Gövdede bir documentNumber bekleniyordu." }, 400);
   }
 
   const directive = findDirective(documentNumber);
@@ -57,7 +57,7 @@ export async function POST(request: Request): Promise<Response> {
     return json(
       {
         error:
-          "Postgres is not reachable, so nothing was recorded. Start it with `docker compose up -d` and try again.",
+          "Postgres'e ulaşılamadı, hiçbir şey kaydedilmedi. `docker compose up -d` ile başlatıp tekrar deneyin.",
       },
       503,
     );

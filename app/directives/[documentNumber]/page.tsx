@@ -6,6 +6,7 @@ import { countVerdicts } from "../../../src/domain/directive";
 import type { AircraftAssessment } from "../../../src/domain/directive";
 import { VerdictMark, VerdictReasons } from "../../verdict";
 import { RecordRun } from "./record-run";
+import Link from "next/link";
 
 interface PageProps {
   readonly params: Promise<{ readonly documentNumber: string }>;
@@ -96,36 +97,25 @@ export default async function DirectivePage({ params }: PageProps) {
 
   return (
     <div className="stack">
+      <p className="backlink">
+        <Link href="/">← Bütün direktifler</Link>
+      </p>
+
       <h1 className="mono">AD {directive.documentNumber}</h1>
       <p className="prose">{directive.title}</p>
-      <p className="muted">
-        Yayın {directive.publicationDate}.{" "}
-        <a href={directive.sourceUrl}>Federal Register’da oku</a>
-      </p>
+      <p className="muted small">{directive.publicationDate} tarihinde yayınlandı.</p>
 
       {/* The answer first. Everything below it is the evidence for the answer,
           and an evidence-first page makes the reader hunt for the conclusion. */}
       <p className={`answer ${answerTone}`}>{answer}</p>
 
-      <h2>Paragraf (c), yayınlandığı hâliyle</h2>
-      <blockquote className="clause">{directive.applicability}</blockquote>
-
-      <h2>Parser ne anladı</h2>
-      {assessment.parsed === null ? (
+      {assessment.parsed === null && (
         <p className="notice notice-info">
-          Dilbilgisi bu maddeden tek bir kısıt çıkaramadı, o yüzden hiçbir uçak
-          değerlendirilmedi. Bu direktifi bir kişinin okuması gerekiyor; kapsama sayfasında
-          çözümlenemeyen olarak sayılıyor.
+          Bu maddeden tek bir kısıt çıkarılamadı, o yüzden hiçbir uçak değerlendirilmedi. Bu
+          direktifi bir kişinin okuması gerekiyor.
         </p>
-      ) : (
-        <ul className="recognized">
-          {assessment.recognized.map((phrase, index) => (
-            <li key={index}>{phrase}</li>
-          ))}
-        </ul>
       )}
 
-      <h2>Filoya karşı</h2>
       {assessment.parsed === null ? (
         <p className="muted">
           Gösterilecek bir şey yok: çözümlenemeyen bir madde varsayılan bir karar değil, hiç
@@ -166,10 +156,39 @@ export default async function DirectivePage({ params }: PageProps) {
             </details>
           )}
 
-          <h2>Kaydet</h2>
-          <p className="prose muted">
-            Bu değerlendirmeyi, onu üreten parser sürümüyle birlikte saklar; kararlar sonradan
-            savunulabilsin diye. Postgres gerekiyor: <code>docker compose up -d</code>.
+          {/* Evidence on demand. The answer above is what the reader came for;
+              the clause behind it matters only when they want to check. */}
+          <details className="evidence">
+            <summary>Bu karar nereden çıktı?</summary>
+            <p className="muted small">
+              Her direktifin kapsamını belirleyen bir maddesi var, resmî adıyla{" "}
+              <strong>(c) Applicability</strong>. Cevap bu metinden çıkıyor; motor onu okuyup
+              filodaki her uçakla karşılaştırıyor.
+            </p>
+            <blockquote className="clause">{directive.applicability}</blockquote>
+            {assessment.recognized.length > 0 && (
+              <>
+                <p className="muted small">Motorun bu metinden çıkardığı kısıtlar:</p>
+                <ul className="recognized">
+                  {assessment.recognized.map((phrase, index) => (
+                    <li key={index}>{phrase}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+            <p className="muted small">
+              Direktifin resmî metni ABD Federal Register&apos;da yayınlanıyor;{" "}
+              <a href={directive.sourceUrl}>tam metni orada okuyabilirsiniz</a>.
+            </p>
+          </details>
+
+          <h2>Bu kararı kaydet</h2>
+          <p className="prose muted small">
+            Uçuşa elverişlilik kararları sonradan denetlenebilmek zorunda:{" "}
+            <em>bu direktif hakkında hangi tarihte ne karar verdik, o anda hangi uçaklar
+            belirsizdi.</em> Kaydet dediğinizde yukarıdaki tablo, kararı üreten motor sürümüyle
+            birlikte veritabanına yazılıyor. Çalışması için Postgres gerekiyor:{" "}
+            <code>docker compose up -d</code>.
           </p>
           <RecordRun documentNumber={directive.documentNumber} />
         </>

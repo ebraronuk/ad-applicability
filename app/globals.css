@@ -567,3 +567,40 @@ td.mono a:hover {
   background: var(--unknown-bg);
   border-color: var(--unknown-ring);
 }
+
+.backlink {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+}
+
+.backlink a {
+  text-decoration: none;
+  color: var(--ink-muted);
+}
+
+.backlink a:hover {
+  color: var(--link);
+}
+
+.evidence {
+  margin-top: 2rem;
+  padding: 0 1.1rem 0.6rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.evidence[open] {
+  padding-bottom: 1rem;
+}
+
+.evidence > summary {
+  margin: 0 -1.1rem;
+  padding: 0.75rem 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.evidence .clause {
+  margin: 0.6rem 0;
+}

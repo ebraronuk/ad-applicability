@@ -19,7 +19,7 @@ export default function CoveragePage() {
 
   return (
     <div className="stack">
-      <h1>Parser kapsaması</h1>
+      <h1>Motor direktiflerin ne kadarını çözüyor?</h1>
       <p className="prose muted">
         Bu sayfada, repoya işlenmiş korpustaki {coverage.total} direktif üzerinden, siz sayfayı
         açtığınız anda ölçüldü. Buradaki hiçbir sayı kayıtlı değil.

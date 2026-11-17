@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { readonly children: ReactNode 
             </span>
             <nav aria-label="Bölümler">
               <Link href="/">Direktifler</Link>
-              <Link href="/coverage">Kapsama</Link>
+              <Link href="/coverage">Çözüm oranı</Link>
             </nav>
           </div>
         </header>
