@@ -1,0 +1,17 @@
+# Postgres for assessment records. Reference data stays in committed files:
+# it is read-only and every coverage figure has to be reproducible offline.
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: ad_applicability
+      POSTGRES_USER: ad
+      POSTGRES_PASSWORD: ad_local_only
+    ports: ["5432:5432"]
+    volumes:
+      - ./migrations:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ad -d ad_applicability"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
