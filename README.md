@@ -1,28 +1,41 @@
-# Uçuşa Elverişlilik Direktifi Kapsam Motoru
+# Direktif Kapsam Kontrolü
 
-Bir uçuşa elverişlilik direktifi (Airworthiness Directive) ile bir filo verildiğinde, direktifin hangi uçakları kapsadığına karar verir. Kararı gerekçesiyle söyler; karar veremiyorsa hangi bilginin eksik olduğunu söyler.
+**Bir uçakta zorunlu bir arıza giderme emri yayınlandığında, filodaki hangi uçakları bağladığını söyler, ve her uçak için neden o kararı verdiğini gösterir.**
 
-> **In English.** Given an FAA Airworthiness Directive and a fleet, this engine
-> decides which aircraft the directive applies to. Each aircraft gets one of
-> three verdicts — applies, does not apply, or undetermined — with the reasoning
-> attached. Uncertainty is a first-class value that composes through the whole
-> expression (Kleene three-valued logic), because 45% of real directives defer
-> their own applicability to a manufacturer document that is not public. The
-> parser understands 99.0% of 196 real directive clauses; coverage is measured
-> by the test suite, not claimed in prose. Code and inline comments are in
-> English; the long-form documentation is in Turkish.
+Karar veremediğinde tahmin etmez: hangi bilginin eksik olduğunu söyler. Gerçek direktifler, gerçek uçaklar, ölçülmüş kapsama.
 
-## Problem
+```mermaid
+flowchart LR
+    A["Federal Register API<br/>196 gerçek direktif"] --> P
+    B["Uçak sicili<br/>400 gerçek uçak"] --> E
 
-FAA bir uçuşa elverişlilik direktifi yayınladığında, her işletici ve bakım kuruluşu tek bir soruyu cevaplamak zorunda: **bu direktif bizim uçaklarımızı kapsıyor mu?**
+    P["parse.ts<br/>dilbilgisi<br/>paragraf (c) → ifade ağacı"] --> E
+    E{"evaluate.ts<br/>Kleene üç değerli mantık<br/>totality derleyici garantisi"}
 
-Cevap tek bir paragrafta, paragraf (c)'de, şöyle bir dille yazılı:
+    E --> V1["▲ Kapsamda<br/>+ eşleşen ölçüt"]
+    E --> V2["○ Kapsam dışı<br/>+ gerekçe"]
+    E --> V3["◆ Belirsiz<br/>+ eksik olan bilgi"]
 
-> This AD applies to The Boeing Company Model 787-8, 787-9, and 787-10
-> airplanes, certificated in any category, as identified in Boeing Alert
-> Requirements Bulletin B787-81205-SB340062-00 RB, Issue 001.
+    V1 --> U["Next.js<br/>3 ekran"]
+    V2 --> U
+    V3 --> U
+    U --> API["POST /api/runs"]
+    API --> DB[("Postgres<br/>denetim izi")]
+```
 
-Bugün bu paragrafı biri okuyup filo listesiyle elle karşılaştırıyor, her direktif için, sürekli. Mekanikleştirilmesi gereken bir iş, ama aynı zamanda **kendinden emin yanlış cevabın cevap vermemekten kötü olduğu** bir iş: yerde kalması gereken bir uçağı temiz göstermek bir hata kaydı değil, uçuşa elverişlilik olayıdır.
+## Neyi gösteriyor
+
+| Yapılan iş | Kanıtı |
+|---|---|
+| **Regülasyon metnini çalıştırılabilir kurala çevirme.** Paragraf (c) düzyazı; ondan bir ifade ağacı çıkaran dilbilgisi elle yazıldı | 196 gerçek maddenin **%99'u** çözümleniyor, `npm test` ölçüyor, [`docs/coverage.md`](docs/coverage.md) yazıyor |
+| **Üç değerli mantık.** Belirsizlik kenarda ele alınan bir hata değil, ifadenin içinde birleşen bir değer | Bilinmeyen bir olgu kesin bir kararı asla çeviremiyor: property testi. `conjoin`'i bozunca test düşüyor, bilerek doğrulandı |
+| **Derleyici garantili totality.** Her uçak üç karardan tam birini alıyor | Düğüm tipi üzerindeki switch `never` ataması ile bitiyor; yeni bir tip ekleyip işlememek `tsc`'yi düşürüyor |
+| **Kuralların şemada yaşadığı veritabanı** | `definite_verdict_has_reasoning` ve `undetermined_names_what_is_missing`: açıklanamayan bir kararı kaydetmek **imkânsız** |
+| **Ajan yazdığı kodun denetimi** | Gözden geçirmenin yakaladığı **5 gerçek kusur**, nasıl bulundukları ile birlikte aşağıda yazılı |
+
+**Sayılar:** 196 direktif × 400 uçak = **77.600 karar**. Bunların %0,6'sı belirsiz, oysa direktiflerin %45'i bir belgeye devrediyor. Farkı kapatan şey Kleene kısa devresi: kesin bir ret, yanındaki bilinmeyene rağmen sonucu belirliyor.
+
+**Çalıştırmak:** `npm install && npm test`, başka hiçbir şey gerekmiyor. Arayüz için `npm run dev`, denetim kaydı için `docker compose up -d`.
 
 ## Ekranlar
 
@@ -54,9 +67,9 @@ Paragraf (c)'yi bir ifade ağacına çeviriyor, filoya karşı değerlendiriyor 
 
 ## "Belirsiz" neden ürünün kalbi
 
-`data/corpus/ads.json` içindeki korpus üzerinde ölçüldü: **gerçek direktiflerin %45'i kendi kapsamını söylemiyor.** Kapsamı bir üretici servis bültenine, takılı bir parça numarasına ya da başka bir otoritenin direktifine devrediyor — hiçbiri halka açık olmayan, hiçbir sicil kaydının taşımadığı belgeler.
+`data/corpus/ads.json` içindeki korpus üzerinde ölçüldü: **gerçek direktiflerin %45'i kendi kapsamını söylemiyor.** Kapsamı bir üretici servis bültenine, takılı bir parça numarasına ya da başka bir otoritenin direktifine devrediyor, hiçbiri halka açık olmayan, hiçbir sicil kaydının taşımadığı belgeler.
 
-Orada tahmin eden bir motor işe yaramaz; bilinmeyeni "kapsam dışı" sayan bir motor ise tehlikelidir. Bu yüzden belirsizlik, ifadenin tamamı boyunca birleşen birinci sınıf bir değer — Kleene'in güçlü üç değerli mantığı. Önemli olan özellik şu: **bilinmeyen bir olgu cevabı yalnızca belirsize genişletebilir; kesin bir evet'i kesin bir hayır'a asla çeviremez.** Bu bir yorum değil, bir property testi (aşağıda).
+Orada tahmin eden bir motor işe yaramaz; bilinmeyeni "kapsam dışı" sayan bir motor ise tehlikelidir. Bu yüzden belirsizlik, ifadenin tamamı boyunca birleşen birinci sınıf bir değer, Kleene'in güçlü üç değerli mantığı. Önemli olan özellik şu: **bilinmeyen bir olgu cevabı yalnızca belirsize genişletebilir; kesin bir evet'i kesin bir hayır'a asla çeviremez.** Bu bir yorum değil, bir property testi (aşağıda).
 
 Aynı mantıktan işe yarar bir sonuç da çıkıyor: kesin bir ret, yanındaki bilinmeyene rağmen konjonksiyonu tek başına sonuçlandırıyor. Yanlış modeldeki bir uçak, çözülemeyen parça koşulu ne derse desin kapsam dışıdır. Motorun korpusu, tam parse edilebilen madde oranından daha fazla çözmesinin sebebi bu.
 
@@ -160,24 +173,24 @@ Korpus bilerek repoya işlenmiş. Yukarıdaki her kapsama değerinin çevrimdı�
 
 ## Bu nasıl yazıldı
 
-Kodlama ajanlarıyla (Claude Code) yazıldı; kimsenin bir konvansiyonu hatırlamasına bağlı olmayan kapılar altında. Gözden geçirmenin gerçekten yakaladığı üç kusur — çünkü iddia, kanıt olmadan hiçbir şey ifade etmiyor:
+Kodlama ajanlarıyla (Claude Code) yazıldı; kimsenin bir konvansiyonu hatırlamasına bağlı olmayan kapılar altında. Gözden geçirmenin gerçekten yakaladığı üç kusur, çünkü iddia, kanıt olmadan hiçbir şey ifade etmiyor:
 
-1. **Bir ASCII tabloyu yutup uçak modeli diye raporlayan parser.** AD 2026-22785 şöyle başlıyor: *"Lycoming Engines (Lycoming) Model engines identified in table 1 ..."* — burada `Model`'den sonraki kelime kategori kelimesinin kendisi. Lazy bir eşleşme sıfır uzunlukta duramaz, o yüzden metinde çok ileride başka bir "engines" geçişine kadar koştu ve arada bir tablo çizgisini yakaladı. Çökme değil, ret değil: **kendinden emin yanlış cevap**, yani hiçbir tip denetleyicisinin göremediği sınıf. 196 maddenin tamamı üzerinde çalışan bir property testi buldu (hiçbir model tanımı kategori kelimesi içeremez); tam birinde düştü. Zaten okuduğum örneklerden yazılmış bir test geçerdi.
+1. **Bir ASCII tabloyu yutup uçak modeli diye raporlayan parser.** AD 2026-22785 şöyle başlıyor: *"Lycoming Engines (Lycoming) Model engines identified in table 1 ..."*, burada `Model`'den sonraki kelime kategori kelimesinin kendisi. Lazy bir eşleşme sıfır uzunlukta duramaz, o yüzden metinde çok ileride başka bir "engines" geçişine kadar koştu ve arada bir tablo çizgisini yakaladı. Çökme değil, ret değil: **kendinden emin yanlış cevap**, yani hiçbir tip denetleyicisinin göremediği sınıf. 196 maddenin tamamı üzerinde çalışan bir property testi buldu (hiçbir model tanımı kategori kelimesi içeremez); tam birinde düştü. Zaten okuduğum örneklerden yazılmış bir test geçerdi.
 2. **Alternatif model grupları AND'lenmişti.** Kendi alt paragraflarına atıf yapan direktifler tek maddede birkaç model dizisi üretiyor. Bunları AND'lemek, hiçbir uçak aynı anda A330-243 ve A330-941 olamayacağı için o şekildeki her direktifi **tüm filo için "kapsam dışı"** diye çözüyordu: temiz, kendinden emin, evrensel bir yanlış negatif.
-3. **Negasyon birleştiricisinde iki dalı da boş dizi olan bir koşul.** Tip denetiminden geçti, var olan testlerden de geçti, ve her dışlamanın gerekçesini sessizce düşürdü. Diff okunurken yakalandı, test bulmadı — ve asıl bulgu o boşluk: hiçbir test bir reddin *gerekçe içeriğine* bakmıyordu, yalnızca karar tipine bakıyordu.
+3. **Negasyon birleştiricisinde iki dalı da boş dizi olan bir koşul.** Tip denetiminden geçti, var olan testlerden de geçti, ve her dışlamanın gerekçesini sessizce düşürdü. Diff okunurken yakalandı, test bulmadı, ve asıl bulgu o boşluk: hiçbir test bir reddin *gerekçe içeriğine* bakmıyordu, yalnızca karar tipine bakıyordu.
 
 4. **Üretici kısıtının düşürülmesi.** `Model engines` ifadesinde gerçek bir model
-   tanımı yok, ve parser model bulamayınca üreticiyi de bırakıyordu — madde
+   tanımı yok, ve parser model bulamayınca üreticiyi de bırakıyordu, madde
    yalnızca devir düğümlerine indirgeniyordu. Sonuç: Lycoming motorlarıyla
    ilgili bir direktif, filodaki 400 uçağın hepsi için "belirsiz" dönüyordu,
    oysa hiçbiri Lycoming motoru değil. **Yalnızca motoru uçtan uca gerçek
    veride çalıştırmak ortaya çıkardı**; birim testleri de, parser testleri de
    geçiyordu, çünkü hiçbiri parse sonucunu bir filoya karşı değerlendirmiyordu.
    Düzeltme yeni bir AST düğümü gerektirdi, ve derleyici onu değerlendiricide
-   ele almaya zorladı — totality garantisinin işe yaradığı yer burası.
+   ele almaya zorladı, totality garantisinin işe yaradığı yer burası.
 
 5. **Sessizce atlayan veritabanı testleri.** `describe.skipIf` toplama anında
-   değerlendiriliyor, oysa bayrak `beforeAll` içinde kuruluyordu — yani bayrak o
+   değerlendiriliyor, oysa bayrak `beforeAll` içinde kuruluyordu, yani bayrak o
    anda hep `false` ve dört test, veritabanı ayakta olmasına rağmen her koşumda
    sessizce atlanıyordu. Paket yeşil görünüyor, hiçbir şey doğrulamıyordu.
    Sessizce atlayan bir test, düşen testten kötüdür. Erişilebilirlik kontrolü
@@ -187,7 +200,7 @@ Kodlama ajanlarıyla (Claude Code) yazıldı; kimsenin bir konvansiyonu hatırla
 Talimatla değil mekanik olarak zorlananlar:
 
 - **Totality** derleme zamanı garantisi. Düğüm tipi üzerindeki switch bir `never` ataması ile bitiyor, yani yeni bir düğüm tipi ekleyip işlememek `tsc`'yi düşürüyor.
-- **Monotonluk** bir property testi. `conjoin`'i belirsizi ret sayacak şekilde geri almak onu düşürüyor — varsayılmadı, bilerek doğrulandı.
+- **Monotonluk** bir property testi. `conjoin`'i belirsizi ret sayacak şekilde geri almak onu düşürüyor, varsayılmadı, bilerek doğrulandı.
 - **Kapsama** bir kilit dişlisi, yukarıda anlatıldığı gibi.
 
 ## Lisans
