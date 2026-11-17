@@ -1,0 +1,333 @@
+/*
+ * One stylesheet, tokens on :root.
+ *
+ * Every verdict colour is paired with a glyph and a word in the markup, so the
+ * colour is decoration: nothing here is the only carrier of a meaning.
+ */
+:root {
+  --ink: #15202b;
+  --ink-muted: #5a6672;
+  --page: #ffffff;
+  --surface: #f5f7f9;
+  --border: #d4dae0;
+  --link: #0b4f8a;
+  --focus: #0b4f8a;
+
+  --applies: #9a1b1b;
+  --applies-bg: #fdf0ef;
+  --clear: #1d6235;
+  --clear-bg: #eef6f0;
+  --unknown: #7a4a00;
+  --unknown-bg: #fdf5e6;
+
+  --gutter: 16px;
+  --measure: 72ch;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+a {
+  color: var(--link);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin: 0 0 0.4em;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+code,
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+}
+
+/* Layout */
+
+.shell {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.topbar {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.topbar .shell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  align-items: baseline;
+  padding-block: 0.75rem;
+}
+
+.topbar strong {
+  font-size: 0.95rem;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+main {
+  padding-block: 1.5rem 3rem;
+}
+
+.pagefoot {
+  border-top: 1px solid var(--border);
+  color: var(--ink-muted);
+  font-size: 0.8rem;
+  padding-block: 1rem 2rem;
+}
+
+.prose {
+  max-width: var(--measure);
+}
+
+.muted {
+  color: var(--ink-muted);
+}
+
+.stack > * + * {
+  margin-top: 0.75rem;
+}
+
+/* The directive's own words, kept visually distinct from our description of them. */
+.clause {
+  background: var(--surface);
+  border-left: 3px solid var(--border);
+  padding: 0.75rem 1rem;
+  margin: 0;
+  white-space: pre-wrap;
+  max-width: var(--measure);
+}
+
+.recognized {
+  margin: 0;
+  padding-left: 1.25rem;
+  max-width: var(--measure);
+}
+
+.recognized li {
+  margin-bottom: 0.25rem;
+}
+
+/* Verdict marks */
+
+.verdict {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0.1rem 0.45rem;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.verdict-applies {
+  color: var(--applies);
+  background: var(--applies-bg);
+}
+
+.verdict-clear {
+  color: var(--clear);
+  background: var(--clear-bg);
+}
+
+.verdict-unknown {
+  color: var(--unknown);
+  background: var(--unknown-bg);
+}
+
+/* Counts */
+
+.counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.counts li {
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.6rem 0.9rem;
+  min-width: 9rem;
+}
+
+.counts .n {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tables */
+
+.scroller {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+caption {
+  text-align: left;
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  padding: 0.5rem 0.75rem;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  background: var(--surface);
+  position: sticky;
+  top: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.reason {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+/* Search */
+
+.search {
+  display: block;
+  max-width: 28rem;
+  margin-bottom: 1rem;
+}
+
+.search span {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.search input {
+  width: 100%;
+  font: inherit;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--page);
+  color: inherit;
+}
+
+/* Buttons and async feedback */
+
+button {
+  font: inherit;
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  background: var(--ink);
+  color: var(--page);
+  cursor: pointer;
+}
+
+button[disabled] {
+  cursor: progress;
+  opacity: 0.6;
+}
+
+.notice {
+  border: 1px solid var(--border);
+  border-left-width: 3px;
+  padding: 0.6rem 0.9rem;
+  max-width: var(--measure);
+}
+
+.notice-ok {
+  border-left-color: var(--clear);
+  background: var(--clear-bg);
+}
+
+.notice-bad {
+  border-left-color: var(--applies);
+  background: var(--applies-bg);
+}
+
+.notice-info {
+  border-left-color: var(--unknown);
+  background: var(--unknown-bg);
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.3rem 0;
+}
+
+.pending {
+  margin-left: 0.4rem;
+  font-size: 0.8em;
+  color: var(--ink-muted);
+}
+
+@media (max-width: 40rem) {
+  .counts li {
+    min-width: 7rem;
+    flex: 1 1 7rem;
+  }
+}
