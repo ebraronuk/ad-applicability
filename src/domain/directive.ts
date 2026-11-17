@@ -6,9 +6,9 @@
  * to open the regulation and read the clause, so an unsourced verdict is not a
  * useful output and the types here make one impossible to construct.
  */
-import type { Aircraft } from "./aircraft.js";
-import type { ApplicabilityNode } from "../applicability/ast.js";
-import type { Verdict } from "../applicability/evaluate.js";
+import type { Aircraft } from "./aircraft";
+import type { ApplicabilityNode } from "../applicability/ast";
+import type { Verdict } from "../applicability/evaluate";
 
 export interface Directive {
   /** Federal Register document number, e.g. "2026-22817". */

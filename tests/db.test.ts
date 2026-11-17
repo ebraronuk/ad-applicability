@@ -1,11 +1,11 @@
 import { afterAll, describe, expect, it } from "vitest";
 import type { Pool } from "pg";
-import { createPool, isReachable } from "../src/db/client.js";
-import { affectedByRun, recordRun } from "../src/db/assessments.js";
-import { parseApplicability } from "../src/applicability/parse.js";
-import { evaluate } from "../src/applicability/evaluate.js";
-import type { Aircraft } from "../src/domain/aircraft.js";
-import type { Directive } from "../src/domain/directive.js";
+import { createPool, isReachable } from "../src/db/client";
+import { affectedByRun, recordRun } from "../src/db/assessments";
+import { parseApplicability } from "../src/applicability/parse";
+import { evaluate } from "../src/applicability/evaluate";
+import type { Aircraft } from "../src/domain/aircraft";
+import type { Directive } from "../src/domain/directive";
 
 // Reachability is resolved at module scope, with top-level await, because
 // `describe.skipIf` is evaluated during collection: a flag set in `beforeAll`

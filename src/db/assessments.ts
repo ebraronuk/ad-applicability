@@ -1,8 +1,8 @@
 import type { Pool } from "pg";
-import type { Aircraft } from "../domain/aircraft.js";
-import type { Directive } from "../domain/directive.js";
-import type { ApplicabilityNode } from "../applicability/ast.js";
-import type { Verdict } from "../applicability/evaluate.js";
+import type { Aircraft } from "../domain/aircraft";
+import type { Directive } from "../domain/directive";
+import type { ApplicabilityNode } from "../applicability/ast";
+import type { Verdict } from "../applicability/evaluate";
 
 export interface RunInput {
   readonly directive: Directive;

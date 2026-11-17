@@ -7,10 +7,10 @@
  * truth is that nobody knows. Totality is a compile-time guarantee: the switch
  * is exhaustive and ends in a `never` assignment.
  */
-import type { Aircraft } from "../domain/aircraft.js";
-import { manufacturerMatches, modelMatches } from "../domain/aircraft.js";
-import type { ApplicabilityNode, MissingFactKind } from "./ast.js";
-import { compareSerial } from "./serial.js";
+import type { Aircraft } from "../domain/aircraft";
+import { manufacturerMatches, modelMatches } from "../domain/aircraft";
+import type { ApplicabilityNode, MissingFactKind } from "./ast";
+import { compareSerial } from "./serial";
 
 export interface MissingFact {
   readonly kind: MissingFactKind;

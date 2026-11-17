@@ -1,10 +1,10 @@
 import { describe, expect, it } from "vitest";
 import fc from "fast-check";
-import type { Aircraft } from "../src/domain/aircraft.js";
-import type { ApplicabilityNode } from "../src/applicability/ast.js";
-import { and, deferrals, except, or } from "../src/applicability/ast.js";
-import { evaluate } from "../src/applicability/evaluate.js";
-import { compareSerial } from "../src/applicability/serial.js";
+import type { Aircraft } from "../src/domain/aircraft";
+import type { ApplicabilityNode } from "../src/applicability/ast";
+import { and, deferrals, except, or } from "../src/applicability/ast";
+import { evaluate } from "../src/applicability/evaluate";
+import { compareSerial } from "../src/applicability/serial";
 
 const boeing787: Aircraft = {
   nNumber: "12345",

@@ -5,8 +5,8 @@
  * hand-picked examples. `npm test` reports the resulting coverage to
  * docs/coverage.md and fails if it regresses.
  */
-import type { AircraftCategory, ApplicabilityNode } from "./ast.js";
-import { and, or } from "./ast.js";
+import type { AircraftCategory, ApplicabilityNode } from "./ast";
+import { and, or } from "./ast";
 
 export interface ParseResult {
   readonly node: ApplicabilityNode | null;

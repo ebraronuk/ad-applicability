@@ -1,10 +1,10 @@
 import { describe, expect, it } from "vitest";
 import { mkdirSync, writeFileSync } from "node:fs";
 import corpus from "../data/corpus/ads.json" with { type: "json" };
-import { deferrals } from "../src/applicability/ast.js";
-import { parseApplicability } from "../src/applicability/parse.js";
-import { evaluate } from "../src/applicability/evaluate.js";
-import type { Aircraft } from "../src/domain/aircraft.js";
+import { deferrals } from "../src/applicability/ast";
+import { parseApplicability } from "../src/applicability/parse";
+import { evaluate } from "../src/applicability/evaluate";
+import type { Aircraft } from "../src/domain/aircraft";
 import fleetData from "../data/fleet/sample-fleet.json" with { type: "json" };
 
 interface CorpusEntry {
