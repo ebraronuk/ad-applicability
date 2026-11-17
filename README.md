@@ -6,9 +6,9 @@ Bir uçuşa elverişlilik direktifi (Airworthiness Directive) ile bir filo veril
 > decides which aircraft the directive applies to. Each aircraft gets one of
 > three verdicts — applies, does not apply, or undetermined — with the reasoning
 > attached. Uncertainty is a first-class value that composes through the whole
-> expression (Kleene three-valued logic), because 35% of real directives defer
+> expression (Kleene three-valued logic), because 45% of real directives defer
 > their own applicability to a manufacturer document that is not public. The
-> parser understands 96.4% of 196 real directive clauses; coverage is measured
+> parser understands 99.0% of 196 real directive clauses; coverage is measured
 > by the test suite, not claimed in prose. Code and inline comments are in
 > English; the long-form documentation is in Turkish.
 
@@ -36,7 +36,7 @@ Paragraf (c)'yi bir ifade ağacına çeviriyor, filoya karşı değerlendiriyor 
 
 ## "Belirsiz" neden ürünün kalbi
 
-`data/corpus/ads.json` içindeki korpus üzerinde ölçüldü: **gerçek direktiflerin %35'i kendi kapsamını söylemiyor.** Kapsamı bir üretici servis bültenine, takılı bir parça numarasına ya da başka bir otoritenin direktifine devrediyor — hiçbiri halka açık olmayan, hiçbir sicil kaydının taşımadığı belgeler.
+`data/corpus/ads.json` içindeki korpus üzerinde ölçüldü: **gerçek direktiflerin %45'i kendi kapsamını söylemiyor.** Kapsamı bir üretici servis bültenine, takılı bir parça numarasına ya da başka bir otoritenin direktifine devrediyor — hiçbiri halka açık olmayan, hiçbir sicil kaydının taşımadığı belgeler.
 
 Orada tahmin eden bir motor işe yaramaz; bilinmeyeni "kapsam dışı" sayan bir motor ise tehlikelidir. Bu yüzden belirsizlik, ifadenin tamamı boyunca birleşen birinci sınıf bir değer — Kleene'in güçlü üç değerli mantığı. Önemli olan özellik şu: **bilinmeyen bir olgu cevabı yalnızca belirsize genişletebilir; kesin bir evet'i kesin bir hayır'a asla çeviremez.** Bu bir yorum değil, bir property testi (aşağıda).
 
@@ -48,13 +48,13 @@ Aynı mantıktan işe yarar bir sonuç da çıkıyor: kesin bir ret, yanındaki 
 
 ```
 corpus                 196 directives
-parsed                 189 (96.4%)
-fully resolvable       100 (51.0%)
+parsed                 194 (99.0%)
+fully resolvable       105 (53.6%)
 deferred to a document  89   (87 servis bülteni, 4 takılı parça, 3 tablo)
-unparsed                 7
+unparsed                 2
 ```
 
-Motorun 189 parse edilmiş direktifi 400 uçaklık filoya karşı değerlendirmesi,
+Motorun 194 parse edilmiş direktifi 400 uçaklık filoya karşı değerlendirmesi,
 toplam 77.600 karar:
 
 ```
@@ -63,7 +63,7 @@ kapsam dışı  77.027  (%99,3)
 belirsiz        462   (%0,6)
 ```
 
-Yukarıdaki kısa devre iddiası bu rakamla doğrulanıyor: direktiflerin **%35'i**
+Yukarıdaki kısa devre iddiası bu rakamla doğrulanıyor: direktiflerin **%45'i**
 bir belgeye devrediyor, ama kararların yalnızca **%0,6'sı** belirsiz kalıyor,
 çünkü kesin bir ret konjonksiyonu tek başına sonuçlandırıyor. Bu da bir test,
 varsayım değil.
@@ -99,10 +99,27 @@ npm test                  # veritabanı kapalıysa 4 test atlanır, paket yeşil
 Açıkça yazılıyor, çünkü bu sınır bir tasarım kararı, yapılacaklar listesi değil:
 
 - **Uyum süresi hesabı yok.** Direktifler son tarihleri uçuş saati, çevrim ya da takvim ayı cinsinden, bir başlangıç olayına göre veriyor. Kullanım verisi halka açık değil, o yüzden motor son tarih hesaplıyormuş gibi yapmıyor.
-- **Servis bülteni kütüphanesi yok.** Üretici bültenleri halka açık değil. %35'lik devir oranının sebebi bu ve açık veriyle çözülebilir bir şey değil.
+- **Servis bülteni kütüphanesi yok.** Üretici bültenleri halka açık değil. %45'lik devir oranının sebebi bu ve açık veriyle çözülebilir bir şey değil.
 - **Modifikasyon durumu yok.** Sicil kaydı bir uçağa hangi bültenlerin uygulandığını tutmuyor, o yüzden "şu bülten uygulanmış olanlar hariç" ifadesi yapısal olarak belirsize çözülüyor.
 - **Seri numarası karşılaştırması bilinçli olarak kısmi.** Sıralama yalnızca aynı tanınan biçimdeki seriler arasında tanımlı; gerisi tahmin yerine belirsiz döndürüyor. Karşılaştırmayı reddetmek bir özellik.
 - **Filo verisi dünya çapında, ABD tescilli değil.** Gerekçesi `scripts/fetch-fleet.py` başında yazılı: FAA'nın kendi sicil veritabanı otomatik isteklere 403 ve 503 dönüyor, o yüzden programatik erişim için yayınlanan OpenSky uçak veritabanı kullanıldı. İçindeki her uçak gerçek bir uçak, her seri numarası gerçek bir seri numarası; ama bir FAA direktifinin gerçekten bağladığı popülasyon değil.
+
+## Arayüz
+
+Next.js (App Router) ile aynı repoda, üç ekran:
+
+- **`/`** yayın tarihine göre direktif listesi, belge numarası / üretici / başlık araması
+- **`/directives/<belge-no>`** maddenin kendi metni, parser'ın anladıkları, ve uçak
+  başına karar: kapsamda ve belirsiz olanlar önde, kapsam dışı olanlar kapalı bir
+  bölümde, çünkü kimse onlara göre işlem yapmıyor. Karar rengi tek sinyal değil:
+  her kararın bir sözcüğü ve bir şekli de var.
+- **`/coverage`** yukarıdaki kapsama tablosu, sayfa her açıldığında korpustan
+  yeniden ölçülerek
+
+Veri yükleme sunucu bileşenlerinde; istemci bileşeni yalnızca arama kutusunda ve
+"Bu değerlendirmeyi kaydet" düğmesinde var. O düğme `POST /api/runs` ile
+`recordRun()`'ı çağırıyor; Postgres kapalıyken sayfa çökmüyor, 503 ve ne
+yapılacağını söyleyen bir mesaj dönüyor.
 
 ## Çalıştırma
 
@@ -110,6 +127,8 @@ Açıkça yazılıyor, çünkü bu sınır bir tasarım kararı, yapılacaklar l
 npm install
 npm test          # test paketi + docs/coverage.md üretir
 npm run typecheck
+npm run dev       # arayüz, http://localhost:3000
+npm run build
 ```
 
 Korpusu Federal Register'dan yenilemek için:
