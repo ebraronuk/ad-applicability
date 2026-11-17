@@ -4,6 +4,14 @@
 
 Karar veremediğinde tahmin etmez: hangi bilginin eksik olduğunu söyler. Gerçek direktifler, gerçek uçaklar, ölçülmüş kapsama.
 
+## Bu ne işe yarıyor
+
+Bir uçak tipinde emniyeti etkileyen bir sorun bulunduğunda (bir parçada çatlak riski, bir sistemde arıza), havacılık otoritesi **zorunlu bir talimat** yayınlıyor: şu uçaklarda şu işlem şu tarihe kadar yapılacak. Buna *uçuşa elverişlilik direktifi* deniyor; uyulmaması uçağı uçuştan men ediyor.
+
+Sorun şurada: talimat kimleri bağladığını bir liste olarak değil, **düzyazı bir paragraf** olarak yazıyor. *"Şu üreticinin şu modelleri, şu seri numaraları arasında, şu bülten uygulanmış olanlar hariç."* Bir havayolunun yüzlerce uçağı var ve yılda yüzlerce direktif yayınlanıyor; bugün bunu biri elle okuyup filo listesiyle karşılaştırıyor.
+
+Bu araç o paragrafı okuyup filodaki her uçak için cevabı veriyor. Emin olamadığında tahmin etmiyor: paragrafın dayandığı belge elinde yoksa bunu açıkça söylüyor.
+
 ```mermaid
 flowchart LR
     A["Federal Register API<br/>196 gerçek direktif"] --> P
