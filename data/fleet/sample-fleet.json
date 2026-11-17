@@ -1,0 +1,2773 @@
+{
+ "name": "Sample mixed fleet (OpenSky aircraft database, 2024-01)",
+ "source": "https://s3.opensky-network.org/data-samples/metadata/aircraft-database-complete-2024-01.csv",
+ "licence": "CC-BY-SA 4.0, OpenSky Network",
+ "aircraft": [
+  {
+   "nNumber": "TC-SGM",
+   "manufacturer": "AIRBUS",
+   "model": "A310 308F",
+   "serialNumber": "592",
+   "typeDesignator": "A310"
+  },
+  {
+   "nNumber": "N855UA",
+   "manufacturer": "AIRBUS",
+   "model": "A319-131",
+   "serialNumber": "1737",
+   "typeDesignator": "A319"
+  },
+  {
+   "nNumber": "N505NK",
+   "manufacturer": "AIRBUS",
+   "model": "A319-132",
+   "serialNumber": "2485",
+   "typeDesignator": "A319"
+  },
+  {
+   "nNumber": "A9C-AD",
+   "manufacturer": "AIRBUS",
+   "model": "A320 214",
+   "serialNumber": "4083",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "B-9981",
+   "manufacturer": "AIRBUS",
+   "model": "A320 214",
+   "serialNumber": "5740",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "JY-PTD",
+   "manufacturer": "AIRBUS",
+   "model": "A320 214",
+   "serialNumber": "2764",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "VT-PNQ",
+   "manufacturer": "AIRBUS",
+   "model": "A320 214",
+   "serialNumber": "2612",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "A6-AOP",
+   "manufacturer": "AIRBUS",
+   "model": "A320 214SL",
+   "serialNumber": "7315",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "B-8733",
+   "manufacturer": "AIRBUS",
+   "model": "A320 214SL",
+   "serialNumber": "6204",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "B-8855",
+   "manufacturer": "AIRBUS",
+   "model": "A320 214SL",
+   "serialNumber": "7745",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "B-6723",
+   "manufacturer": "AIRBUS",
+   "model": "A320 232",
+   "serialNumber": "4483",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "PR-MAZ",
+   "manufacturer": "AIRBUS",
+   "model": "A320 232",
+   "serialNumber": "2513",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "B-8743",
+   "manufacturer": "AIRBUS",
+   "model": "A320 232SL",
+   "serialNumber": "7442",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "PR-YRD",
+   "manufacturer": "AIRBUS",
+   "model": "A320 251NSL",
+   "serialNumber": "7354",
+   "typeDesignator": "A20N"
+  },
+  {
+   "nNumber": "JA213A",
+   "manufacturer": "AIRBUS",
+   "model": "A320 271NSL",
+   "serialNumber": "7554",
+   "typeDesignator": "A20N"
+  },
+  {
+   "nNumber": "VT-WGA",
+   "manufacturer": "AIRBUS",
+   "model": "A320 271NSL",
+   "serialNumber": "7047",
+   "typeDesignator": "A20N"
+  },
+  {
+   "nNumber": "HB-JJL",
+   "manufacturer": "AIRBUS",
+   "model": "A320-214",
+   "serialNumber": "2606",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "N615NK",
+   "manufacturer": "AIRBUS",
+   "model": "A320-232",
+   "serialNumber": "5159",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "N708JB",
+   "manufacturer": "AIRBUS",
+   "model": "A320-232",
+   "serialNumber": "3479",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "N514VL",
+   "manufacturer": "AIRBUS",
+   "model": "A320-233",
+   "serialNumber": "5337",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "N515VL",
+   "manufacturer": "AIRBUS",
+   "model": "A320-233",
+   "serialNumber": "5391",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "N363FR",
+   "manufacturer": "AIRBUS",
+   "model": "A320-251N",
+   "serialNumber": "9260",
+   "typeDesignator": "A20N"
+  },
+  {
+   "nNumber": "N945NK",
+   "manufacturer": "AIRBUS",
+   "model": "A320-271N",
+   "serialNumber": "10594",
+   "typeDesignator": "A20N"
+  },
+  {
+   "nNumber": "VT-PPK",
+   "manufacturer": "AIRBUS",
+   "model": "A321 211",
+   "serialNumber": "3619",
+   "typeDesignator": "A321"
+  },
+  {
+   "nNumber": "CC-BEJ",
+   "manufacturer": "AIRBUS",
+   "model": "A321 211SL",
+   "serialNumber": "7036",
+   "typeDesignator": "A321"
+  },
+  {
+   "nNumber": "VN-A605",
+   "manufacturer": "AIRBUS",
+   "model": "A321 231",
+   "serialNumber": "5699",
+   "typeDesignator": "A321"
+  },
+  {
+   "nNumber": "N674NK",
+   "manufacturer": "AIRBUS",
+   "model": "A321-231",
+   "serialNumber": "7462",
+   "typeDesignator": "A321"
+  },
+  {
+   "nNumber": "RP-C3344",
+   "manufacturer": "AIRBUS",
+   "model": "A330 343E",
+   "serialNumber": "1527",
+   "typeDesignator": "A333"
+  },
+  {
+   "nNumber": "N628AC",
+   "manufacturer": "AIRBUS",
+   "model": "A330-243",
+   "serialNumber": "1191",
+   "typeDesignator": "A332"
+  },
+  {
+   "nNumber": "4K-AZ86",
+   "manufacturer": "AIRBUS",
+   "model": "A340 542",
+   "serialNumber": "894",
+   "typeDesignator": "A345"
+  },
+  {
+   "nNumber": "A6-EEG",
+   "manufacturer": "AIRBUS",
+   "model": "A380 861",
+   "serialNumber": "116",
+   "typeDesignator": "A388"
+  },
+  {
+   "nNumber": "VP-BTO",
+   "manufacturer": "AIRBUS",
+   "model": "Airbus A319 114",
+   "serialNumber": "1129",
+   "typeDesignator": "A319"
+  },
+  {
+   "nNumber": "G-EZPP",
+   "manufacturer": "AIRBUS",
+   "model": "Airbus A320 214SL",
+   "serialNumber": "7340",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "VP-BJA",
+   "manufacturer": "AIRBUS",
+   "model": "Airbus A320 214SL",
+   "serialNumber": "5536",
+   "typeDesignator": "A320"
+  },
+  {
+   "nNumber": "D-ABCK",
+   "manufacturer": "AIRBUS",
+   "model": "Airbus A321 211",
+   "serialNumber": "5133",
+   "typeDesignator": "A321"
+  },
+  {
+   "nNumber": "SP-HAX",
+   "manufacturer": "AIRBUS",
+   "model": "Airbus A321 211",
+   "serialNumber": "2903",
+   "typeDesignator": "A321"
+  },
+  {
+   "nNumber": "VP-BES",
+   "manufacturer": "AIRBUS",
+   "model": "Airbus A321 211SL",
+   "serialNumber": "6817",
+   "typeDesignator": "A321"
+  },
+  {
+   "nNumber": "VP-BKQ",
+   "manufacturer": "AIRBUS",
+   "model": "Airbus A321 211SL",
+   "serialNumber": "7801",
+   "typeDesignator": "A321"
+  },
+  {
+   "nNumber": "B-6079",
+   "manufacturer": "AIRBUS",
+   "model": "Airbus A330 243",
+   "serialNumber": "810",
+   "typeDesignator": "A332"
+  },
+  {
+   "nNumber": "C-FZCC",
+   "manufacturer": "AIRBUS HELICOPTERS",
+   "model": "AS 350 B3 (AIRBUS HELICOPTERS)",
+   "serialNumber": "7959",
+   "typeDesignator": "G280"
+  },
+  {
+   "nNumber": "C-GPHF",
+   "manufacturer": "AIRBUS HELICOPTERS",
+   "model": "EC 130 T2 (Airbus)",
+   "serialNumber": "8115",
+   "typeDesignator": "EC30"
+  },
+  {
+   "nNumber": "I-TDUE",
+   "manufacturer": "AIRBUS HELICOPTERS",
+   "model": "MBB-BK 117 D-2 (H145)",
+   "serialNumber": "20006",
+   "typeDesignator": "EC45"
+  },
+  {
+   "nNumber": "N296S",
+   "manufacturer": "AIRBUS HELICOPTERS INC",
+   "model": "AS350B3",
+   "serialNumber": "8850",
+   "typeDesignator": "AS50"
+  },
+  {
+   "nNumber": "N410AH",
+   "manufacturer": "AIRBUS HELICOPTERS INC",
+   "model": "MBB-BK 117 C-2",
+   "serialNumber": "9776"
+  },
+  {
+   "nNumber": "N122UP",
+   "manufacturer": "AIRBUS INDUSTRIE",
+   "model": "A300 F4-622R",
+   "serialNumber": "0807",
+   "typeDesignator": "A306"
+  },
+  {
+   "nNumber": "VT-CIP",
+   "manufacturer": "AIRBUS INDUSTRIE",
+   "model": "A320-251N",
+   "serialNumber": "8225",
+   "typeDesignator": "A20N"
+  },
+  {
+   "nNumber": "D-AIXK",
+   "manufacturer": "AIRBUS INDUSTRIE",
+   "model": "A350-941",
+   "serialNumber": "212",
+   "typeDesignator": "A359"
+  },
+  {
+   "nNumber": "G-EUPM",
+   "manufacturer": "AIRBUS INDUSTRIE",
+   "model": "AIRBUS A319-131",
+   "serialNumber": "1258",
+   "typeDesignator": "A319"
+  },
+  {
+   "nNumber": "C-FJOK",
+   "manufacturer": "AIRBUS S.A.S",
+   "model": "A321-211 (Airbus)",
+   "serialNumber": "6844",
+   "typeDesignator": "A321"
+  },
+  {
+   "nNumber": "N891KW",
+   "manufacturer": "AIRBUS SAS",
+   "model": "A321-211",
+   "serialNumber": "6895"
+  },
+  {
+   "nNumber": "N349JC",
+   "manufacturer": "AVIONS MARCEL DASSAULT BREGUET",
+   "model": "FALCON 10",
+   "serialNumber": "70",
+   "typeDesignator": "FA10"
+  },
+  {
+   "nNumber": "F-GHHR",
+   "manufacturer": "BELL",
+   "model": "205A-1",
+   "serialNumber": "30223",
+   "typeDesignator": "UH1"
+  },
+  {
+   "nNumber": "N35NR",
+   "manufacturer": "BELL",
+   "model": "206-L4",
+   "serialNumber": "52137",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "N407SJ",
+   "manufacturer": "BELL",
+   "model": "206B Jet Ranger II",
+   "serialNumber": "1551",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "LV-BRU",
+   "manufacturer": "BELL",
+   "model": "206B Jet Ranger III",
+   "serialNumber": "2651",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "N100CK",
+   "manufacturer": "BELL",
+   "model": "206B Jet Ranger III",
+   "serialNumber": "4644",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "N3FG",
+   "manufacturer": "BELL",
+   "model": "206B Jet Ranger III",
+   "serialNumber": "3795",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "N720HP",
+   "manufacturer": "BELL",
+   "model": "206B Jet Ranger III",
+   "serialNumber": "2325",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "ZS-RUM",
+   "manufacturer": "BELL",
+   "model": "206L Long Ranger III",
+   "serialNumber": "51357",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "N205FC",
+   "manufacturer": "BELL",
+   "model": "206L-3",
+   "serialNumber": "51130",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "N410AP",
+   "manufacturer": "BELL",
+   "model": "407",
+   "serialNumber": "53091",
+   "typeDesignator": "B407"
+  },
+  {
+   "nNumber": "N437MY",
+   "manufacturer": "BELL",
+   "model": "407",
+   "serialNumber": "53020",
+   "typeDesignator": "B407"
+  },
+  {
+   "nNumber": "N464SF",
+   "manufacturer": "BELL",
+   "model": "407",
+   "serialNumber": "53128",
+   "typeDesignator": "B407"
+  },
+  {
+   "nNumber": "N696AM",
+   "manufacturer": "BELL",
+   "model": "407",
+   "serialNumber": "53564",
+   "typeDesignator": "B407"
+  },
+  {
+   "nNumber": "ZS-RXE",
+   "manufacturer": "BELL",
+   "model": "407",
+   "serialNumber": "53917",
+   "typeDesignator": "B407"
+  },
+  {
+   "nNumber": "N505ZH",
+   "manufacturer": "BELL",
+   "model": "412 EP",
+   "serialNumber": "36658",
+   "typeDesignator": "B412"
+  },
+  {
+   "nNumber": "N427V",
+   "manufacturer": "BELL",
+   "model": "427",
+   "serialNumber": "56063",
+   "typeDesignator": "B427"
+  },
+  {
+   "nNumber": "JA126D",
+   "manufacturer": "BELL",
+   "model": "429 Global Ranger",
+   "serialNumber": "57316",
+   "typeDesignator": "B429"
+  },
+  {
+   "nNumber": "D-HASB",
+   "manufacturer": "BELL",
+   "model": "47G-2",
+   "serialNumber": "1466",
+   "typeDesignator": "B47G"
+  },
+  {
+   "nNumber": "F-BTSE",
+   "manufacturer": "BELL",
+   "model": "47G-2",
+   "serialNumber": "483",
+   "typeDesignator": "B47G"
+  },
+  {
+   "nNumber": "N7836S",
+   "manufacturer": "BELL",
+   "model": "47G-5",
+   "serialNumber": "7860",
+   "typeDesignator": "B47G"
+  },
+  {
+   "nNumber": "N27LC",
+   "manufacturer": "BELL",
+   "model": "OH-58A",
+   "serialNumber": "73-21872",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "N244LC",
+   "manufacturer": "BELL",
+   "model": "OH-58C",
+   "serialNumber": "71-20802",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "N297GR",
+   "manufacturer": "BELL",
+   "model": "OH-58C",
+   "serialNumber": "69-16312",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "N76PD",
+   "manufacturer": "BELL",
+   "model": "OH-58C Kiowa",
+   "serialNumber": "41503",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "N48358",
+   "manufacturer": "BELL",
+   "model": "TH-13T",
+   "serialNumber": "67-15919",
+   "typeDesignator": "B47G"
+  },
+  {
+   "nNumber": "N871M",
+   "manufacturer": "BELL",
+   "model": "TH-13T",
+   "serialNumber": "3802",
+   "typeDesignator": "B47G"
+  },
+  {
+   "nNumber": "ZS-RBD",
+   "manufacturer": "BELL",
+   "model": "TH-13T Sioux",
+   "serialNumber": "3613",
+   "typeDesignator": "B47G"
+  },
+  {
+   "nNumber": "N431ZH",
+   "manufacturer": "BELL",
+   "model": "UH-1H",
+   "serialNumber": "13902",
+   "typeDesignator": "UH1"
+  },
+  {
+   "nNumber": "N959BH",
+   "manufacturer": "BELL",
+   "model": "UH-1H",
+   "serialNumber": "6413808",
+   "typeDesignator": "UH1"
+  },
+  {
+   "nNumber": "N204AL",
+   "manufacturer": "BELL",
+   "model": "UH-1H Iroquois",
+   "serialNumber": "10482",
+   "typeDesignator": "UH1"
+  },
+  {
+   "nNumber": "N703SG",
+   "manufacturer": "BELL",
+   "model": "UH-1H Iroquois",
+   "serialNumber": "4520",
+   "typeDesignator": "UH1"
+  },
+  {
+   "nNumber": "VH-OMR",
+   "manufacturer": "BELL HELICOPTER CO",
+   "model": "206B",
+   "serialNumber": "2466",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "C-FKWB",
+   "manufacturer": "BELL HELICOPTER COMPANY",
+   "model": "206B (Bell)",
+   "serialNumber": "1000",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "C-GJSD",
+   "manufacturer": "BELL HELICOPTER COMPANY A DIVISION OF TEXTRON INC.",
+   "model": "206B (Bell)",
+   "serialNumber": "883",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "N14SJ",
+   "manufacturer": "BELL HELICOPTER TEXTRON",
+   "model": "206L-1",
+   "serialNumber": "45564",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "N519RS",
+   "manufacturer": "BELL HELICOPTER TEXTRON CANADA",
+   "model": "407",
+   "serialNumber": "54843",
+   "typeDesignator": "B407"
+  },
+  {
+   "nNumber": "N211FX",
+   "manufacturer": "BELL HELICOPTER TEXTRON CANADA",
+   "model": "429",
+   "serialNumber": "57004",
+   "typeDesignator": "B429"
+  },
+  {
+   "nNumber": "N429NA",
+   "manufacturer": "BELL HELICOPTER TEXTRON CANADA",
+   "model": "429",
+   "serialNumber": "57009",
+   "typeDesignator": "B429"
+  },
+  {
+   "nNumber": "C-FRWF",
+   "manufacturer": "BELL HELICOPTER TEXTRON DIVISION OF TEXTRON INC",
+   "model": "212 (Bell)",
+   "serialNumber": "30894",
+   "typeDesignator": "B212"
+  },
+  {
+   "nNumber": "C-GQHW",
+   "manufacturer": "BELL HELICOPTER TEXTRON DIVISION OF TEXTRON INC.",
+   "model": "206L (Bell)",
+   "serialNumber": "45113",
+   "typeDesignator": "B06"
+  },
+  {
+   "nNumber": "N3657F",
+   "manufacturer": "BELL-ALLIED HELICOPTER",
+   "model": "47D1",
+   "serialNumber": "900",
+   "typeDesignator": "B47G"
+  },
+  {
+   "nNumber": "N617JM",
+   "manufacturer": "BELLANCA",
+   "model": "17-30A",
+   "serialNumber": "76-30845",
+   "typeDesignator": "BL17"
+  },
+  {
+   "nNumber": "N6591V",
+   "manufacturer": "BELLANCA",
+   "model": "17-31A",
+   "serialNumber": "32-29",
+   "typeDesignator": "BL17"
+  },
+  {
+   "nNumber": "N4205Y",
+   "manufacturer": "BELLANCA",
+   "model": "7ECA",
+   "serialNumber": "1195-77",
+   "typeDesignator": "CH7A"
+  },
+  {
+   "nNumber": "N8626V",
+   "manufacturer": "BELLANCA",
+   "model": "7GCAA",
+   "serialNumber": "312-75",
+   "typeDesignator": "CH7B"
+  },
+  {
+   "nNumber": "N20SB",
+   "manufacturer": "BELLANCA",
+   "model": "7GCBC",
+   "serialNumber": "917-76",
+   "typeDesignator": "CH7B"
+  },
+  {
+   "nNumber": "N88119",
+   "manufacturer": "BELLANCA",
+   "model": "7GCBC",
+   "serialNumber": "606-74",
+   "typeDesignator": "CH7B"
+  },
+  {
+   "nNumber": "N7DT",
+   "manufacturer": "BELLANCA",
+   "model": "7KCAB",
+   "serialNumber": "577-76",
+   "typeDesignator": "CH7B"
+  },
+  {
+   "nNumber": "N8622V",
+   "manufacturer": "BELLANCA",
+   "model": "8KCAB",
+   "serialNumber": "172-75",
+   "typeDesignator": "BL8"
+  },
+  {
+   "nNumber": "C-FJIK",
+   "manufacturer": "BELLANCA AIRCRAFT CORP.",
+   "model": "17-30A (Bellanca)",
+   "serialNumber": "79-30927",
+   "typeDesignator": "BL17"
+  },
+  {
+   "nNumber": "HZ-SNB",
+   "manufacturer": "BOEING",
+   "model": "727 223F",
+   "serialNumber": "21084",
+   "typeDesignator": "B722"
+  },
+  {
+   "nNumber": "EP-SII",
+   "manufacturer": "BOEING",
+   "model": "737 31S",
+   "serialNumber": "29056",
+   "typeDesignator": "B733"
+  },
+  {
+   "nNumber": "CC-ADZ",
+   "manufacturer": "BOEING",
+   "model": "737 3G7",
+   "serialNumber": "24634",
+   "typeDesignator": "B733"
+  },
+  {
+   "nNumber": "ZS-JRF",
+   "manufacturer": "BOEING",
+   "model": "737 4L7C",
+   "serialNumber": "26961",
+   "typeDesignator": "B734"
+  },
+  {
+   "nNumber": "N990ST",
+   "manufacturer": "BOEING",
+   "model": "737 4Y0C",
+   "serialNumber": "24493",
+   "typeDesignator": "B734"
+  },
+  {
+   "nNumber": "C-FGWJ",
+   "manufacturer": "BOEING",
+   "model": "737-7CT (Boeing)",
+   "serialNumber": "32764",
+   "typeDesignator": "B737"
+  },
+  {
+   "nNumber": "C-GWJT",
+   "manufacturer": "BOEING",
+   "model": "737-7CT (Boeing)",
+   "serialNumber": "40338",
+   "typeDesignator": "B737"
+  },
+  {
+   "nNumber": "N223WN",
+   "manufacturer": "BOEING",
+   "model": "737-7H4",
+   "serialNumber": "32492",
+   "typeDesignator": "B737"
+  },
+  {
+   "nNumber": "N749SW",
+   "manufacturer": "BOEING",
+   "model": "737-7H4",
+   "serialNumber": "29801",
+   "typeDesignator": "B737"
+  },
+  {
+   "nNumber": "N359PX",
+   "manufacturer": "BOEING",
+   "model": "737-800",
+   "serialNumber": "31280",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "N8564Z",
+   "manufacturer": "BOEING",
+   "model": "737-800",
+   "serialNumber": "42545",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "N37287",
+   "manufacturer": "BOEING",
+   "model": "737-824",
+   "serialNumber": "31636",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "N293AR",
+   "manufacturer": "BOEING",
+   "model": "737-82R",
+   "serialNumber": "29344",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "N3747D",
+   "manufacturer": "BOEING",
+   "model": "737-832",
+   "serialNumber": "32374",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "N376DA",
+   "manufacturer": "BOEING",
+   "model": "737-832",
+   "serialNumber": "29624",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "N8600F",
+   "manufacturer": "BOEING",
+   "model": "737-8H4",
+   "serialNumber": "39882",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "N78438",
+   "manufacturer": "BOEING",
+   "model": "737-924ER",
+   "serialNumber": "33533",
+   "typeDesignator": "B739"
+  },
+  {
+   "nNumber": "EI-FVX",
+   "manufacturer": "BOEING",
+   "model": "737NG 800/W",
+   "serialNumber": "42090",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "LV-GUB",
+   "manufacturer": "BOEING",
+   "model": "737NG 800/W",
+   "serialNumber": "42060",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "B-5742",
+   "manufacturer": "BOEING",
+   "model": "737NG 81B/W",
+   "serialNumber": "38946",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "B-7631",
+   "manufacturer": "BOEING",
+   "model": "737NG 83Z/W",
+   "serialNumber": "61273",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "B-1735",
+   "manufacturer": "BOEING",
+   "model": "737NG 86N/W",
+   "serialNumber": "41269",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "B-5197",
+   "manufacturer": "BOEING",
+   "model": "737NG 86N/W",
+   "serialNumber": "36811",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "CN-RGE",
+   "manufacturer": "BOEING",
+   "model": "737NG 86N/W",
+   "serialNumber": "36822",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "B-7590",
+   "manufacturer": "BOEING",
+   "model": "737NG 89P/W",
+   "serialNumber": "41485",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "N371BC",
+   "manufacturer": "BOEING",
+   "model": "737NG 8EF/W BBJ2",
+   "serialNumber": "32971",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "VT-ESO",
+   "manufacturer": "BOEING",
+   "model": "747 437",
+   "serialNumber": "27165",
+   "typeDesignator": "B744"
+  },
+  {
+   "nNumber": "OE-ILC",
+   "manufacturer": "BOEING",
+   "model": "747-409F",
+   "serialNumber": "30762",
+   "typeDesignator": "B744"
+  },
+  {
+   "nNumber": "N937UW",
+   "manufacturer": "BOEING",
+   "model": "757 2B7/W",
+   "serialNumber": "27245",
+   "typeDesignator": "B752"
+  },
+  {
+   "nNumber": "N902NV",
+   "manufacturer": "BOEING",
+   "model": "757-204",
+   "serialNumber": "26964"
+  },
+  {
+   "nNumber": "N606AA",
+   "manufacturer": "BOEING",
+   "model": "757-223",
+   "serialNumber": "27057",
+   "typeDesignator": "B752"
+  },
+  {
+   "nNumber": "N17139",
+   "manufacturer": "BOEING",
+   "model": "757-224",
+   "serialNumber": "30352",
+   "typeDesignator": "B752"
+  },
+  {
+   "nNumber": "N1709A",
+   "manufacturer": "BOEING",
+   "model": "767-375",
+   "serialNumber": "24086",
+   "typeDesignator": "B763"
+  },
+  {
+   "nNumber": "ZK-OKA",
+   "manufacturer": "BOEING",
+   "model": "777 219ER",
+   "serialNumber": "29404",
+   "typeDesignator": "B772"
+  },
+  {
+   "nNumber": "A6-ECY",
+   "manufacturer": "BOEING",
+   "model": "777 31HER",
+   "serialNumber": "35595",
+   "typeDesignator": "B77W"
+  },
+  {
+   "nNumber": "VH-VKG",
+   "manufacturer": "BOEING",
+   "model": "787 8",
+   "serialNumber": "36232",
+   "typeDesignator": "B788"
+  },
+  {
+   "nNumber": "VH-VKI",
+   "manufacturer": "BOEING",
+   "model": "787 8",
+   "serialNumber": "36235",
+   "typeDesignator": "B788"
+  },
+  {
+   "nNumber": "02-1103",
+   "manufacturer": "BOEING",
+   "model": "C-17A Globemaster III",
+   "serialNumber": "P103",
+   "typeDesignator": "C17"
+  },
+  {
+   "nNumber": "A15-303",
+   "manufacturer": "BOEING",
+   "model": "CH-47F Chinook",
+   "serialNumber": "M7433",
+   "typeDesignator": "H47"
+  },
+  {
+   "nNumber": "N752JT",
+   "manufacturer": "BOEING",
+   "model": "D75N1",
+   "serialNumber": "75-4043"
+  },
+  {
+   "nNumber": "N16635",
+   "manufacturer": "BOEING",
+   "model": "E75N1",
+   "serialNumber": "758780",
+   "typeDesignator": "ST75"
+  },
+  {
+   "nNumber": "N839DS",
+   "manufacturer": "BOEING",
+   "model": "P-8A Poseidon",
+   "serialNumber": "63181",
+   "typeDesignator": "P8"
+  },
+  {
+   "nNumber": "N64983",
+   "manufacturer": "BOEING",
+   "model": "Stearman B75N1 N2S-3 Kaydet",
+   "serialNumber": "75-2594",
+   "typeDesignator": "ST75"
+  },
+  {
+   "nNumber": "G-ILLE",
+   "manufacturer": "BOEING AIRPLANE CO",
+   "model": "BOEING E75 (MODIFIED) Stearman",
+   "serialNumber": "75-5028",
+   "typeDesignator": "ST75"
+  },
+  {
+   "nNumber": "G-TUIO",
+   "manufacturer": "BOEING CHARLESTON (CHS)",
+   "model": "Boeing 787-9",
+   "serialNumber": "64294",
+   "typeDesignator": "B789"
+  },
+  {
+   "nNumber": "G-VIIE",
+   "manufacturer": "BOEING COMPANY",
+   "model": "BOEING 777-236",
+   "serialNumber": "27487",
+   "typeDesignator": "B772"
+  },
+  {
+   "nNumber": "G-ZBKP",
+   "manufacturer": "BOEING COMPANY",
+   "model": "BOEING 787-9 Dreamliner",
+   "serialNumber": "38632",
+   "typeDesignator": "B789"
+  },
+  {
+   "nNumber": "03-05346",
+   "manufacturer": "BOEING-MCDONNELL DOUGLAS",
+   "model": "AH-64D Apache",
+   "serialNumber": "PVD346",
+   "typeDesignator": "H64"
+  },
+  {
+   "nNumber": "C-GUGS",
+   "manufacturer": "BOMBARDIER",
+   "model": "BD-100-1A10 (Bombardier)",
+   "serialNumber": "20773",
+   "typeDesignator": "CL35"
+  },
+  {
+   "nNumber": "M-EANS",
+   "manufacturer": "BOMBARDIER",
+   "model": "Bombardier Challenger 300",
+   "serialNumber": "20017",
+   "typeDesignator": "CL30"
+  },
+  {
+   "nNumber": "D-ATWO",
+   "manufacturer": "BOMBARDIER",
+   "model": "Bombardier Challenger 604",
+   "serialNumber": "5539",
+   "typeDesignator": "CL60"
+  },
+  {
+   "nNumber": "RA-67232",
+   "manufacturer": "BOMBARDIER",
+   "model": "Bombardier Challenger 850",
+   "serialNumber": "8099",
+   "typeDesignator": "CRJ2"
+  },
+  {
+   "nNumber": "OE-LUB",
+   "manufacturer": "BOMBARDIER",
+   "model": "Bombardier Global Express XRS",
+   "serialNumber": "9208",
+   "typeDesignator": "GLEX"
+  },
+  {
+   "nNumber": "EC-HPR",
+   "manufacturer": "BOMBARDIER",
+   "model": "CRJ 200ER",
+   "serialNumber": "7430",
+   "typeDesignator": "CRJ2"
+  },
+  {
+   "nNumber": "N244PS",
+   "manufacturer": "BOMBARDIER",
+   "model": "CRJ 200LR",
+   "serialNumber": "7912",
+   "typeDesignator": "CRJ2"
+  },
+  {
+   "nNumber": "N903SW",
+   "manufacturer": "BOMBARDIER",
+   "model": "CRJ 200LR",
+   "serialNumber": "7425",
+   "typeDesignator": "CRJ2"
+  },
+  {
+   "nNumber": "N907SW",
+   "manufacturer": "BOMBARDIER",
+   "model": "CRJ 200LR",
+   "serialNumber": "7511",
+   "typeDesignator": "CRJ2"
+  },
+  {
+   "nNumber": "D-ACKD",
+   "manufacturer": "BOMBARDIER",
+   "model": "CRJ 900 LR",
+   "serialNumber": "15080",
+   "typeDesignator": "CRJ9"
+  },
+  {
+   "nNumber": "N999ND",
+   "manufacturer": "BOMBARDIER",
+   "model": "Challenger 300",
+   "serialNumber": "20250",
+   "typeDesignator": "CL30"
+  },
+  {
+   "nNumber": "HZ-OHS",
+   "manufacturer": "BOMBARDIER",
+   "model": "Challenger 601 3A",
+   "serialNumber": "5102",
+   "typeDesignator": "CL61"
+  },
+  {
+   "nNumber": "XA-ARK",
+   "manufacturer": "BOMBARDIER",
+   "model": "Challenger 604",
+   "serialNumber": "5578",
+   "typeDesignator": "CL64"
+  },
+  {
+   "nNumber": "A9C-ACE",
+   "manufacturer": "BOMBARDIER",
+   "model": "Challenger 605",
+   "serialNumber": "5778",
+   "typeDesignator": "CL65"
+  },
+  {
+   "nNumber": "V2-LEU",
+   "manufacturer": "BOMBARDIER",
+   "model": "DHC-8 311",
+   "serialNumber": "408",
+   "typeDesignator": "DH8C"
+  },
+  {
+   "nNumber": "VH-SBT",
+   "manufacturer": "BOMBARDIER",
+   "model": "DHC-8 315Q",
+   "serialNumber": "580",
+   "typeDesignator": "DH8C"
+  },
+  {
+   "nNumber": "VH-QOD",
+   "manufacturer": "BOMBARDIER",
+   "model": "DHC-8 402",
+   "serialNumber": "4123",
+   "typeDesignator": "DH8D"
+  },
+  {
+   "nNumber": "C-FLGZ",
+   "manufacturer": "BOMBARDIER",
+   "model": "Global 6000",
+   "serialNumber": "9726",
+   "typeDesignator": "GL6T"
+  },
+  {
+   "nNumber": "N287JA",
+   "manufacturer": "BOMBARDIER",
+   "model": "Global 6000",
+   "serialNumber": "9759",
+   "typeDesignator": "GL6T"
+  },
+  {
+   "nNumber": "N157PB",
+   "manufacturer": "BOMBARDIER",
+   "model": "Learjet 45",
+   "serialNumber": "45-030",
+   "typeDesignator": "LJ45"
+  },
+  {
+   "nNumber": "N45TK",
+   "manufacturer": "BOMBARDIER",
+   "model": "Learjet 45",
+   "serialNumber": "45-210",
+   "typeDesignator": "LJ45"
+  },
+  {
+   "nNumber": "LV-FUF",
+   "manufacturer": "BOMBARDIER",
+   "model": "Learjet 60",
+   "serialNumber": "60-165",
+   "typeDesignator": "LJ60"
+  },
+  {
+   "nNumber": "N78FR",
+   "manufacturer": "BOMBARDIER",
+   "model": "Learjet 60",
+   "serialNumber": "60-109",
+   "typeDesignator": "LJ60"
+  },
+  {
+   "nNumber": "VT-DBC",
+   "manufacturer": "BOMBARDIER",
+   "model": "Learjet 60 XR",
+   "serialNumber": "60-384",
+   "typeDesignator": "LJ60"
+  },
+  {
+   "nNumber": "N405HM",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "BD-100-1A10",
+   "serialNumber": "20060",
+   "typeDesignator": "CL30"
+  },
+  {
+   "nNumber": "N632RP",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "BD-100-1A10",
+   "serialNumber": "20784"
+  },
+  {
+   "nNumber": "N869CL",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "BD-100-1A10",
+   "serialNumber": "20869"
+  },
+  {
+   "nNumber": "N888KR",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "BD-100-1A10",
+   "serialNumber": "20922"
+  },
+  {
+   "nNumber": "N91PR",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "BD-100-1A10",
+   "serialNumber": "20395",
+   "typeDesignator": "CL30"
+  },
+  {
+   "nNumber": "N165KD",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "BD-700-1A10",
+   "serialNumber": "9831"
+  },
+  {
+   "nNumber": "N598CH",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "BD-700-1A10",
+   "serialNumber": "9817",
+   "typeDesignator": "GLEX"
+  },
+  {
+   "nNumber": "N835GL",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "BD-700-1A10",
+   "serialNumber": "9835"
+  },
+  {
+   "nNumber": "N110CP",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "CL-600-2B16",
+   "serialNumber": "5801",
+   "typeDesignator": "CL60"
+  },
+  {
+   "nNumber": "N145DC",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "CL-600-2B16",
+   "serialNumber": "5516"
+  },
+  {
+   "nNumber": "N251QS",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "CL-600-2B16",
+   "serialNumber": "6178",
+   "typeDesignator": "CL60"
+  },
+  {
+   "nNumber": "N261FW",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "CL-600-2B16",
+   "serialNumber": "5858"
+  },
+  {
+   "nNumber": "N426AW",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "CL-600-2B19",
+   "serialNumber": "7669",
+   "typeDesignator": "CRJ2"
+  },
+  {
+   "nNumber": "N433SW",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "CL-600-2B19",
+   "serialNumber": "7550",
+   "typeDesignator": "CRJ2"
+  },
+  {
+   "nNumber": "N612QX",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "CL-600-2C10",
+   "serialNumber": "10042",
+   "typeDesignator": "CRJ7"
+  },
+  {
+   "nNumber": "N718PS",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "CL-600-2C10",
+   "serialNumber": "10175",
+   "typeDesignator": "CRJ7"
+  },
+  {
+   "nNumber": "N719PS",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "CL-600-2C10",
+   "serialNumber": "10177",
+   "typeDesignator": "CRJ7"
+  },
+  {
+   "nNumber": "N329MS",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "CL-600-2D24",
+   "serialNumber": "15126",
+   "typeDesignator": "CRJ9"
+  },
+  {
+   "nNumber": "N548CA",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "CL-600-2D24",
+   "serialNumber": "15159",
+   "typeDesignator": "CRJ9"
+  },
+  {
+   "nNumber": "N564NN",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "CL-600-2D24",
+   "serialNumber": "15351",
+   "typeDesignator": "CRJ9"
+  },
+  {
+   "nNumber": "N600NN",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "CL-600-2D24",
+   "serialNumber": "15416",
+   "typeDesignator": "CRJ9"
+  },
+  {
+   "nNumber": "N612NN",
+   "manufacturer": "BOMBARDIER INC",
+   "model": "CL-600-2D24",
+   "serialNumber": "15477",
+   "typeDesignator": "CRJ9"
+  },
+  {
+   "nNumber": "C-FBCS",
+   "manufacturer": "BOMBARDIER INC.",
+   "model": "BD-500-1A10 (Series CS100) (Bombardier)",
+   "serialNumber": "50001",
+   "typeDesignator": "BCS1"
+  },
+  {
+   "nNumber": "C-FXAI",
+   "manufacturer": "BOMBARDIER INC.",
+   "model": "BD-700-2A12 (Bombardier)",
+   "serialNumber": "70006"
+  },
+  {
+   "nNumber": "C-GOGY",
+   "manufacturer": "BOMBARDIER INC.",
+   "model": "CL-215-6B11 (Series CL-415) (Bombardier)",
+   "serialNumber": "2040",
+   "typeDesignator": "CL2T"
+  },
+  {
+   "nNumber": "C-FSRW",
+   "manufacturer": "BOMBARDIER INC.",
+   "model": "DHC-8-402 (Dehavilland)",
+   "serialNumber": "4172",
+   "typeDesignator": "DH8D"
+  },
+  {
+   "nNumber": "F-GIPH",
+   "manufacturer": "DASSAULT",
+   "model": "Dassault Falcon 10 100",
+   "serialNumber": "194",
+   "typeDesignator": "FA10"
+  },
+  {
+   "nNumber": "VP-CJA",
+   "manufacturer": "DASSAULT",
+   "model": "Dassault Falcon 2000",
+   "serialNumber": "18",
+   "typeDesignator": "F2TH"
+  },
+  {
+   "nNumber": "XA-CHD",
+   "manufacturer": "DASSAULT",
+   "model": "Dassault Falcon 2000LX S",
+   "serialNumber": "308",
+   "typeDesignator": "F2TH"
+  },
+  {
+   "nNumber": "F-HLRX",
+   "manufacturer": "DASSAULT",
+   "model": "Dassault Falcon 2000S",
+   "serialNumber": "740",
+   "typeDesignator": "F2TH"
+  },
+  {
+   "nNumber": "M-TINK",
+   "manufacturer": "DASSAULT",
+   "model": "Dassault Falcon 7X",
+   "serialNumber": "266",
+   "typeDesignator": "FA7X"
+  },
+  {
+   "nNumber": "VQ-BTV",
+   "manufacturer": "DASSAULT",
+   "model": "Dassault Falcon 7X",
+   "serialNumber": "175",
+   "typeDesignator": "FA7X"
+  },
+  {
+   "nNumber": "9H-ALJ",
+   "manufacturer": "DASSAULT",
+   "model": "Dassault Falcon 900EX",
+   "serialNumber": "95",
+   "typeDesignator": "F900"
+  },
+  {
+   "nNumber": "MM62245",
+   "manufacturer": "DASSAULT",
+   "model": "Dassault Falcon 900EX EASy",
+   "serialNumber": "156",
+   "typeDesignator": "F900"
+  },
+  {
+   "nNumber": "N307PD",
+   "manufacturer": "DASSAULT",
+   "model": "FALCON 2000EX",
+   "serialNumber": "300",
+   "typeDesignator": "F2TH"
+  },
+  {
+   "nNumber": "N412EC",
+   "manufacturer": "DASSAULT",
+   "model": "FALCON 900 EX",
+   "serialNumber": "144",
+   "typeDesignator": "F900"
+  },
+  {
+   "nNumber": "N672WB",
+   "manufacturer": "DASSAULT",
+   "model": "FALCON 900 EX",
+   "serialNumber": "280",
+   "typeDesignator": "F900"
+  },
+  {
+   "nNumber": "N900RL",
+   "manufacturer": "DASSAULT",
+   "model": "FALCON 900 EX",
+   "serialNumber": "131",
+   "typeDesignator": "F900"
+  },
+  {
+   "nNumber": "N232TW",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 20 C",
+   "serialNumber": "32",
+   "typeDesignator": "FA20"
+  },
+  {
+   "nNumber": "T7-ALM",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 20 E",
+   "serialNumber": "240",
+   "typeDesignator": "FA20"
+  },
+  {
+   "nNumber": "VH-PNY",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 20 F-5",
+   "serialNumber": "357",
+   "typeDesignator": "FA20"
+  },
+  {
+   "nNumber": "N68GL",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 2000",
+   "serialNumber": "63",
+   "typeDesignator": "F2TH"
+  },
+  {
+   "nNumber": "VT-RVL",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 2000",
+   "serialNumber": "101",
+   "typeDesignator": "F2TH"
+  },
+  {
+   "nNumber": "N255JE",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 2000LX",
+   "serialNumber": "173",
+   "typeDesignator": "F2LX"
+  },
+  {
+   "nNumber": "CN-ANO",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 50",
+   "serialNumber": "12",
+   "typeDesignator": "FA50"
+  },
+  {
+   "nNumber": "N805DW",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 50",
+   "serialNumber": "49",
+   "typeDesignator": "FA50"
+  },
+  {
+   "nNumber": "N977KG",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 50",
+   "serialNumber": "25",
+   "typeDesignator": "FA50"
+  },
+  {
+   "nNumber": "YV2165",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 50",
+   "serialNumber": "4",
+   "typeDesignator": "FA50"
+  },
+  {
+   "nNumber": "N133JA",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 50EX",
+   "serialNumber": "268",
+   "typeDesignator": "F5EX"
+  },
+  {
+   "nNumber": "9H-MAK",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 7X",
+   "serialNumber": "114",
+   "typeDesignator": "FA7X"
+  },
+  {
+   "nNumber": "TN-ELS",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 7X",
+   "serialNumber": "232",
+   "typeDesignator": "FA7X"
+  },
+  {
+   "nNumber": "F-WWQY",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 8X",
+   "serialNumber": "425",
+   "typeDesignator": "FA8X"
+  },
+  {
+   "nNumber": "N375SC",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 900EX EASy",
+   "serialNumber": "215",
+   "typeDesignator": "F9EX"
+  },
+  {
+   "nNumber": "N901SB",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 900EX EASy",
+   "serialNumber": "122",
+   "typeDesignator": "F9EX"
+  },
+  {
+   "nNumber": "N902SB",
+   "manufacturer": "DASSAULT",
+   "model": "Falcon 900EX EASy",
+   "serialNumber": "167",
+   "typeDesignator": "F9EX"
+  },
+  {
+   "nNumber": "N4840W",
+   "manufacturer": "DASSAULT AVIATION",
+   "model": "FALCON 2000",
+   "serialNumber": "228",
+   "typeDesignator": "F2TH"
+  },
+  {
+   "nNumber": "N613BD",
+   "manufacturer": "DASSAULT AVIATION",
+   "model": "FALCON 2000",
+   "serialNumber": "218",
+   "typeDesignator": "F2TH"
+  },
+  {
+   "nNumber": "N198SS",
+   "manufacturer": "DASSAULT AVIATION",
+   "model": "FALCON 2000EX",
+   "serialNumber": "011",
+   "typeDesignator": "F2TH"
+  },
+  {
+   "nNumber": "HB-JSS",
+   "manufacturer": "DASSAULT AVIATION",
+   "model": "FALCON 7X",
+   "serialNumber": "002",
+   "typeDesignator": "FA7X"
+  },
+  {
+   "nNumber": "N656FG",
+   "manufacturer": "DASSAULT AVIATION",
+   "model": "FALCON 7X",
+   "serialNumber": "483",
+   "typeDesignator": "FA8X"
+  },
+  {
+   "nNumber": "N250JC",
+   "manufacturer": "DASSAULT AVIATION",
+   "model": "FALCON 900EX",
+   "serialNumber": "229",
+   "typeDesignator": "F900"
+  },
+  {
+   "nNumber": "N68YB",
+   "manufacturer": "DASSAULT AVIATION",
+   "model": "MYSTERE-FALCON 50",
+   "serialNumber": "290",
+   "typeDesignator": "FA50"
+  },
+  {
+   "nNumber": "N696RG",
+   "manufacturer": "DASSAULT AVIATION",
+   "model": "MYSTERE-FALCON 50",
+   "serialNumber": "265",
+   "typeDesignator": "FA50"
+  },
+  {
+   "nNumber": "E35",
+   "manufacturer": "DASSAULT-BREGUET",
+   "model": "Alpha Jet",
+   "serialNumber": "E35",
+   "typeDesignator": "AJET"
+  },
+  {
+   "nNumber": "E123",
+   "manufacturer": "DASSAULT-BREGUET",
+   "model": "Alpha Jet E",
+   "serialNumber": "E123",
+   "typeDesignator": "AJET"
+  },
+  {
+   "nNumber": "E38",
+   "manufacturer": "DASSAULT-BREGUET",
+   "model": "Alpha Jet E",
+   "serialNumber": "E38",
+   "typeDesignator": "AJET"
+  },
+  {
+   "nNumber": "N314AM",
+   "manufacturer": "DASSAULT-BREGUET",
+   "model": "FALCON 50",
+   "serialNumber": "205",
+   "typeDesignator": "FA50"
+  },
+  {
+   "nNumber": "N37KJ",
+   "manufacturer": "DASSAULT-BREGUET",
+   "model": "FALCON 50",
+   "serialNumber": "173",
+   "typeDesignator": "FA50"
+  },
+  {
+   "nNumber": "N519EM",
+   "manufacturer": "DASSAULT-BREGUET",
+   "model": "FALCON 50",
+   "serialNumber": "19",
+   "typeDesignator": "FA50"
+  },
+  {
+   "nNumber": "N339RK",
+   "manufacturer": "DASSAULT-BREGUET",
+   "model": "MYSTERE FALCON 20-F5",
+   "serialNumber": "313",
+   "typeDesignator": "FA20"
+  },
+  {
+   "nNumber": "N706SB",
+   "manufacturer": "DASSAULT-BREGUET",
+   "model": "MYSTERE FALCON 20-F5",
+   "serialNumber": "383",
+   "typeDesignator": "FA20"
+  },
+  {
+   "nNumber": "N777FC",
+   "manufacturer": "DASSAULT-BREGUET",
+   "model": "MYSTERE FALCON 200",
+   "serialNumber": "508",
+   "typeDesignator": "FA20"
+  },
+  {
+   "nNumber": "N232CL",
+   "manufacturer": "DASSAULT-BREGUET",
+   "model": "MYSTERE FALCON 900",
+   "serialNumber": "009",
+   "typeDesignator": "F900"
+  },
+  {
+   "nNumber": "N900KU",
+   "manufacturer": "DASSAULT-BREGUET",
+   "model": "MYSTERE FALCON 900",
+   "serialNumber": "91",
+   "typeDesignator": "F900"
+  },
+  {
+   "nNumber": "C-FOTA",
+   "manufacturer": "DASSAULT-BREGUET / DORNIER",
+   "model": "Alpha Jet Model A (Dornier)",
+   "serialNumber": "072",
+   "typeDesignator": "AJET"
+  },
+  {
+   "nNumber": "D-KRES",
+   "manufacturer": "DIAMOND",
+   "model": "HK 36TTC 115 Super Dimona",
+   "serialNumber": "36.602",
+   "typeDesignator": "DIMO"
+  },
+  {
+   "nNumber": "OK-3611",
+   "manufacturer": "DIAMOND",
+   "model": "HK 36TTC 115 Super Dimona",
+   "serialNumber": "36.818",
+   "typeDesignator": "DIMO"
+  },
+  {
+   "nNumber": "ES-KEN",
+   "manufacturer": "DIAMOND AIRCRAFT",
+   "model": "DA62",
+   "serialNumber": "62.043",
+   "typeDesignator": "DA62"
+  },
+  {
+   "nNumber": "D-EBYK",
+   "manufacturer": "DIAMOND AIRCRAFT",
+   "model": "Diamond Star DA40",
+   "serialNumber": "40.349",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "D-ECOR",
+   "manufacturer": "DIAMOND AIRCRAFT",
+   "model": "Diamond Star DA40",
+   "serialNumber": "40.228",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "D-EZYE",
+   "manufacturer": "DIAMOND AIRCRAFT",
+   "model": "Diamond Star DA40",
+   "serialNumber": "40.268",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "LN-FTS",
+   "manufacturer": "DIAMOND AIRCRAFT",
+   "model": "Diamond Star DA40 NG",
+   "serialNumber": "40.N306",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "D-EUPC",
+   "manufacturer": "DIAMOND AIRCRAFT",
+   "model": "Diamond Star DA40D",
+   "serialNumber": "D4.232",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "F-HDDE",
+   "manufacturer": "DIAMOND AIRCRAFT",
+   "model": "Diamond Star DA40D",
+   "serialNumber": "D4.074",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "F-HRSY",
+   "manufacturer": "DIAMOND AIRCRAFT",
+   "model": "Diamond Star DA40D",
+   "serialNumber": "D4.073",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "D-EZIC",
+   "manufacturer": "DIAMOND AIRCRAFT",
+   "model": "Katana DA20-A1",
+   "serialNumber": "10054",
+   "typeDesignator": "DV20"
+  },
+  {
+   "nNumber": "D-EZZA",
+   "manufacturer": "DIAMOND AIRCRAFT",
+   "model": "Katana DA20-A1",
+   "serialNumber": "10020",
+   "typeDesignator": "DV20"
+  },
+  {
+   "nNumber": "CS-DBI",
+   "manufacturer": "DIAMOND AIRCRAFT",
+   "model": "Katana DV20",
+   "serialNumber": "20016",
+   "typeDesignator": "DV20"
+  },
+  {
+   "nNumber": "D-ETFW",
+   "manufacturer": "DIAMOND AIRCRAFT",
+   "model": "Katana DV20",
+   "serialNumber": "20059",
+   "typeDesignator": "DV20"
+  },
+  {
+   "nNumber": "D-EVHF",
+   "manufacturer": "DIAMOND AIRCRAFT",
+   "model": "Katana DV20",
+   "serialNumber": "20202",
+   "typeDesignator": "DV20"
+  },
+  {
+   "nNumber": "D-GCOB",
+   "manufacturer": "DIAMOND AIRCRAFT",
+   "model": "Twin Star DA42",
+   "serialNumber": "42.174",
+   "typeDesignator": "DA42"
+  },
+  {
+   "nNumber": "N919ES",
+   "manufacturer": "DIAMOND AIRCRAFT IND GMBH",
+   "model": "DA 42",
+   "serialNumber": "42.106",
+   "typeDesignator": "DA42"
+  },
+  {
+   "nNumber": "N725SA",
+   "manufacturer": "DIAMOND AIRCRAFT IND GMBH",
+   "model": "DA 42 NG",
+   "serialNumber": "42.N021",
+   "typeDesignator": "DA42"
+  },
+  {
+   "nNumber": "N118CY",
+   "manufacturer": "DIAMOND AIRCRAFT IND GMBH",
+   "model": "DA 62",
+   "serialNumber": "62.031",
+   "typeDesignator": "DA62"
+  },
+  {
+   "nNumber": "N548SA",
+   "manufacturer": "DIAMOND AIRCRAFT IND GMBH",
+   "model": "DA 62",
+   "serialNumber": "62.208"
+  },
+  {
+   "nNumber": "N215DS",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 40",
+   "serialNumber": "40.829",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "N236MA",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 40",
+   "serialNumber": "40.425",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "N245DS",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 40",
+   "serialNumber": "40.833",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "N270DS",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 40",
+   "serialNumber": "40.270",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "N410US",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 40",
+   "serialNumber": "40.710",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "N416AM",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 40",
+   "serialNumber": "40.543",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "N52TJ",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 40",
+   "serialNumber": "40.1063",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "N566MT",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 40",
+   "serialNumber": "40.304",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "N585BW",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 40",
+   "serialNumber": "40.262",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "N714KJ",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 40",
+   "serialNumber": "40.888",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "N955DS",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 40",
+   "serialNumber": "40.950",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "N523BL",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 40 NG",
+   "serialNumber": "40.NC217"
+  },
+  {
+   "nNumber": "N538SA",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 40 NG",
+   "serialNumber": "40.NC198"
+  },
+  {
+   "nNumber": "N718NG",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 40 NG",
+   "serialNumber": "40.NC037",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "N457TS",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 42",
+   "serialNumber": "42.AC062",
+   "typeDesignator": "DA42"
+  },
+  {
+   "nNumber": "N491TS",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 42",
+   "serialNumber": "42.AC091",
+   "typeDesignator": "DA42"
+  },
+  {
+   "nNumber": "N919AB",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 42",
+   "serialNumber": "42.AC107"
+  },
+  {
+   "nNumber": "N821BR",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA 42 NG",
+   "serialNumber": "42.NC008",
+   "typeDesignator": "DA42"
+  },
+  {
+   "nNumber": "N240JP",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA20-C1",
+   "serialNumber": "C0192",
+   "typeDesignator": "DV20"
+  },
+  {
+   "nNumber": "N323HB",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA20-C1",
+   "serialNumber": "C0339",
+   "typeDesignator": "DV20"
+  },
+  {
+   "nNumber": "N382DC",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA20-C1",
+   "serialNumber": "C0242",
+   "typeDesignator": "DV20"
+  },
+  {
+   "nNumber": "N960DA",
+   "manufacturer": "DIAMOND AIRCRAFT IND INC",
+   "model": "DA20-C1",
+   "serialNumber": "C0470",
+   "typeDesignator": "DV20"
+  },
+  {
+   "nNumber": "C-FPBK",
+   "manufacturer": "DIAMOND AIRCRAFT INDUSTRIES",
+   "model": "DA 20-A1 (Diamond)",
+   "serialNumber": "10273"
+  },
+  {
+   "nNumber": "VH-OBS",
+   "manufacturer": "DIAMOND AIRCRAFT INDUSTRIES",
+   "model": "HK-36 TTC-ECO",
+   "serialNumber": "36642",
+   "typeDesignator": "DIMO"
+  },
+  {
+   "nNumber": "HB-2374",
+   "manufacturer": "DIAMOND AIRCRAFT INDUSTRIES GMBH",
+   "model": "HK 36 TC",
+   "serialNumber": "36.709",
+   "typeDesignator": "DIMO"
+  },
+  {
+   "nNumber": "C-GDIB",
+   "manufacturer": "DIAMOND AIRCRAFT INDUSTRIES INC.",
+   "model": "DA 20-A1 (Diamond)",
+   "serialNumber": "10105",
+   "typeDesignator": "DV20"
+  },
+  {
+   "nNumber": "C-FMIS",
+   "manufacturer": "DIAMOND AIRCRAFT INDUSTRIES INC.",
+   "model": "DA 20-C1 (Diamond)",
+   "serialNumber": "C0377",
+   "typeDesignator": "DV20"
+  },
+  {
+   "nNumber": "C-FNXA",
+   "manufacturer": "DIAMOND AIRCRAFT INDUSTRIES INC.",
+   "model": "DA 20-C1 (Diamond)",
+   "serialNumber": "C0459"
+  },
+  {
+   "nNumber": "C-FNAC",
+   "manufacturer": "DIAMOND AIRCRAFT INDUSTRIES INC.",
+   "model": "DA40 (Diamond)",
+   "serialNumber": "40.221",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "C-GXLX",
+   "manufacturer": "DIAMOND AIRCRAFT INDUSTRIES INC.",
+   "model": "DA40 (Diamond)",
+   "serialNumber": "40.872",
+   "typeDesignator": "DA40"
+  },
+  {
+   "nNumber": "108",
+   "manufacturer": "EMBRAER",
+   "model": "121 Xingu AA",
+   "serialNumber": "121108",
+   "typeDesignator": "E121"
+  },
+  {
+   "nNumber": "HB-AZB",
+   "manufacturer": "EMBRAER",
+   "model": "E190-E2",
+   "serialNumber": "19020026",
+   "typeDesignator": "E290"
+  },
+  {
+   "nNumber": "HB-AZC",
+   "manufacturer": "EMBRAER",
+   "model": "E190-E2",
+   "serialNumber": "19020030",
+   "typeDesignator": "E290"
+  },
+  {
+   "nNumber": "N847AE",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-135KL",
+   "serialNumber": "145707",
+   "typeDesignator": "E135"
+  },
+  {
+   "nNumber": "N720AE",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-135LR",
+   "serialNumber": "145279"
+  },
+  {
+   "nNumber": "N697EE",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-145",
+   "serialNumber": "145-1197",
+   "typeDesignator": "E145"
+  },
+  {
+   "nNumber": "N267SK",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-145LR",
+   "serialNumber": "145268"
+  },
+  {
+   "nNumber": "N622AE",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-145LR",
+   "serialNumber": "145108",
+   "typeDesignator": "E145"
+  },
+  {
+   "nNumber": "N811HK",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-145LR",
+   "serialNumber": "145256"
+  },
+  {
+   "nNumber": "N902BC",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-145LR",
+   "serialNumber": "14500887",
+   "typeDesignator": "E145"
+  },
+  {
+   "nNumber": "N14162",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-145XR",
+   "serialNumber": "14500808",
+   "typeDesignator": "E45X"
+  },
+  {
+   "nNumber": "N386AZ",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-145XR",
+   "serialNumber": "14501159",
+   "typeDesignator": "E45X"
+  },
+  {
+   "nNumber": "XA-GAM",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-170 LR",
+   "serialNumber": "17000146",
+   "typeDesignator": "E170"
+  },
+  {
+   "nNumber": "F-HBXG",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-170 STD",
+   "serialNumber": "17000301",
+   "typeDesignator": "E170"
+  },
+  {
+   "nNumber": "N625CZ",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-175 LR",
+   "serialNumber": "17000225",
+   "typeDesignator": "E75S"
+  },
+  {
+   "nNumber": "B-3178",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-190 LR",
+   "serialNumber": "19000417",
+   "typeDesignator": "E190"
+  },
+  {
+   "nNumber": "ER-ECB",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-190 LR",
+   "serialNumber": "19000325",
+   "typeDesignator": "E190"
+  },
+  {
+   "nNumber": "F-HBLG",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-190 STD",
+   "serialNumber": "19000254",
+   "typeDesignator": "E190"
+  },
+  {
+   "nNumber": "EC-LFZ",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-195 LR",
+   "serialNumber": "19000357",
+   "typeDesignator": "E195"
+  },
+  {
+   "nNumber": "VQ-BRY",
+   "manufacturer": "EMBRAER",
+   "model": "EMB-195 LR",
+   "serialNumber": "19000157",
+   "typeDesignator": "E195"
+  },
+  {
+   "nNumber": "N251NC",
+   "manufacturer": "EMBRAER",
+   "model": "ERJ 170-100 LR",
+   "serialNumber": "17000025",
+   "typeDesignator": "E170"
+  },
+  {
+   "nNumber": "N817MD",
+   "manufacturer": "EMBRAER",
+   "model": "ERJ 170-100SU",
+   "serialNumber": "17000038"
+  },
+  {
+   "nNumber": "N818MD",
+   "manufacturer": "EMBRAER",
+   "model": "ERJ 170-100SU",
+   "serialNumber": "17000039",
+   "typeDesignator": "E170"
+  },
+  {
+   "nNumber": "N938QQ",
+   "manufacturer": "EMBRAER",
+   "model": "ERJ 190-100 IGW",
+   "serialNumber": "19000038"
+  },
+  {
+   "nNumber": "PR-PFN",
+   "manufacturer": "EMBRAER",
+   "model": "ERJ-145 LR",
+   "serialNumber": "145002",
+   "typeDesignator": "E145"
+  },
+  {
+   "nNumber": "V5-WIN",
+   "manufacturer": "EMBRAER",
+   "model": "ERJ-145 LR",
+   "serialNumber": "145285",
+   "typeDesignator": "E145"
+  },
+  {
+   "nNumber": "A6-LGI",
+   "manufacturer": "EMBRAER",
+   "model": "Embraer Legacy 650",
+   "serialNumber": "14501190",
+   "typeDesignator": "E35L"
+  },
+  {
+   "nNumber": "F-HMML",
+   "manufacturer": "EMBRAER",
+   "model": "Embraer Phenom 300",
+   "serialNumber": "50500247",
+   "typeDesignator": "E55P"
+  },
+  {
+   "nNumber": "N661HS",
+   "manufacturer": "EMBRAER",
+   "model": "Legacy 500",
+   "serialNumber": "55000034",
+   "typeDesignator": "E550"
+  },
+  {
+   "nNumber": "M-DSCL",
+   "manufacturer": "EMBRAER",
+   "model": "Legacy 600",
+   "serialNumber": "14500851",
+   "typeDesignator": "E35L"
+  },
+  {
+   "nNumber": "N241DE",
+   "manufacturer": "EMBRAER",
+   "model": "Phenom 100",
+   "serialNumber": "50000070",
+   "typeDesignator": "E50P"
+  },
+  {
+   "nNumber": "N988BC",
+   "manufacturer": "EMBRAER",
+   "model": "Phenom 100",
+   "serialNumber": "50000139",
+   "typeDesignator": "E50P"
+  },
+  {
+   "nNumber": "B-3355",
+   "manufacturer": "EMBRAER",
+   "model": "Phenom 300",
+   "serialNumber": "50500363",
+   "typeDesignator": "E55P"
+  },
+  {
+   "nNumber": "N974SC",
+   "manufacturer": "EMBRAER",
+   "model": "Phenom 300",
+   "serialNumber": "50500282",
+   "typeDesignator": "E55P"
+  },
+  {
+   "nNumber": "PP-XVI",
+   "manufacturer": "EMBRAER",
+   "model": "Phenom 300",
+   "serialNumber": "50599801",
+   "typeDesignator": "E55P"
+  },
+  {
+   "nNumber": "N108MP",
+   "manufacturer": "EMBRAER EMPRESA BRASILEIRA DE",
+   "model": "ERJ 190-100 IGW",
+   "serialNumber": "19000108",
+   "typeDesignator": "E190"
+  },
+  {
+   "nNumber": "N117EE",
+   "manufacturer": "EMBRAER EXECUTIVE AIRCRAFT INC",
+   "model": "EMB-500",
+   "serialNumber": "50000417",
+   "typeDesignator": "E50P"
+  },
+  {
+   "nNumber": "N404QS",
+   "manufacturer": "EMBRAER EXECUTIVE AIRCRAFT INC",
+   "model": "EMB-505",
+   "serialNumber": "50500401",
+   "typeDesignator": "E55P"
+  },
+  {
+   "nNumber": "N506FF",
+   "manufacturer": "EMBRAER EXECUTIVE AIRCRAFT INC",
+   "model": "EMB-505",
+   "serialNumber": "50500226"
+  },
+  {
+   "nNumber": "N54LA",
+   "manufacturer": "EMBRAER EXECUTIVE AIRCRAFT INC",
+   "model": "EMB-505",
+   "serialNumber": "50500540",
+   "typeDesignator": "E55P"
+  },
+  {
+   "nNumber": "N347FX",
+   "manufacturer": "EMBRAER S A",
+   "model": "EMB-505",
+   "serialNumber": "50500094",
+   "typeDesignator": "E55P"
+  },
+  {
+   "nNumber": "N139SY",
+   "manufacturer": "EMBRAER S A",
+   "model": "ERJ 170-200 LR",
+   "serialNumber": "17000468",
+   "typeDesignator": "E75L"
+  },
+  {
+   "nNumber": "N148SY",
+   "manufacturer": "EMBRAER S A",
+   "model": "ERJ 170-200 LR",
+   "serialNumber": "17000492",
+   "typeDesignator": "E75L"
+  },
+  {
+   "nNumber": "N278NN",
+   "manufacturer": "EMBRAER S A",
+   "model": "ERJ 170-200 LR",
+   "serialNumber": "17000784",
+   "typeDesignator": "E75L"
+  },
+  {
+   "nNumber": "N86322",
+   "manufacturer": "EMBRAER S A",
+   "model": "ERJ 170-200 LR",
+   "serialNumber": "17000465",
+   "typeDesignator": "E75L"
+  },
+  {
+   "nNumber": "N87318",
+   "manufacturer": "EMBRAER S A",
+   "model": "ERJ 170-200 LR",
+   "serialNumber": "17000443",
+   "typeDesignator": "E75L"
+  },
+  {
+   "nNumber": "N899DX",
+   "manufacturer": "EMBRAER-EMPRESA BRASILEIRA DE",
+   "model": "EMB-500",
+   "serialNumber": "50000216",
+   "typeDesignator": "E50P"
+  },
+  {
+   "nNumber": "N202JQ",
+   "manufacturer": "EMBRAER-EMPRESA BRASILEIRA DE",
+   "model": "ERJ 170-200 LR",
+   "serialNumber": "17000240",
+   "typeDesignator": "E75L"
+  },
+  {
+   "nNumber": "N232JQ",
+   "manufacturer": "EMBRAER-EMPRESA BRASILEIRA DE",
+   "model": "ERJ 170-200 LR",
+   "serialNumber": "17000225",
+   "typeDesignator": "E75L"
+  },
+  {
+   "nNumber": "N236JQ",
+   "manufacturer": "EMBRAER-EMPRESA BRASILEIRA DE",
+   "model": "ERJ 170-200 LR",
+   "serialNumber": "17000236",
+   "typeDesignator": "E75L"
+  },
+  {
+   "nNumber": "C-GZUN",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "369 E",
+   "serialNumber": "0563E",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N43792",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "369 E",
+   "serialNumber": "0601E",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N7032V",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "369 E",
+   "serialNumber": "0553E",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N4119Q",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "369 FF",
+   "serialNumber": "0193FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N41321",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "369 FF",
+   "serialNumber": "0198FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N4144D",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "369 FF",
+   "serialNumber": "0199FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N4165D",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "369 FF",
+   "serialNumber": "0201FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N41786",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "369 FF",
+   "serialNumber": "0196FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N4226A",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "369 FF",
+   "serialNumber": "0206FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N4235P",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "369 FF",
+   "serialNumber": "0209FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N4236R",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "369 FF",
+   "serialNumber": "0210FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N530MJ",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "369 FF",
+   "serialNumber": "0254FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N60270",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "369 FF",
+   "serialNumber": "0270FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N520PG",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "MD 520N",
+   "serialNumber": "LN090",
+   "typeDesignator": "MD52"
+  },
+  {
+   "nNumber": "N778MH",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "MD 520N",
+   "serialNumber": "LN077",
+   "typeDesignator": "MD52"
+  },
+  {
+   "nNumber": "JA600N",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "MD 600N",
+   "serialNumber": "RN051",
+   "typeDesignator": "MD60"
+  },
+  {
+   "nNumber": "N605BP",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "MD 600N",
+   "serialNumber": "RN034",
+   "typeDesignator": "MD60"
+  },
+  {
+   "nNumber": "JA02AP",
+   "manufacturer": "MD HELICOPTERS",
+   "model": "MD 900 Explorer",
+   "serialNumber": "900-00113",
+   "typeDesignator": "EXPL"
+  },
+  {
+   "nNumber": "N101SY",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369A",
+   "serialNumber": "201374",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N1576F",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369E",
+   "serialNumber": "0568E",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N369SD",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369E",
+   "serialNumber": "0548E",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N411WJ",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369E",
+   "serialNumber": "0620E"
+  },
+  {
+   "nNumber": "N5277F",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369E",
+   "serialNumber": "0587E",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N5284F",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369E",
+   "serialNumber": "0585E",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N591E",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369E",
+   "serialNumber": "0591E",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N64RS",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369E",
+   "serialNumber": "0320E",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N651RP",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369E",
+   "serialNumber": "0583E"
+  },
+  {
+   "nNumber": "N911MU",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369E",
+   "serialNumber": "0614E",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N1808",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369FF",
+   "serialNumber": "0318FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N18FF",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369FF",
+   "serialNumber": "0146FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N4000V",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369FF",
+   "serialNumber": "0321FF"
+  },
+  {
+   "nNumber": "N40048",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369FF",
+   "serialNumber": "0334FF"
+  },
+  {
+   "nNumber": "N507MP",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369FF",
+   "serialNumber": "0226FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N530GM",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369FF",
+   "serialNumber": "0151FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N530KK",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369FF",
+   "serialNumber": "0174FF"
+  },
+  {
+   "nNumber": "N530PJ",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369FF",
+   "serialNumber": "0140FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N530TV",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369FF",
+   "serialNumber": "0172FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N581TG",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369FF",
+   "serialNumber": "0185FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N6100N",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369FF",
+   "serialNumber": "0216FF"
+  },
+  {
+   "nNumber": "N882TV",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369FF",
+   "serialNumber": "0324FF"
+  },
+  {
+   "nNumber": "N150AG",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369HM",
+   "serialNumber": "1090201M",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N450AG",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369HM",
+   "serialNumber": "1090202M",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N369DF",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "369HS",
+   "serialNumber": "820404S",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N520AP",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "500N",
+   "serialNumber": "LN095",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N913PG",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "500N",
+   "serialNumber": "LN108",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "N600MW",
+   "manufacturer": "MD HELICOPTERS INC",
+   "model": "600N",
+   "serialNumber": "RN064",
+   "typeDesignator": "MD60"
+  },
+  {
+   "nNumber": "N40090",
+   "manufacturer": "MD HELICOPTERS LLC",
+   "model": "369E",
+   "serialNumber": "0627E"
+  },
+  {
+   "nNumber": "N6040J",
+   "manufacturer": "MD HELICOPTERS LLC",
+   "model": "369FF",
+   "serialNumber": "0342FF"
+  },
+  {
+   "nNumber": "N682HB",
+   "manufacturer": "MD HELICOPTERS LLC",
+   "model": "369FF",
+   "serialNumber": "0336FF"
+  },
+  {
+   "nNumber": "C-FVGK",
+   "manufacturer": "MD HELICOPTERS, INC.",
+   "model": "369FF (Mcdonnell Douglas)",
+   "serialNumber": "0150FF",
+   "typeDesignator": "H500"
+  },
+  {
+   "nNumber": "EI-DRC",
+   "manufacturer": "THE BOEING COMPANY",
+   "model": "BOEING 737-852",
+   "serialNumber": "35116",
+   "typeDesignator": "B738"
+  },
+  {
+   "nNumber": "EI-FIB",
+   "manufacturer": "THE BOEING COMPANY",
+   "model": "BOEING 737-8AS",
+   "serialNumber": "44692",
+   "typeDesignator": "B738"
+  }
+ ]
+}
