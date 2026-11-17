@@ -43,7 +43,7 @@ flowchart LR
 
 **Sayılar:** 196 direktif × 400 uçak = **77.600 karar**. Bunların %0,6'sı belirsiz, oysa direktiflerin %45'i bir belgeye devrediyor. Farkı kapatan şey Kleene kısa devresi: kesin bir ret, yanındaki bilinmeyene rağmen sonucu belirliyor.
 
-**Çalıştırmak:** `npm install && npm test`, başka hiçbir şey gerekmiyor. Arayüz için `npm run dev`, denetim kaydı için `docker compose up -d`.
+**Çalıştırmak:** `npm install && npm test`, başka hiçbir şey gerekmiyor. Arayüz için `npm run dev`, uçtan uca testler için `npm run test:e2e`, denetim kaydı için `docker compose up -d`.
 
 ## Ekranlar
 
