@@ -26,6 +26,10 @@ Bugün bu paragrafı biri okuyup filo listesiyle elle karşılaştırıyor, her 
 
 ## Ekranlar
 
+Açılış ekranı: problem, üç karar türü ve korpus.
+
+![Ana sayfa](docs/screenshots/home.jpg)
+
 Bir direktif, filoya karşı. Her satırda karar ve gerekçesi:
 
 ![Kapsamdaki uçaklar](docs/screenshots/in-scope.jpg)

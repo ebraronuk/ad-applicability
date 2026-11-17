@@ -19,7 +19,7 @@ export interface DirectiveRow {
  */
 function Opening() {
   const { pending } = useLinkStatus();
-  return pending ? <span className="pending">opening…</span> : null;
+  return pending ? <span className="pending">açılıyor…</span> : null;
 }
 
 /**
@@ -43,26 +43,30 @@ export function DirectiveSearch({ rows }: { readonly rows: readonly DirectiveRow
 
   return (
     <>
-      <label className="search" htmlFor="directive-search">
-        <span>Belge numarası, üretici veya başlığa göre ara</span>
+      <div className="searchrow">
+        <label className="visually-hidden" htmlFor="directive-search">
+          Belge numarası, üretici veya başlığa göre ara
+        </label>
         <input
           id="directive-search"
+          className="search"
           type="search"
           value={query}
           autoComplete="off"
-          placeholder="Boeing, 2026-22310, helicopters"
+          placeholder="Ara: Boeing, Airbus Helicopters, 2026-22310…"
           onChange={(event) => setQuery(event.target.value)}
         />
-      </label>
-
-      <p aria-live="polite" className="muted">
-        {matches.length} of {rows.length} directives
-      </p>
+        <p aria-live="polite" className="muted small count">
+          {matches.length === rows.length
+            ? `${rows.length} direktif`
+            : `${rows.length} direktifin ${matches.length} tanesi`}
+        </p>
+      </div>
 
       {matches.length === 0 ? (
         <p className="notice notice-info">
-          No directive matches <strong>{query.trim()}</strong>. Try a document number such as
-          2026-22310, or a manufacturer name.
+          <strong>{query.trim()}</strong> ile eşleşen direktif yok. Bir belge numarası
+          (2026-22310 gibi) ya da üretici adı deneyin.
         </p>
       ) : (
         <div className="scroller" tabIndex={0} role="region" aria-label="Direktifler">
