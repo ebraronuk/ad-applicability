@@ -64,6 +64,22 @@ export interface SerialListNode {
   readonly serials: readonly string[];
 }
 
+/**
+ * A manufacturer with no model designation behind it.
+ *
+ * Needed because some clauses name a manufacturer and then hand the model set
+ * to a table: "Lycoming Engines (Lycoming) Model engines identified in table 1
+ * ...". Without this node the whole clause reduced to its deferrals, so every
+ * aircraft came back undetermined even though a Boeing is obviously not a
+ * Lycoming engine. Keeping the manufacturer lets the Kleene short-circuit do
+ * its job and settle those aircraft definitively.
+ */
+export interface ManufacturerNode {
+  readonly kind: "manufacturer";
+  readonly name: string;
+  readonly category?: AircraftCategory;
+}
+
 /** Applies to every aircraft the rest of the expression admits, with no further narrowing. */
 export interface AllNode {
   readonly kind: "all";
@@ -96,6 +112,7 @@ export interface ExceptNode {
 
 export type ApplicabilityNode =
   | ModelsNode
+  | ManufacturerNode
   | SerialRangeNode
   | SerialBoundNode
   | SerialListNode
@@ -138,6 +155,7 @@ export function deferrals(node: ApplicabilityNode): readonly DeferredNode[] {
     case "except":
       return [...deferrals(node.base), ...deferrals(node.exclusion)];
     case "models":
+    case "manufacturer":
     case "serial_range":
     case "serial_bound":
     case "serial_list":

@@ -193,7 +193,20 @@ export function parseApplicability(applicability: string): ParseResult {
     });
     recognized.push(`models: ${models.join(", ")}`);
   }
-  if (modelGroups.length > 0) constraints.push(or(...modelGroups));
+  if (modelGroups.length > 0) {
+    constraints.push(or(...modelGroups));
+  } else if (manufacturer !== undefined) {
+    // No model designation, but the manufacturer is still a real constraint.
+    // Dropping it here was defect 4: the clause collapsed to its deferrals and
+    // every aircraft in the fleet came back undetermined.
+    const category = detectCategory(text);
+    constraints.push({
+      kind: "manufacturer",
+      name: manufacturer,
+      ...(category === null ? {} : { category }),
+    });
+    recognized.push(`manufacturer: ${manufacturer}`);
+  }
 
   const serial = parseSerialConstraint(text);
   if (serial) {

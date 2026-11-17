@@ -3,6 +3,9 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import corpus from "../data/corpus/ads.json" with { type: "json" };
 import { deferrals } from "../src/applicability/ast.js";
 import { parseApplicability } from "../src/applicability/parse.js";
+import { evaluate } from "../src/applicability/evaluate.js";
+import type { Aircraft } from "../src/domain/aircraft.js";
+import fleetData from "../data/fleet/sample-fleet.json" with { type: "json" };
 
 interface CorpusEntry {
   readonly documentNumber: string;
@@ -10,6 +13,7 @@ interface CorpusEntry {
 }
 
 const directives = corpus as readonly CorpusEntry[];
+const fleet = (fleetData as { aircraft: Aircraft[] }).aircraft;
 
 /**
  * The committed baseline. This is a ratchet, not a target: it exists so that a
@@ -80,5 +84,41 @@ describe("parser coverage over the real corpus", () => {
         expect(group).not.toMatch(/certificated|airplanes|helicopters|engines/i);
       }
     }
+  });
+});
+
+describe("fleet evaluation over the real corpus", () => {
+  it("settles a manufacturer mismatch definitively instead of deferring", () => {
+    // Defect 4. AD 2026-22785 names "Lycoming Engines ... Model engines
+    // identified in table 1", so there is no model designation to parse. An
+    // earlier version dropped the manufacturer too, leaving only the deferral
+    // nodes, so all 400 aircraft came back undetermined. None of them is a
+    // Lycoming engine, so the right answer is 400 definite refutations.
+    const directive = directives.find((d) => d.documentNumber === "2026-22785");
+    expect(directive).toBeDefined();
+    const result = parseApplicability(directive!.applicability);
+    expect(result.node).not.toBeNull();
+
+    const verdicts = fleet.map((aircraft) => evaluate(result.node!, aircraft).kind);
+    expect(verdicts.filter((k) => k === "undetermined")).toHaveLength(0);
+    expect(verdicts.filter((k) => k === "does_not_apply")).toHaveLength(fleet.length);
+  });
+
+  it("keeps the undetermined share small because a refutation short-circuits", () => {
+    // The claim the README makes, asserted rather than assumed: 35% of
+    // directives defer to a document, yet far fewer than 35% of decisions are
+    // undetermined, because one definite refutation settles a conjunction.
+    let undeterminedCount = 0;
+    let total = 0;
+    for (const directive of directives) {
+      const result = parseApplicability(directive.applicability);
+      if (!result.node) continue;
+      for (const aircraft of fleet) {
+        total += 1;
+        if (evaluate(result.node, aircraft).kind === "undetermined") undeterminedCount += 1;
+      }
+    }
+    expect(total).toBeGreaterThan(50_000);
+    expect(undeterminedCount / total).toBeLessThan(0.05);
   });
 });

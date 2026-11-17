@@ -114,6 +114,15 @@ export function evaluate(node: ApplicabilityNode, aircraft: Aircraft): Verdict {
       return applies(`model ${matched} is named in the clause`);
     }
 
+    case "manufacturer": {
+      if (!manufacturerMatches(node.name, aircraft.manufacturer)) {
+        return doesNotApply(`manufacturer ${aircraft.manufacturer} is not ${node.name}`);
+      }
+      // The manufacturer matches but the clause named no model, so this node
+      // alone cannot confirm scope. It narrows; it does not decide.
+      return applies(`manufacturer matches ${node.name}`);
+    }
+
     case "serial_range": {
       const low = compareSerial(aircraft.serialNumber, node.from);
       const high = compareSerial(aircraft.serialNumber, node.to);
