@@ -2,7 +2,7 @@ import { afterAll, describe, expect, it } from "vitest";
 import type { Pool } from "pg";
 import { createPool, isReachable } from "../src/db/client";
 import { affectedByRun, recordRun } from "../src/db/assessments";
-import { parseApplicability } from "../src/applicability/parse";
+import { PARSER_VERSION, parseApplicability } from "../src/applicability/parse";
 import { evaluate } from "../src/applicability/evaluate";
 import type { Aircraft } from "../src/domain/aircraft";
 import type { Directive } from "../src/domain/directive";
@@ -41,7 +41,7 @@ withDb("assessment records", () => {
     const parsed = parseApplicability(directive.applicability);
     const runId = await recordRun(pool, {
       directive,
-      parserVersion: "0.1.0",
+      parserVersion: PARSER_VERSION,
       parsed: parsed.node,
       verdicts: fleet.map((aircraft) => ({
         aircraft,

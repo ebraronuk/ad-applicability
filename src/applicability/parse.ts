@@ -8,6 +8,12 @@
 import type { AircraftCategory, ApplicabilityNode } from "./ast";
 import { and, or } from "./ast";
 
+/**
+ * Stamped onto every recorded run. Bump it whenever the grammar changes, or a
+ * stored verdict can no longer be traced to the rules that produced it.
+ */
+export const PARSER_VERSION = "0.1.0";
+
 export interface ParseResult {
   readonly node: ApplicabilityNode | null;
   /** Phrases the parser understood, for the explanation trail. */
