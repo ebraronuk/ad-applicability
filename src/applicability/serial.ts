@@ -1,24 +1,16 @@
 /**
- * Serial-number comparison.
+ * Serial comparison, defined only where an ordering actually exists.
  *
- * This is the part of the problem that looks trivial and is not. Directives
- * write ranges like "serial numbers 29000 through 30500 inclusive", but the
- * registry holds serials such as "29000", "0450", "S-123", "MSN 41925" and
- * "61-0001". A naive `Number()` on those silently produces NaN or reorders
- * them, and a silently wrong ordering in a compliance tool means an aircraft is
- * cleared when it should be grounded.
- *
- * So comparison is only defined between serials of the SAME recognised shape,
- * and everything else returns null, which the evaluator turns into
- * "undetermined" rather than into a guess. Refusing to compare is a feature.
+ * Registries hold "29000", "0450", "S-123", "MSN 41925" and "41925A". Number()
+ * on those yields NaN or a wrong order, and a wrong order here clears an
+ * aircraft that should be grounded. So comparison is defined only between
+ * serials of the same recognised shape; everything else returns null and
+ * surfaces as undetermined. Refusing to compare is the feature.
  */
 
 interface ParsedSerial {
-  /** Non-numeric lead-in, normalised. Empty for a plain number. */
   readonly prefix: string;
   readonly value: number;
-  /** Digit count as written, so "0450" and "450" are distinguishable if ever needed. */
-  readonly width: number;
 }
 
 const PLAIN = /^(\d+)$/;
@@ -26,47 +18,37 @@ const PREFIXED = /^([A-Z][A-Z\s-]*?)[\s-]*(\d+)$/;
 
 function parse(serial: string): ParsedSerial | null {
   const normalized = serial.trim().toUpperCase();
-  if (!normalized) return null;
 
   const plain = PLAIN.exec(normalized);
-  if (plain) {
-    const digits = plain[1]!;
-    return { prefix: "", value: Number(digits), width: digits.length };
-  }
+  if (plain) return { prefix: "", value: Number(plain[1]) };
 
   const prefixed = PREFIXED.exec(normalized);
   if (prefixed) {
-    const digits = prefixed[2]!;
     return {
       prefix: prefixed[1]!.replace(/[\s-]+/g, ""),
-      value: Number(digits),
-      width: digits.length,
+      value: Number(prefixed[2]),
     };
   }
 
-  // Shapes this function does not claim to understand: dotted serials,
-  // block designations, anything with an embedded letter such as "41925A".
+  // Not understood: dotted serials, block designations, embedded letters.
   return null;
 }
 
 /**
- * -1, 0 or 1 when the two serials are comparable, and null when they are not.
+ * -1, 0 or 1 when comparable, null when not.
  *
- * Null is returned both for unparseable input and for serials whose prefixes
- * differ, because "S-100" and "T-100" have no defined order: they belong to
- * different manufacturer blocks and the directive that mentions one says
- * nothing about the other.
+ * Differing prefixes return null rather than an order: "S-100" and "T-100" are
+ * different manufacturer blocks, so a directive naming one says nothing about
+ * the other.
  */
 export function compareSerial(left: string, right: string): -1 | 0 | 1 | null {
   const a = parse(left);
   const b = parse(right);
-  if (!a || !b) return null;
-  if (a.prefix !== b.prefix) return null;
+  if (!a || !b || a.prefix !== b.prefix) return null;
   if (a.value === b.value) return 0;
   return a.value < b.value ? -1 : 1;
 }
 
-/** Whether a serial has a shape this module can order at all. */
 export function isComparableSerial(serial: string): boolean {
   return parse(serial) !== null;
 }

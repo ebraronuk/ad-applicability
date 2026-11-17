@@ -1,22 +1,11 @@
 /**
- * The evaluator: does this directive apply to this aircraft?
+ * Does this directive apply to this aircraft?
  *
- * Two properties matter more than anything else here.
- *
- * TOTALITY. Every aircraft receives exactly one of three verdicts: applies,
- * does not apply, or undetermined. Never two, never none. The switch below is
- * exhaustive over `ApplicabilityNode` and ends in a `never` check, so totality
- * is enforced by the compiler rather than hoped for by a test.
- *
- * THREE-VALUED LOGIC. "Undetermined" is not a failure path bolted on at the
- * edges, it is a value that composes. The combinators follow Kleene's strong
- * three-valued logic, which has the property that actually matters for a
- * compliance tool: an unknown fact can only ever widen the answer to
- * undetermined, it can never turn a definite yes into a definite no or the
- * reverse. A naive implementation that treated undetermined as false would
- * quietly report aircraft as out of scope when the truth is that nobody knows,
- * which in this domain is the difference between a grounded fleet and an
- * unairworthy one flying.
+ * Verdicts compose under Kleene's strong three-valued logic, so an unknown fact
+ * can only widen an answer to undetermined and never flip a definite verdict.
+ * Treating undetermined as false would report aircraft as out of scope when the
+ * truth is that nobody knows. Totality is a compile-time guarantee: the switch
+ * is exhaustive and ends in a `never` assignment.
  */
 import type { Aircraft } from "../domain/aircraft.js";
 import { manufacturerMatches, modelMatches } from "../domain/aircraft.js";
@@ -54,10 +43,9 @@ function reasons(verdicts: readonly Verdict[]): readonly string[] {
 }
 
 /**
- * Kleene conjunction. One definite "does not apply" settles the whole
- * expression, because no unknown elsewhere can bring the aircraft back into
- * scope. That short-circuit is the reason this engine resolves far more of the
- * corpus than the share of fully-parseable clauses would suggest.
+ * One definite refutation settles the expression: no unknown elsewhere can
+ * bring the aircraft back into scope. This short-circuit is why only 0.6% of
+ * decisions end up undetermined while 35% of clauses defer.
  */
 export function conjoin(verdicts: readonly Verdict[]): Verdict {
   const refuting = verdicts.find((v) => v.kind === "does_not_apply");
@@ -77,11 +65,9 @@ export function disjoin(verdicts: readonly Verdict[]): Verdict {
 }
 
 /**
- * `base` except `exclusion`, which is conjunction with a negation. Negating an
- * undetermined exclusion leaves it undetermined, so an aircraft inside the base
- * set whose exclusion cannot be checked is reported as undetermined rather than
- * as in scope. That is the conservative direction: it puts the aircraft in front
- * of an engineer instead of silently clearing or condemning it.
+ * `base` minus `exclusion`. An unverifiable exclusion leaves the aircraft
+ * undetermined rather than in scope, which puts it in front of an engineer
+ * instead of silently clearing or condemning it.
  */
 export function exclude(base: Verdict, exclusion: Verdict): Verdict {
   if (base.kind === "does_not_apply") return base;

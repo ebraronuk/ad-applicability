@@ -1,18 +1,10 @@
 /**
- * The applicability expression tree.
+ * The applicability expression tree: the grammar of paragraph (c), written down.
  *
- * An Airworthiness Directive scopes itself in one clause of prose, paragraph
- * (c). That prose is not free-form: across the corpus in `data/corpus/ads.json`
- * it decomposes into a small number of shapes, and this file is that grammar
- * written down. Every node here was added because a real AD needed it, and
- * `docs/applicability-patterns.md` records which document first motivated each.
- *
- * The important design choice is the `Deferred` node. Roughly a third of real
- * ADs do not state their own applicability: they point at a manufacturer
- * service bulletin, an installed part number, or a table this engine does not
- * have. Those are not parse failures and they are not "false" either. Treating
- * them as a node in the tree is what lets the evaluator stay total and answer
- * "undetermined, and here is the fact I am missing" rather than guessing.
+ * Every node exists because a real directive needed it. `Deferred` is the one
+ * that shapes the design: a third of directives point at a service bulletin or
+ * part number this engine does not hold, which is neither a parse failure nor a
+ * "false", so it has to be a value in the tree.
  */
 
 /** What the directive calls the thing it applies to. */
@@ -65,14 +57,9 @@ export interface SerialListNode {
 }
 
 /**
- * A manufacturer with no model designation behind it.
- *
- * Needed because some clauses name a manufacturer and then hand the model set
- * to a table: "Lycoming Engines (Lycoming) Model engines identified in table 1
- * ...". Without this node the whole clause reduced to its deferrals, so every
- * aircraft came back undetermined even though a Boeing is obviously not a
- * Lycoming engine. Keeping the manufacturer lets the Kleene short-circuit do
- * its job and settle those aircraft definitively.
+ * A manufacturer with no model designation behind it, as in "Lycoming Engines
+ * ... Model engines identified in table 1". Without this node the clause
+ * reduced to its deferrals and every aircraft came back undetermined.
  */
 export interface ManufacturerNode {
   readonly kind: "manufacturer";

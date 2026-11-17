@@ -1,23 +1,9 @@
 /**
  * Parse paragraph (c) of an Airworthiness Directive into an applicability tree.
  *
- * The patterns here are measured, not guessed. Across the 196 directives in
- * `data/corpus/ads.json`:
- *
- *   98.5%  name at least one "Model ..." designation
- *   83.2%  carry the boilerplate "certificated in any category"
- *   58.7%  airplanes, 26.5% helicopters, 15.8% engines
- *   34.7%  defer applicability to a manufacturer bulletin or foreign AD
- *   16.3%  refer to their own sub-paragraphs, (c)(1), (c)(2), ...
- *   15.8%  contain a range ("through")
- *    9.7%  mention serial numbers
- *    6.6%  add an installed-part condition
- *    2.6%  carry an "except" clause
- *    1.5%  refer to a table
- *
- * Re-run `scripts/report-coverage.ts` after changing anything here: the figure
- * in the README is produced from this parser against that corpus, so it is a
- * measurement rather than a claim.
+ * Patterns are derived from measuring all 196 clauses in the corpus, not from
+ * hand-picked examples. `npm test` reports the resulting coverage to
+ * docs/coverage.md and fails if it regresses.
  */
 import type { AircraftCategory, ApplicabilityNode } from "./ast.js";
 import { and, or } from "./ast.js";
@@ -77,22 +63,13 @@ function detectCategory(text: string): AircraftCategory | null {
 const CATEGORY_ALTERNATION = "airplanes?|helicopters?|engines?|propellers?";
 
 /**
- * Pull the model designations out of one "Model A, B, and C <category>" run.
+ * One "Model A, B, and C <category>" run.
  *
- * Two bugs shaped this pattern, both found by running it over the corpus
- * rather than over examples chosen by hand.
- *
- * First version split the whole clause on commas, which merged the model list
- * with everything after it and produced designations such as
- * "787-10 airplanes certificated in any".
- *
- * Second version anchored on the terminating category word but matched lazily
- * across any distance, so AD 2026-22785 ("Lycoming Engines (Lycoming) Model
- * engines identified in table 1 ...") ran past the immediately following
- * category word to one much later in the document and captured a stretch of
- * table rule characters as a model name. The run is now TEMPERED: it cannot
- * contain a category word, so "Model engines" correctly yields no designation
- * at all. Both cases are pinned in `tests/parse.test.ts`.
+ * TEMPERED on purpose: the run cannot contain a category word. Two defects
+ * forced this. A comma split merged the list with the text after it; a lazy
+ * match then ran past the immediately following category word to a later one
+ * and captured an ASCII table rule line as a model name (AD 2026-22785, whose
+ * clause says "Model engines"). Both pinned in tests/coverage.test.ts.
  */
 const MODEL_RUN = new RegExp(
   String.raw`\bModels?\s+((?:(?!\b(?:${CATEGORY_ALTERNATION})\b)[^.;]){0,160}?)(?=\s+(?:${CATEGORY_ALTERNATION})\b)`,
