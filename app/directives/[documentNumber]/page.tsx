@@ -74,6 +74,26 @@ export default async function DirectivePage({ params }: PageProps) {
     ({ verdict }) => verdict.kind === "does_not_apply",
   );
 
+  const fleetSize = counts.applies + counts.undetermined + counts.doesNotApply;
+  const answer =
+    assessment.parsed === null
+      ? "Bu maddeyi motor çözümleyemedi, bir kişinin okuması gerekiyor."
+      : counts.applies === 0 && counts.undetermined === 0
+        ? `Bu direktif filonuzu etkilemiyor: ${fleetSize} uçağın hepsi kapsam dışı.`
+        : counts.applies > 0 && counts.undetermined === 0
+          ? `Filonuzdaki ${fleetSize} uçaktan ${counts.applies} tanesi bu direktifin kapsamında.`
+          : counts.applies === 0
+            ? `Karar verilemedi: ${counts.undetermined} uçak için madde, motorun elinde olmayan bir belgeye dayanıyor.`
+            : `${counts.applies} uçak kapsamda, ${counts.undetermined} uçak için karar verilemedi.`;
+  const answerTone =
+    assessment.parsed === null
+      ? "answer-unknown"
+      : counts.applies > 0
+        ? "answer-applies"
+        : counts.undetermined > 0
+          ? "answer-unknown"
+          : "answer-clear";
+
   return (
     <div className="stack">
       <h1 className="mono">AD {directive.documentNumber}</h1>
@@ -83,15 +103,19 @@ export default async function DirectivePage({ params }: PageProps) {
         <a href={directive.sourceUrl}>Federal Register’da oku</a>
       </p>
 
+      {/* The answer first. Everything below it is the evidence for the answer,
+          and an evidence-first page makes the reader hunt for the conclusion. */}
+      <p className={`answer ${answerTone}`}>{answer}</p>
+
       <h2>Paragraf (c), yayınlandığı hâliyle</h2>
       <blockquote className="clause">{directive.applicability}</blockquote>
 
       <h2>Parser ne anladı</h2>
       {assessment.parsed === null ? (
         <p className="notice notice-info">
-          The grammar could not extract a single constraint from this clause, so no aircraft was
-          evaluated against it. This directive has to be read by a person. It is counted as
-          unparsed on the coverage page.
+          Dilbilgisi bu maddeden tek bir kısıt çıkaramadı, o yüzden hiçbir uçak
+          değerlendirilmedi. Bu direktifi bir kişinin okuması gerekiyor; kapsama sayfasında
+          çözümlenemeyen olarak sayılıyor.
         </p>
       ) : (
         <ul className="recognized">
@@ -104,7 +128,8 @@ export default async function DirectivePage({ params }: PageProps) {
       <h2>Filoya karşı</h2>
       {assessment.parsed === null ? (
         <p className="muted">
-          Nothing to show: an unparsed clause produces no verdicts rather than a default one.
+          Gösterilecek bir şey yok: çözümlenemeyen bir madde varsayılan bir karar değil, hiç
+          karar üretmiyor.
         </p>
       ) : (
         <>
@@ -123,12 +148,9 @@ export default async function DirectivePage({ params }: PageProps) {
             </li>
           </ul>
 
-          {needsAttention.length === 0 ? (
-            <p className="notice notice-ok">
-              Bu filoda kapsamda ya da belirsiz tek bir uçak yok. {counts.doesNotApply} uçağın hepsi
-              kesin olarak kapsam dışı.
-            </p>
-          ) : (
+          {/* The all-clear case needs no table and no second notice: the answer
+              at the top of the page already says it. */}
+          {needsAttention.length > 0 && (
             <AircraftTable
               rows={needsAttention}
               caption={`Bu direktifin temize çıkarmadığı ${needsAttention.length} uçak`}
@@ -140,14 +162,14 @@ export default async function DirectivePage({ params }: PageProps) {
           {cleared.length > 0 && (
             <details>
               <summary>Kapsam dışı kalan {cleared.length} uçağı göster</summary>
-              <AircraftTable rows={cleared} caption={`${cleared.length} aircraft out of scope`} />
+              <AircraftTable rows={cleared} caption={`Kapsam dışı ${cleared.length} uçak`} />
             </details>
           )}
 
           <h2>Kaydet</h2>
           <p className="prose muted">
-            Stores this run with the parser version that produced it, so the verdicts can be
-            defended later. Needs Postgres: <code>docker compose up -d</code>.
+            Bu değerlendirmeyi, onu üreten parser sürümüyle birlikte saklar; kararlar sonradan
+            savunulabilsin diye. Postgres gerekiyor: <code>docker compose up -d</code>.
           </p>
           <RecordRun documentNumber={directive.documentNumber} />
         </>

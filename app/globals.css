@@ -538,3 +538,32 @@ td.mono a {
 td.mono a:hover {
   text-decoration: underline;
 }
+
+/* The answer, before the evidence. */
+.answer {
+  margin: 0.9rem 0 0;
+  padding: 0.85rem 1.1rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  font-size: 1.02rem;
+  font-weight: 500;
+  max-width: var(--measure);
+}
+
+.answer-applies {
+  color: var(--applies);
+  background: var(--applies-bg);
+  border-color: var(--applies-ring);
+}
+
+.answer-clear {
+  color: var(--clear);
+  background: var(--clear-bg);
+  border-color: var(--clear-ring);
+}
+
+.answer-unknown {
+  color: var(--unknown);
+  background: var(--unknown-bg);
+  border-color: var(--unknown-ring);
+}
