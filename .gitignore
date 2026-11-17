@@ -3,3 +3,6 @@ coverage/
 *.log
 .DS_Store
 data/.cache/
+.next/
+next-env.d.ts
+*.tsbuildinfo
