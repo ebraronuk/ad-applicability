@@ -4,7 +4,7 @@
 export default function ErrorBoundary({ reset }: { readonly reset: () => void }) {
   return (
     <div className="stack">
-      <h1>This page did not render</h1>
+      <h1>Bu sayfa açılamadı</h1>
       <p className="notice notice-bad" role="alert">
         Something failed while assessing the fleet. The verdicts you were looking at are not
         incomplete, they were never produced.
@@ -15,7 +15,7 @@ export default function ErrorBoundary({ reset }: { readonly reset: () => void })
         </button>
       </p>
       <p>
-        <a href="/">Back to the directive list</a>
+        <a href="/">Direktif listesine dön</a>
       </p>
     </div>
   );

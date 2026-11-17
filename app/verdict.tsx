@@ -1,4 +1,5 @@
 import type { Verdict } from "../src/applicability/evaluate.js";
+import { missingLabel } from "./labels";
 
 /**
  * A verdict mark carries a word and a glyph, not just a colour.
@@ -7,9 +8,9 @@ import type { Verdict } from "../src/applicability/evaluate.js";
  * hangar, and this is the one element a reader acts on.
  */
 const MARKS = {
-  applies: { className: "verdict-applies", glyph: "▲", label: "In scope" },
-  does_not_apply: { className: "verdict-clear", glyph: "○", label: "Out of scope" },
-  undetermined: { className: "verdict-unknown", glyph: "◆", label: "Undetermined" },
+  applies: { className: "verdict-applies", glyph: "▲", label: "Kapsamda" },
+  does_not_apply: { className: "verdict-clear", glyph: "○", label: "Kapsam dışı" },
+  undetermined: { className: "verdict-unknown", glyph: "◆", label: "Belirsiz" },
 } as const;
 
 export function VerdictMark({ kind }: { readonly kind: Verdict["kind"] }) {
@@ -30,7 +31,7 @@ export function verdictLabel(kind: Verdict["kind"]): string {
 export function VerdictReasons({ verdict }: { readonly verdict: Verdict }) {
   const lines =
     verdict.kind === "undetermined"
-      ? verdict.missing.map((fact) => `${fact.kind.replace(/_/g, " ")}: ${fact.detail}`)
+      ? verdict.missing.map((fact) => `${missingLabel(fact.kind)}: ${fact.detail}`)
       : verdict.because;
   return (
     <ul className="reason">

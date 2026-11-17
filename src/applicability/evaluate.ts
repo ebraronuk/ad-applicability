@@ -72,41 +72,41 @@ export function disjoin(verdicts: readonly Verdict[]): Verdict {
 export function exclude(base: Verdict, exclusion: Verdict): Verdict {
   if (base.kind === "does_not_apply") return base;
   if (exclusion.kind === "applies") {
-    return doesNotApply(`excluded: ${exclusion.because.join("; ")}`);
+    return doesNotApply(`istisna kapsamında: ${exclusion.because.join("; ")}`);
   }
   if (base.kind === "undetermined" || exclusion.kind === "undetermined") {
     return undetermined(...missingFacts([base, exclusion]));
   }
-  return applies(...base.because, `not excluded: ${exclusion.because.join("; ")}`);
+  return applies(...base.because, `istisna dışında: ${exclusion.because.join("; ")}`);
 }
 
 export function evaluate(node: ApplicabilityNode, aircraft: Aircraft): Verdict {
   switch (node.kind) {
     case "all":
-      return applies("clause places no further restriction");
+      return applies("madde başka bir kısıt getirmiyor");
 
     case "models": {
       if (node.manufacturer && !manufacturerMatches(node.manufacturer, aircraft.manufacturer)) {
         return doesNotApply(
-          `manufacturer ${aircraft.manufacturer} is not ${node.manufacturer}`,
+          `üretici ${aircraft.manufacturer}, ${node.manufacturer} değil`,
         );
       }
       const matched = node.models.find((m) => modelMatches(m, aircraft.model));
       if (!matched) {
         return doesNotApply(
-          `model ${aircraft.model} is not among ${node.models.join(", ")}`,
+          `${aircraft.model} modeli şunlar arasında değil: ${node.models.join(", ")}`,
         );
       }
-      return applies(`model ${matched} is named in the clause`);
+      return applies(`${matched} modeli maddede adı geçiyor`);
     }
 
     case "manufacturer": {
       if (!manufacturerMatches(node.name, aircraft.manufacturer)) {
-        return doesNotApply(`manufacturer ${aircraft.manufacturer} is not ${node.name}`);
+        return doesNotApply(`üretici ${aircraft.manufacturer}, ${node.name} değil`);
       }
       // The manufacturer matches but the clause named no model, so this node
       // alone cannot confirm scope. It narrows; it does not decide.
-      return applies(`manufacturer matches ${node.name}`);
+      return applies(`üretici ${node.name} ile eşleşiyor`);
     }
 
     case "serial_range": {
@@ -115,18 +115,18 @@ export function evaluate(node: ApplicabilityNode, aircraft: Aircraft): Verdict {
       if (low === null || high === null) {
         return undetermined({
           kind: "modification_state",
-          detail: `serial ${aircraft.serialNumber} is not comparable with the range ${node.from}-${node.to}`,
+          detail: `${aircraft.serialNumber} seri numarası ${node.from}-${node.to} aralığıyla karşılaştırılamıyor`,
         });
       }
       const withinLow = low >= 0;
       const withinHigh = node.inclusive ? high <= 0 : high < 0;
       if (withinLow && withinHigh) {
         return applies(
-          `serial ${aircraft.serialNumber} falls in ${node.from}-${node.to}`,
+          `${aircraft.serialNumber} seri numarası ${node.from}-${node.to} aralığında`,
         );
       }
       return doesNotApply(
-        `serial ${aircraft.serialNumber} is outside ${node.from}-${node.to}`,
+        `${aircraft.serialNumber} seri numarası ${node.from}-${node.to} aralığı dışında`,
       );
     }
 
@@ -135,7 +135,7 @@ export function evaluate(node: ApplicabilityNode, aircraft: Aircraft): Verdict {
       if (comparison === null) {
         return undetermined({
           kind: "modification_state",
-          detail: `serial ${aircraft.serialNumber} is not comparable with ${node.bound}`,
+          detail: `${aircraft.serialNumber} seri numarası ${node.bound} ile karşılaştırılamıyor`,
         });
       }
       const inScope =
@@ -146,10 +146,10 @@ export function evaluate(node: ApplicabilityNode, aircraft: Aircraft): Verdict {
           : node.inclusive
             ? comparison >= 0
             : comparison > 0;
-      const wording = `${node.direction === "up_to" ? "up to" : "from"} ${node.bound}`;
+      const wording = `${node.bound} ${node.direction === "up_to" ? "ve öncesi" : "ve sonrası"}`;
       return inScope
-        ? applies(`serial ${aircraft.serialNumber} is ${wording}`)
-        : doesNotApply(`serial ${aircraft.serialNumber} is not ${wording}`);
+        ? applies(`${aircraft.serialNumber} seri numarası ${wording} aralığında`)
+        : doesNotApply(`${aircraft.serialNumber} seri numarası ${wording} aralığında değil`);
     }
 
     case "serial_list": {
@@ -157,8 +157,8 @@ export function evaluate(node: ApplicabilityNode, aircraft: Aircraft): Verdict {
         (s) => compareSerial(aircraft.serialNumber, s) === 0,
       );
       return listed
-        ? applies(`serial ${aircraft.serialNumber} is listed in the clause`)
-        : doesNotApply(`serial ${aircraft.serialNumber} is not listed in the clause`);
+        ? applies(`${aircraft.serialNumber} seri numarası maddede sayılıyor`)
+        : doesNotApply(`${aircraft.serialNumber} seri numarası maddede sayılmıyor`);
     }
 
     case "deferred":

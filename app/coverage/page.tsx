@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { directives } from "../../src/corpus";
 import { summarizeCoverage } from "../../src/coverage";
+import { missingLabel } from "../labels";
 
 const KIND_WORDING: Record<string, string> = {
-  service_bulletin: "a manufacturer service bulletin or a foreign authority's directive",
-  installed_part: "a part number installed on the aircraft",
-  referenced_table: "a table printed inside the directive",
+  service_bulletin: "üretici servis bülteni ya da yabancı bir otoritenin direktifi",
+  installed_part: "uçağa takılı bir parça numarası",
+  referenced_table: "direktifin içinde basılı bir tablo",
   referenced_paragraph: "another paragraph of the directive",
   modification_state: "whether a modification has been carried out",
 };
@@ -18,50 +19,50 @@ export default function CoveragePage() {
 
   return (
     <div className="stack">
-      <h1>Parser coverage</h1>
+      <h1>Parser kapsaması</h1>
       <p className="prose muted">
-        Measured on this page from the {coverage.total} directives in the committed corpus, at the
-        moment you loaded it. Nothing here is a stored number.
+        Bu sayfada, repoya işlenmiş korpustaki {coverage.total} direktif üzerinden, siz sayfayı
+        açtığınız anda ölçüldü. Buradaki hiçbir sayı kayıtlı değil.
       </p>
 
       <ul className="counts">
         <li>
           <span className="n">{coverage.parsed}</span>
-          parsed, {share(coverage.parsed)}
+          çözümlendi, {share(coverage.parsed)}
         </li>
         <li>
           <span className="n">{coverage.fullyResolvable}</span>
-          fully resolvable, {share(coverage.fullyResolvable)}
+          tam çözülebilir, {share(coverage.fullyResolvable)}
         </li>
         <li>
           <span className="n">{coverage.deferred}</span>
-          deferred, {share(coverage.deferred)}
+          devredildi, {share(coverage.deferred)}
         </li>
         <li>
           <span className="n">{coverage.unparsed.length}</span>
-          unparsed, {share(coverage.unparsed.length)}
+          çözümlenemedi, {share(coverage.unparsed.length)}
         </li>
       </ul>
 
-      <h2>Deferred to a fact the engine does not hold</h2>
+      <h2>Motorun elinde olmayan bilgiye devredilenler</h2>
       <p className="prose muted">
-        A deferral is not a parse failure. The clause was understood; it points at a document no
-        registry carries, so the aircraft it names stay undetermined rather than being guessed
-        either way. Counted per deferral, so a clause that defers twice appears twice.
+        Devir, çözümleme hatası değil. Madde anlaşıldı; ama hiçbir sicil kaydının taşımadığı bir
+        belgeye işaret ediyor, bu yüzden kapsadığı uçaklar tahmin edilmek yerine belirsiz
+        kalıyor. Devir başına sayılıyor, iki kez devreden bir madde iki kez görünüyor.
       </p>
       <div className="scroller">
         <table>
           <thead>
             <tr>
-              <th scope="col">Kind</th>
-              <th scope="col">What is missing</th>
-              <th scope="col">Deferrals</th>
+              <th scope="col">Tür</th>
+              <th scope="col">Eksik olan</th>
+              <th scope="col">Devir</th>
             </tr>
           </thead>
           <tbody>
             {coverage.deferralsByKind.map(({ kind, count }) => (
               <tr key={kind}>
-                <td className="mono">{kind.replace(/_/g, " ")}</td>
+                <td className="mono">{missingLabel(kind)}</td>
                 <td>{KIND_WORDING[kind] ?? kind}</td>
                 <td>{count}</td>
               </tr>
@@ -70,9 +71,9 @@ export default function CoveragePage() {
         </table>
       </div>
 
-      <h2>Unparsed clauses</h2>
+      <h2>Çözümlenemeyen maddeler</h2>
       {coverage.unparsed.length === 0 ? (
-        <p className="notice notice-ok">The grammar extracted a constraint from every clause.</p>
+        <p className="notice notice-ok">Dilbilgisi her maddeden bir kısıt çıkarabildi.</p>
       ) : (
         <ul>
           {coverage.unparsed.map((documentNumber) => (

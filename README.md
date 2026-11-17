@@ -24,6 +24,20 @@ Cevap tek bir paragrafta, paragraf (c)'de, şöyle bir dille yazılı:
 
 Bugün bu paragrafı biri okuyup filo listesiyle elle karşılaştırıyor, her direktif için, sürekli. Mekanikleştirilmesi gereken bir iş, ama aynı zamanda **kendinden emin yanlış cevabın cevap vermemekten kötü olduğu** bir iş: yerde kalması gereken bir uçağı temiz göstermek bir hata kaydı değil, uçuşa elverişlilik olayıdır.
 
+## Ekranlar
+
+Bir direktif, filoya karşı. Her satırda karar ve gerekçesi:
+
+![Kapsamdaki uçaklar](docs/screenshots/in-scope.jpg)
+
+Direktif kendi kapsamını söylemiyorsa motor tahmin etmiyor, neyin eksik olduğunu söylüyor:
+
+![Belirsiz](docs/screenshots/undetermined.jpg)
+
+Kapsama, her sayfa yüklemesinde korpustan yeniden ölçülüyor:
+
+![Kapsama](docs/screenshots/coverage.jpg)
+
 ## Ne yapıyor
 
 Paragraf (c)'yi bir ifade ağacına çeviriyor, filoya karşı değerlendiriyor ve her uçak için gerekçesiyle birlikte üç karardan birini döndürüyor:

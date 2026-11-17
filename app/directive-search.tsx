@@ -44,7 +44,7 @@ export function DirectiveSearch({ rows }: { readonly rows: readonly DirectiveRow
   return (
     <>
       <label className="search" htmlFor="directive-search">
-        <span>Search by document number, manufacturer or title</span>
+        <span>Belge numarası, üretici veya başlığa göre ara</span>
         <input
           id="directive-search"
           type="search"
@@ -65,13 +65,13 @@ export function DirectiveSearch({ rows }: { readonly rows: readonly DirectiveRow
           2026-22310, or a manufacturer name.
         </p>
       ) : (
-        <div className="scroller" tabIndex={0} role="region" aria-label="Directives">
+        <div className="scroller" tabIndex={0} role="region" aria-label="Direktifler">
           <table>
             <thead>
               <tr>
-                <th scope="col">Published</th>
-                <th scope="col">Document</th>
-                <th scope="col">Subject</th>
+                <th scope="col">Yayın</th>
+                <th scope="col">Belge</th>
+                <th scope="col">Konu</th>
               </tr>
             </thead>
             <tbody>

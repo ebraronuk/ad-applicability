@@ -12,11 +12,12 @@ export default function DirectiveListPage() {
 
   return (
     <div className="stack">
-      <h1>Airworthiness Directives</h1>
+      <h1>Uçuşa elverişlilik direktifleri</h1>
       <p className="prose muted">
-        {rows.length} directives published by the FAA between {rows.at(-1)?.publicationDate} and{" "}
-        {rows[0]?.publicationDate}. Open one to see which of the {fleet.aircraft.length} aircraft in
-        the fleet it applies to, and why.
+        FAA&apos;nın {rows.at(-1)?.publicationDate} ile {rows[0]?.publicationDate} arasında
+        yayınladığı {rows.length} zorunlu teknik talimat. Birini açın: filodaki{" "}
+        {fleet.aircraft.length} uçaktan hangilerini kapsadığını ve her birinde neden o kararın
+        verildiğini gösterir.
       </p>
       <DirectiveSearch rows={rows} />
     </div>

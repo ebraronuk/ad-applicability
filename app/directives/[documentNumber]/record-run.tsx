@@ -51,7 +51,7 @@ export function RecordRun({ documentNumber }: { readonly documentNumber: string 
   return (
     <div className="stack">
       <button type="button" onClick={record} disabled={state.status === "saving"}>
-        {state.status === "saving" ? "Recording…" : "Record this assessment"}
+        {state.status === "saving" ? "Recording…" : "Bu değerlendirmeyi kaydet"}
       </button>
 
       {state.status === "saving" && (

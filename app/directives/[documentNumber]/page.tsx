@@ -29,12 +29,12 @@ function AircraftTable({
         <caption>{caption}</caption>
         <thead>
           <tr>
-            <th scope="col">Verdict</th>
-            <th scope="col">Registration</th>
-            <th scope="col">Manufacturer</th>
+            <th scope="col">Karar</th>
+            <th scope="col">Tescil</th>
+            <th scope="col">Üretici</th>
             <th scope="col">Model</th>
-            <th scope="col">Serial</th>
-            <th scope="col">Because</th>
+            <th scope="col">Seri No</th>
+            <th scope="col">Gerekçe</th>
           </tr>
         </thead>
         <tbody>
@@ -79,14 +79,14 @@ export default async function DirectivePage({ params }: PageProps) {
       <h1 className="mono">AD {directive.documentNumber}</h1>
       <p className="prose">{directive.title}</p>
       <p className="muted">
-        Published {directive.publicationDate}.{" "}
-        <a href={directive.sourceUrl}>Read it on the Federal Register</a>
+        Yayın {directive.publicationDate}.{" "}
+        <a href={directive.sourceUrl}>Federal Register’da oku</a>
       </p>
 
-      <h2>Paragraph (c), as published</h2>
+      <h2>Paragraf (c), yayınlandığı hâliyle</h2>
       <blockquote className="clause">{directive.applicability}</blockquote>
 
-      <h2>What the parser understood</h2>
+      <h2>Parser ne anladı</h2>
       {assessment.parsed === null ? (
         <p className="notice notice-info">
           The grammar could not extract a single constraint from this clause, so no aircraft was
@@ -101,7 +101,7 @@ export default async function DirectivePage({ params }: PageProps) {
         </ul>
       )}
 
-      <h2>Against the fleet</h2>
+      <h2>Filoya karşı</h2>
       {assessment.parsed === null ? (
         <p className="muted">
           Nothing to show: an unparsed clause produces no verdicts rather than a default one.
@@ -111,27 +111,27 @@ export default async function DirectivePage({ params }: PageProps) {
           <ul className="counts">
             <li>
               <span className="n">{counts.applies}</span>
-              in scope
+              kapsamda
             </li>
             <li>
               <span className="n">{counts.undetermined}</span>
-              undetermined
+              belirsiz
             </li>
             <li>
               <span className="n">{counts.doesNotApply}</span>
-              out of scope
+              kapsam dışı
             </li>
           </ul>
 
           {needsAttention.length === 0 ? (
             <p className="notice notice-ok">
-              No aircraft in this fleet is in scope or undetermined. All {counts.doesNotApply} were
-              refuted on a criterion the clause itself states.
+              Bu filoda kapsamda ya da belirsiz tek bir uçak yok. {counts.doesNotApply} uçağın hepsi
+              kesin olarak kapsam dışı.
             </p>
           ) : (
             <AircraftTable
               rows={needsAttention}
-              caption={`${needsAttention.length} aircraft this directive does not clear`}
+              caption={`Bu direktifin temize çıkarmadığı ${needsAttention.length} uçak`}
             />
           )}
 
@@ -139,12 +139,12 @@ export default async function DirectivePage({ params }: PageProps) {
               because the reasoning for clearing one is what an audit asks for. */}
           {cleared.length > 0 && (
             <details>
-              <summary>Show the {cleared.length} aircraft that are out of scope</summary>
+              <summary>Kapsam dışı kalan {cleared.length} uçağı göster</summary>
               <AircraftTable rows={cleared} caption={`${cleared.length} aircraft out of scope`} />
             </details>
           )}
 
-          <h2>Record</h2>
+          <h2>Kaydet</h2>
           <p className="prose muted">
             Stores this run with the parser version that produced it, so the verdicts can be
             defended later. Needs Postgres: <code>docker compose up -d</code>.

@@ -14,6 +14,13 @@ import { and, or } from "./ast";
  */
 export const PARSER_VERSION = "0.1.0";
 
+/** User-facing labels for the deferral kinds; the UI is Turkish. */
+const MISSING_TR: Record<string, string> = {
+  service_bulletin: "servis bültenine",
+  installed_part: "takılı parça koşuluna",
+  referenced_table: "atıf yapılan tabloya",
+};
+
 export interface ParseResult {
   readonly node: ApplicabilityNode | null;
   /** Phrases the parser understood, for the explanation trail. */
@@ -174,7 +181,7 @@ export function parseApplicability(applicability: string): ParseResult {
       models,
       category,
     });
-    recognized.push(`models: ${models.join(", ")}`);
+    recognized.push(`modeller: ${models.join(", ")}`);
   }
   if (modelGroups.length > 0) {
     constraints.push(or(...modelGroups));
@@ -188,13 +195,13 @@ export function parseApplicability(applicability: string): ParseResult {
       name: manufacturer,
       ...(category === null ? {} : { category }),
     });
-    recognized.push(`manufacturer: ${manufacturer}`);
+    recognized.push(`üretici: ${manufacturer}`);
   }
 
   const serial = parseSerialConstraint(text);
   if (serial) {
     constraints.push(serial.node);
-    recognized.push(`serial constraint: ${serial.phrase}`);
+    recognized.push(`seri numarası kısıtı: ${serial.phrase}`);
   }
 
   for (const { pattern, missing } of DEFERRALS) {
@@ -202,7 +209,7 @@ export function parseApplicability(applicability: string): ParseResult {
     if (!match) continue;
     const detail = (match[1] ?? match[0]).trim();
     constraints.push({ kind: "deferred", missing, detail });
-    recognized.push(`deferred to ${missing.replace(/_/g, " ")}: ${detail}`);
+    recognized.push(`${MISSING_TR[missing]} devredildi: ${detail}`);
   }
 
   if (constraints.length === 0) {
