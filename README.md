@@ -70,6 +70,30 @@ varsayım değil.
 
 `tests/coverage.test.ts` içindeki eşikler bir kilit dişlisi: dilbilgisinde yapılan ve gerçek direktiflerin daha azını anlayan bir değişiklik, sessizce geçmek yerine testi düşürüyor.
 
+## Veri nerede durur
+
+İki tür veri var ve ikisi farklı yere ait:
+
+**Referans verisi dosyada.** Korpus ve filo anlık görüntüsü salt okunur, ve
+yukarıdaki her kapsama değeri çevrimdışı tekrar üretilebilmek zorunda. Barındırılan
+bir veritabanı bunu garanti etmiyor, commit'lenmiş dosya ediyor. 400 uçak ve 196
+direktif de bir veritabanının yerini hak ettiği eşiğin altında.
+
+**Kararlar Postgres'te.** Bir değerlendirme sonucu, birinin sonradan savunmak
+zorunda olduğu bir kayıt: *bu direktif hakkında hangi tarihte ne karar verdik,
+hangi parser sürümüyle, o anda hangi uçaklar belirsizdi.* Denetimin sorduğu soru
+bu, ve `assessment_run.parser_version` o yüzden var.
+
+Kısıtlar uygulama kodunda değil şemada: `definite_verdict_has_reasoning` ve
+`undetermined_names_what_is_missing`, **açıklanamayan bir kararın kaydedilmesini
+imkânsız** kılıyor. Uygulama eninde sonunda bir doğrulamayı atlayan bir yol
+içerir, veritabanı içermez.
+
+```
+docker compose up -d      # şema migrations/ içinden uygulanır
+npm test                  # veritabanı kapalıysa 4 test atlanır, paket yeşil kalır
+```
+
 ## Neyi yapmıyor
 
 Açıkça yazılıyor, çünkü bu sınır bir tasarım kararı, yapılacaklar listesi değil:
@@ -114,6 +138,14 @@ Kodlama ajanlarıyla (Claude Code) yazıldı; kimsenin bir konvansiyonu hatırla
    geçiyordu, çünkü hiçbiri parse sonucunu bir filoya karşı değerlendirmiyordu.
    Düzeltme yeni bir AST düğümü gerektirdi, ve derleyici onu değerlendiricide
    ele almaya zorladı — totality garantisinin işe yaradığı yer burası.
+
+5. **Sessizce atlayan veritabanı testleri.** `describe.skipIf` toplama anında
+   değerlendiriliyor, oysa bayrak `beforeAll` içinde kuruluyordu — yani bayrak o
+   anda hep `false` ve dört test, veritabanı ayakta olmasına rağmen her koşumda
+   sessizce atlanıyordu. Paket yeşil görünüyor, hiçbir şey doğrulamıyordu.
+   Sessizce atlayan bir test, düşen testten kötüdür. Erişilebilirlik kontrolü
+   artık modül kapsamında, top-level await ile. İki dal da elle doğrulandı:
+   veritabanı kapalı 22 geçer/4 atlanır, açık 26 geçer.
 
 Talimatla değil mekanik olarak zorlananlar:
 
