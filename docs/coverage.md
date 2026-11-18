@@ -9,6 +9,6 @@ fully resolvable       105 (53.6%)
 deferred to a document 89
   service_bulletin     87
   installed_part       4
-  referenced_table     3
+  referenced_table     2
 unparsed               2 (2026-21854, 2026-11965)
 ```

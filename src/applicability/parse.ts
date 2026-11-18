@@ -85,11 +85,29 @@ const CATEGORY_ALTERNATION = "airplanes?|helicopters?|engines?|propellers?";
  * clause says "Model engines"). Both pinned in tests/coverage.test.ts.
  */
 const MODEL_RUN = new RegExp(
-  String.raw`\bModels?\s+((?:(?!\b(?:${CATEGORY_ALTERNATION})\b)[^.;]){0,160}?)(?=\s+(?:${CATEGORY_ALTERNATION})\b)`,
+  String.raw`\bModels?\s+((?:(?!\b(?:${CATEGORY_ALTERNATION})\b)[^.;]){0,400}?)(?=\s+(?:${CATEGORY_ALTERNATION})\b)`,
   "gi",
 );
 
 const MODEL_SEPARATOR = /\s*(?:,|\band\b|\bor\b)\s*/i;
+
+/**
+ * "Model A350-941 and -1041" names two models, the second written as a suffix
+ * of the first. Left as "-1041" it matches no registry entry, so every
+ * directive written this way produced a silent false negative. The suffix
+ * inherits the stem of the last full designation.
+ */
+function expandSuffixes(models: readonly string[]): readonly string[] {
+  let stem = "";
+  return models.map((model) => {
+    if (!model.startsWith("-")) {
+      const cut = model.lastIndexOf("-");
+      stem = cut > 0 ? model.slice(0, cut) : "";
+      return model;
+    }
+    return stem ? stem + model : model;
+  });
+}
 
 function parseModelRun(run: string): readonly string[] {
   return run
@@ -100,7 +118,9 @@ function parseModelRun(run: string): readonly string[] {
     // normalisation as long dash runs. A designation is never mostly dashes.
     .filter((part) => !/^[-\u2010-\u2015\s]+$/.test(part) && !/-{4,}/.test(part))
     // "series", "and later", "variants" are qualifiers, not designations.
-    .filter((part) => !/^(series|variants?|later|earlier|all)$/i.test(part));
+    .filter((part) => !/^(series|variants?|later|earlier|all)$/i.test(part))
+    // "747-400 and -8 series": the trailing qualifier is not part of the name.
+    .map((part) => part.replace(/\s+series$/i, "").trim());
 }
 
 /** Everything before the first "Model" is where the manufacturer sits, if named. */
@@ -114,12 +134,19 @@ function detectManufacturer(text: string): string | undefined {
     .replace(/[,;]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
-  if (!candidate || candidate.length > 80) return undefined;
-  return candidate;
+  // "Airbus SAS airplanes" is a manufacturer plus the category word that
+  // follows it; keeping the word in the name stops it matching a registry.
+  const withoutCategory = candidate
+    .replace(new RegExp(`\\s+(?:${CATEGORY_ALTERNATION})\\s*$`, "i"), "")
+    .trim();
+  if (!withoutCategory || withoutCategory.length > 80) return undefined;
+  return withoutCategory;
 }
 
+// The first capture excludes the bound keywords: without that, "serial numbers
+// up to 1999" matched as a range from "up" to "1999".
 const SERIAL_RANGE =
-  /serial\s+numbers?\s+\(?(?:S\/N|MSN)?\)?\s*([A-Z0-9-]+)\s+(?:through|thru|to)\s+([A-Z0-9-]+)(\s+inclusive)?/i;
+  /serial\s+numbers?\s+\(?(?:S\/N|MSN)?\)?\s*(?!up\b|and\b)([A-Z0-9-]+)\s+(?:through|thru|to)\s+([A-Z0-9-]+)(\s+inclusive)?/i;
 const SERIAL_BOUND =
   /serial\s+numbers?\s+\(?(?:S\/N|MSN)?\)?\s*(up\s+to\s+and\s+including|up\s+to|and\s+subsequent)\s+([A-Z0-9-]+)/i;
 
@@ -127,18 +154,8 @@ function parseSerialConstraint(text: string): {
   readonly node: ApplicabilityNode;
   readonly phrase: string;
 } | null {
-  const range = SERIAL_RANGE.exec(text);
-  if (range) {
-    return {
-      node: {
-        kind: "serial_range",
-        from: range[1]!,
-        to: range[2]!,
-        inclusive: range[3] !== undefined,
-      },
-      phrase: range[0],
-    };
-  }
+  // Bounds are checked first: "up to X" is a bound, and a range pattern can
+  // otherwise swallow the keyword as if it were a designation.
   const bound = SERIAL_BOUND.exec(text);
   if (bound) {
     const wording = bound[1]!.toLowerCase();
@@ -150,6 +167,19 @@ function parseSerialConstraint(text: string): {
         inclusive: wording !== "up to",
       },
       phrase: bound[0],
+    };
+  }
+
+  const range = SERIAL_RANGE.exec(text);
+  if (range) {
+    return {
+      node: {
+        kind: "serial_range",
+        from: range[1]!,
+        to: range[2]!,
+        inclusive: range[3] !== undefined,
+      },
+      phrase: range[0],
     };
   }
   return null;
@@ -171,7 +201,7 @@ export function parseApplicability(applicability: string): ParseResult {
   const modelGroups: ApplicabilityNode[] = [];
   const manufacturer = detectManufacturer(text);
   for (const match of text.matchAll(MODEL_RUN)) {
-    const models = parseModelRun(match[1] ?? "");
+    const models = expandSuffixes(parseModelRun(match[1] ?? ""));
     if (models.length === 0) continue;
     const category = detectCategory(text.slice(match.index ?? 0)) ?? detectCategory(text);
     if (!category) continue;
@@ -204,10 +234,16 @@ export function parseApplicability(applicability: string): ParseResult {
     recognized.push(`seri numarası kısıtı: ${serial.phrase}`);
   }
 
+  // One phrase can match more than one deferral pattern: "table 1 to
+  // paragraph (c)" is both a table reference and the thing the clause defers
+  // to. Counting it twice inflated the deferral figures.
+  const seenDeferrals = new Set<string>();
   for (const { pattern, missing } of DEFERRALS) {
     const match = pattern.exec(text);
     if (!match) continue;
     const detail = (match[1] ?? match[0]).trim();
+    if (seenDeferrals.has(detail)) continue;
+    seenDeferrals.add(detail);
     constraints.push({ kind: "deferred", missing, detail });
     recognized.push(`${MISSING_TR[missing]} devredildi: ${detail}`);
   }

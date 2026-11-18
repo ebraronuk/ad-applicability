@@ -1,8 +1,10 @@
 node_modules/
-/coverage/
+coverage/
 *.log
 .DS_Store
 data/.cache/
 .next/
+test-results/
+playwright-report/
 next-env.d.ts
 *.tsbuildinfo

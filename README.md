@@ -6,9 +6,9 @@ Karar veremediğinde tahmin etmez: hangi bilginin eksik olduğunu söyler. Gerç
 
 ## Bu ne işe yarıyor
 
-Bir uçak tipinde emniyeti etkileyen bir sorun bulunduğunda (bir parçada çatlak riski, bir sistemde arıza), havacılık otoritesi **zorunlu bir talimat** yayınlıyor: şu uçaklarda şu işlem şu tarihe kadar yapılacak. Buna *uçuşa elverişlilik direktifi* deniyor; uyulmaması uçağı uçuştan men ediyor.
+Bir uçak tipinde emniyeti etkileyen bir sorun bulunduğunda (bir parçada çatlak riski, bir sistemde arıza), havacılık otoritesi **zorunlu bir talimat** yayınlıyor: şu uçaklarda şu işlem şu tarihe kadar yapılacak. Buna *uçuşa elverişlilik direktifi* deniyor ve uyum zorunlu; şartları yerine getirilmeden uçağın uçuşa elverişliliği etkileniyor.
 
-Sorun şurada: talimat kimleri bağladığını bir liste olarak değil, **düzyazı bir paragraf** olarak yazıyor. *"Şu üreticinin şu modelleri, şu seri numaraları arasında, şu bülten uygulanmış olanlar hariç."* Bir havayolunun yüzlerce uçağı var ve yılda yüzlerce direktif yayınlanıyor; bugün bunu biri elle okuyup filo listesiyle karşılaştırıyor.
+Sorun şurada: talimat kimleri bağladığını bir liste olarak değil, **düzyazı bir paragraf** olarak yazıyor. *"Şu üreticinin şu modelleri, şu seri numaraları arasında, şu bülten uygulanmış olanlar hariç."* Bir havayolunun yüzlerce uçağı var ve yılda yüzlerce direktif yayınlanıyor. Bu araç, o paragrafı filoya karşı değerlendirme adımını hedefliyor; uyum sürecinin bakım kayıtları, modifikasyon geçmişi ve mühendislik değerlendirmesi gibi diğer adımlarını kapsamıyor.
 
 Bu araç o paragrafı okuyup filodaki her uçak için cevabı veriyor. Emin olamadığında tahmin etmiyor: paragrafın dayandığı belge elinde yoksa bunu açıkça söylüyor.
 
@@ -35,11 +35,11 @@ flowchart LR
 
 | Yapılan iş | Kanıtı |
 |---|---|
-| **Regülasyon metnini çalıştırılabilir kurala çevirme.** Paragraf (c) düzyazı; ondan bir ifade ağacı çıkaran dilbilgisi elle yazıldı | 196 gerçek maddenin **%99'u** çözümleniyor, `npm test` ölçüyor, [`docs/coverage.md`](docs/coverage.md) yazıyor |
+| **Regülasyon metnini çalıştırılabilir kurala çevirme.** Paragraf (c) düzyazı; ondan bir ifade ağacı çıkaran dilbilgisi elle yazıldı | Çözümlenebilirlik **%99** (194/196), elle denetlenen örneklemde doğruluk **18/20**. İkisi farklı şey, aşağıda ayrı ayrı |
 | **Üç değerli mantık.** Belirsizlik kenarda ele alınan bir hata değil, ifadenin içinde birleşen bir değer | Bilinmeyen bir olgu kesin bir kararı asla çeviremiyor: property testi. `conjoin`'i bozunca test düşüyor, bilerek doğrulandı |
 | **Derleyici garantili totality.** Her uçak üç karardan tam birini alıyor | Düğüm tipi üzerindeki switch `never` ataması ile bitiyor; yeni bir tip ekleyip işlememek `tsc`'yi düşürüyor |
 | **Kuralların şemada yaşadığı veritabanı** | `definite_verdict_has_reasoning` ve `undetermined_names_what_is_missing`: açıklanamayan bir kararı kaydetmek **imkânsız** |
-| **Ajan yazdığı kodun denetimi** | Gözden geçirmenin yakaladığı **5 gerçek kusur**, nasıl bulundukları ile birlikte aşağıda yazılı |
+| **Ajan yazdığı kodun denetimi** | Gözden geçirmenin yakaladığı **üç gerçek kusur**, nasıl bulundukları ile birlikte aşağıda yazılı |
 
 **Sayılar:** 196 direktif × 400 uçak = **77.600 karar**. Bunların %0,6'sı belirsiz, oysa direktiflerin %45'i bir belgeye devrediyor. Farkı kapatan şey Kleene kısa devresi: kesin bir ret, yanındaki bilinmeyene rağmen sonucu belirliyor.
 
@@ -49,7 +49,7 @@ flowchart LR
 
 ![Bir direktif, filoya karşı: her satırda karar ve gerekçesi](docs/screenshots/in-scope.jpg)
 
-## "Belirsiz" neden ürünün kalbi
+## Üç değerli karar modeli
 
 `data/corpus/ads.json` içindeki korpus üzerinde ölçüldü: **gerçek direktiflerin %45'i kendi kapsamını söylemiyor.** Kapsamı bir üretici servis bültenine, takılı bir parça numarasına ya da başka bir otoritenin direktifine devrediyor, hiçbiri halka açık olmayan, hiçbir sicil kaydının taşımadığı belgeler.
 
@@ -85,6 +85,20 @@ varsayım değil.
 
 `tests/coverage.test.ts` içindeki eşikler bir kilit dişlisi: dilbilgisinde yapılan ve gerçek direktiflerin daha azını anlayan bir değişiklik, sessizce geçmek yerine testi düşürüyor.
 
+**Devir sayıları iki farklı şeyi sayıyor.** `deferred: 89` en az bir devri olan *direktif* sayısı; altındaki kırılım (`87 + 4 + 2 = 93`) *devir* sayısı, çünkü bir madde birden fazla belgeye devredebiliyor. Toplamların tutmaması hata değil, iki ayrı birim.
+
+### Çözümlenebilirlik doğruluk değildir
+
+Yukarıdaki %99, dilbilgisinin bir maddeden **kısıt çıkarabildiği** oranı. Çıkardığı kısıtın **doğru** olduğunu söylemiyor: yanlış bir ifade ağacı üreten bir parser da bu ölçüde başarılı görünür.
+
+Doğruluğu ölçmek için korpustan her 9. kayıt alınarak 20 maddelik bir örneklem elle denetlendi; metin ile çıkarılan kısıt karşılaştırıldı. Sonuç **18/20**. İlk ölçümde 10/20'ydi; aradaki fark, denetimin ortaya çıkardığı üç sistematik hatanın düzeltilmesi:
+
+- `Model A350-941 and -1041` ifadesindeki kısaltılmış ek genişletilmiyordu, `-1041` hiçbir sicil kaydıyla eşleşmiyordu
+- Üretici adı kendinden sonraki kategori kelimesini yutuyordu (`Airbus SAS airplanes`)
+- `serial numbers up to 1999` ifadesi `from: "up"` diye bir aralığa çözülüyordu
+
+Kalan iki hata bilinçli olarak açık bırakıldı, aşağıda yazılı.
+
 ## Neyi yapmıyor
 
 Açıkça yazılıyor, çünkü bu sınır bir tasarım kararı, yapılacaklar listesi değil:
@@ -92,7 +106,9 @@ Açıkça yazılıyor, çünkü bu sınır bir tasarım kararı, yapılacaklar l
 - **Uyum süresi hesabı yok.** Direktifler son tarihleri uçuş saati, çevrim ya da takvim ayı cinsinden, bir başlangıç olayına göre veriyor. Kullanım verisi halka açık değil, o yüzden motor son tarih hesaplıyormuş gibi yapmıyor.
 - **Servis bülteni kütüphanesi yok.** Üretici bültenleri halka açık değil. %45'lik devir oranının sebebi bu ve açık veriyle çözülebilir bir şey değil.
 - **Modifikasyon durumu yok.** Sicil kaydı bir uçağa hangi bültenlerin uygulandığını tutmuyor, o yüzden "şu bülten uygulanmış olanlar hariç" ifadesi yapısal olarak belirsize çözülüyor.
-- **Seri numarası karşılaştırması bilinçli olarak kısmi.** Sıralama yalnızca aynı tanınan biçimdeki seriler arasında tanımlı; gerisi tahmin yerine belirsiz döndürüyor. Karşılaştırmayı reddetmek bir özellik.
+- **Tarih ve teslim koşulları okunmuyor.** `that were delivered before September 23, 2024` gibi bir daraltma sessizce düşüyor; motor o uçakları kapsamda gösteriyor. Örneklem denetiminde çıkan iki açık hatadan biri bu.
+- **Alt paragraflara yayılan bazı madde listeleri yinelenebiliyor.** Aynı model birden fazla grupta görünebiliyor; sonucu değiştirmiyor ama çıkarım temiz değil.
+- **Seri numarası karşılaştırması bilinçli olarak kısmi.** Sıralama yalnızca aynı tanınan biçimdeki seriler arasında tanımlı; gerisi tahmin yerine belirsiz döndürüyor. Tanınmayan biçimler değerlendirme dışında bırakılıyor.
 - **Filo verisi dünya çapında, ABD tescilli değil.** Gerekçesi `scripts/fetch-fleet.py` başında yazılı: FAA'nın kendi sicil veritabanı otomatik isteklere 403 ve 503 dönüyor, o yüzden programatik erişim için yayınlanan OpenSky uçak veritabanı kullanıldı. İçindeki her uçak gerçek bir uçak, her seri numarası gerçek bir seri numarası; ama bir FAA direktifinin gerçekten bağladığı popülasyon değil.
 
 ## Çalıştırma
@@ -130,7 +146,7 @@ Kodlama ajanlarıyla (Claude Code) yazıldı; kimsenin bir konvansiyonu hatırla
 
 **Üretici kısıtının düşürülmesi.** Parser model bulamayınca üreticiyi de bırakıyordu, madde yalnızca devir düğümlerine indirgeniyordu. Sonuç: Lycoming motorlarıyla ilgili bir direktif filodaki 400 uçağın hepsi için "belirsiz" dönüyordu, oysa hiçbiri Lycoming motoru değil. *Yalnızca motoru uçtan uca gerçek veride çalıştırmak ortaya çıkardı;* birim testleri de parser testleri de geçiyordu, çünkü hiçbiri parse sonucunu bir filoya karşı değerlendirmiyordu. Düzeltme yeni bir AST düğümü gerektirdi ve derleyici onu değerlendiricide ele almaya zorladı.
 
-**Sessizce atlayan veritabanı testleri.** `describe.skipIf` toplama anında değerlendiriliyor, oysa bayrak `beforeAll` içinde kuruluyordu; yani bayrak o anda hep `false` ve dört test, veritabanı ayakta olmasına rağmen her koşumda sessizce atlanıyordu. Paket yeşil görünüyor, hiçbir şey doğrulamıyordu. *Testin kendisini yazarken çıktı.* Sessizce atlayan bir test, düşen testten kötüdür.
+**Sessizce atlayan veritabanı testleri.** `describe.skipIf` toplama anında değerlendiriliyor, oysa bayrak `beforeAll` içinde kuruluyordu; yani bayrak o anda hep `false` ve dört test, veritabanı ayakta olmasına rağmen her koşumda sessizce atlanıyordu. Paket yeşil görünüyor, hiçbir şey doğrulamıyordu. *Testin kendisini yazarken çıktı.* Yeşil görünen ama hiçbir şey doğrulamayan bir paket, düşen bir testten daha geç fark ediliyor.
 
 ## Lisans
 
