@@ -1,6 +1,6 @@
 # Direktif Kapsam Kontrolü
 
-**Bir uçakta zorunlu bir arıza giderme emri yayınlandığında, filodaki hangi uçakları bağladığını söyler, ve her uçak için neden o kararı verdiğini gösterir.**
+**Bir uçakta zorunlu bir arıza giderme emri yayınlandığında, maddenin filodaki hangi uçaklarla eşleştiğini söyler, ve her uçak için neden o kararı verdiğini gösterir.**
 
 Karar veremediğinde tahmin etmez: hangi bilginin eksik olduğunu söyler. Gerçek direktifler, gerçek uçaklar, ölçülmüş kapsama.
 
@@ -41,7 +41,7 @@ flowchart LR
 | **Kuralların şemada yaşadığı veritabanı** | `definite_verdict_has_reasoning` ve `undetermined_names_what_is_missing`: açıklanamayan bir kararı kaydetmek **imkânsız** |
 | **Ajan yazdığı kodun denetimi** | Gözden geçirmenin yakaladığı **üç gerçek kusur**, nasıl bulundukları ile birlikte aşağıda yazılı |
 
-**Sayılar:** 196 direktif × 400 uçak = **77.600 karar**. Bunların %0,6'sı belirsiz, oysa direktiflerin %45'i bir belgeye devrediyor. Farkı kapatan şey Kleene kısa devresi: kesin bir ret, yanındaki bilinmeyene rağmen sonucu belirliyor.
+**Sayılar:** 194 direktif × 400 uçak = **77.600 karar**. Kesin ret dışında kalan 688 kararın **%80'i belirsiz**: maddelerin %46'sı halka açık olmayan bir üretici belgesine dayandığı için motor orada tahmin etmek yerine duruyor.
 
 **Çalıştırmak:** `npm install && npm test`, başka hiçbir şey gerekmiyor. Arayüz için `npm run dev`, denetim kaydı için `docker compose up -d`.
 
@@ -69,19 +69,27 @@ deferred to a document  89   (87 servis bülteni, 4 takılı parça, 3 tablo)
 unparsed                 2
 ```
 
-Motorun 194 parse edilmiş direktifi 400 uçaklık filoya karşı değerlendirmesi,
-toplam 77.600 karar:
+194 direktifin 400 uçaklık filoya karşı değerlendirmesi, 77.600 karar:
 
 ```
-kapsamda       111   (%0,14)
-kapsam dışı  77.027  (%99,3)
-belirsiz        462   (%0,6)
+kapsamda         138   (%0,18)
+kapsam dışı   76.912   (%99,1)
+belirsiz         550   (%0,71)
 ```
 
-Yukarıdaki kısa devre iddiası bu rakamla doğrulanıyor: direktiflerin **%45'i**
-bir belgeye devrediyor, ama kararların yalnızca **%0,6'sı** belirsiz kalıyor,
-çünkü kesin bir ret konjonksiyonu tek başına sonuçlandırıyor. Bu da bir test,
-varsayım değil.
+**Bu %0,71 bir yanılsamadır, metrik olarak kullanılmamalıdır.** Uçakların ezici
+çoğunluğu yanlış modelde olduğu için kesin ret alıyor ve payda bununla şişiyor.
+Anlamlı olan, direktifin gerçekten ilgilenebileceği uçaklar:
+
+```
+kesin ret dışındaki kararlar     688
+  kapsamda                       138   (%20,1)
+  belirsiz                       550   (%79,9)
+```
+
+Motor, önemsiz olmayan kararların yalnızca **beşte birinde** kesin cevap
+verebiliyor. Kalan beşte dördünde maddenin dayandığı üretici belgesi elde
+olmadığı için karar bir mühendise kalıyor. Operasyonel gerçek bu.
 
 `tests/coverage.test.ts` içindeki eşikler bir kilit dişlisi: dilbilgisinde yapılan ve gerçek direktiflerin daha azını anlayan bir değişiklik, sessizce geçmek yerine testi düşürüyor.
 
@@ -109,6 +117,7 @@ Açıkça yazılıyor, çünkü bu sınır bir tasarım kararı, yapılacaklar l
 - **Tarih ve teslim koşulları okunmuyor.** `that were delivered before September 23, 2024` gibi bir daraltma sessizce düşüyor; motor o uçakları kapsamda gösteriyor. Örneklem denetiminde çıkan iki açık hatadan biri bu.
 - **Alt paragraflara yayılan bazı madde listeleri yinelenebiliyor.** Aynı model birden fazla grupta görünebiliyor; sonucu değiştirmiyor ama çıkarım temiz değil.
 - **Seri numarası karşılaştırması bilinçli olarak kısmi.** Sıralama yalnızca aynı tanınan biçimdeki seriler arasında tanımlı; gerisi tahmin yerine belirsiz döndürüyor. Tanınmayan biçimler değerlendirme dışında bırakılıyor.
+- **Yargı yetkisi değerlendirilmiyor.** Bir FAA direktifi ABD tescilli uçakları bağlar. Motor maddenin metniyle uçağı eşleştiriyor; o uçağın hukuken bağlı olup olmadığına bakmıyor, tescil ülkesine göre süzme yok.
 - **Filo verisi dünya çapında, ABD tescilli değil.** Gerekçesi `scripts/fetch-fleet.py` başında yazılı: FAA'nın kendi sicil veritabanı otomatik isteklere 403 ve 503 dönüyor, o yüzden programatik erişim için yayınlanan OpenSky uçak veritabanı kullanıldı. İçindeki her uçak gerçek bir uçak, her seri numarası gerçek bir seri numarası; ama bir FAA direktifinin gerçekten bağladığı popülasyon değil.
 
 ## Çalıştırma
