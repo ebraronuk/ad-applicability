@@ -43,7 +43,7 @@ flowchart LR
 
 **Sayılar:** 194 direktif × 400 uçak = **77.600 karar**. Kesin ret dışında kalan 688 kararın **%80'i belirsiz**: maddelerin %46'sı halka açık olmayan bir üretici belgesine dayandığı için motor orada tahmin etmek yerine duruyor.
 
-**Çalıştırmak:** `npm install && npm test`, başka hiçbir şey gerekmiyor. Arayüz için `npm run dev`, denetim kaydı için `docker compose up -d`.
+**Çalıştırmak:** `npm install && npm test`, başka hiçbir şey gerekmiyor. Arayüz için `npm run dev`, uçtan uca testler için `npm run test:e2e`, denetim kaydı için `docker compose up -d`.
 
 ## Ekranlar
 

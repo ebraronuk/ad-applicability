@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    # The engine needs no database, but the schema constraints are part of the
+    # design, so the run that proves them has one. Without this service those
+    # four tests skip and the suite still reports green, which is exactly the
+    # failure mode the db tests were written to avoid.
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_DB: ad_applicability
+          POSTGRES_USER: ad
+          POSTGRES_PASSWORD: ad_local_only
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U ad -d ad_applicability"
+          --health-interval 2s
+          --health-timeout 3s
+          --health-retries 20
+
+    env:
+      DATABASE_URL: postgres://ad:ad_local_only@localhost:5432/ad_applicability
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Apply the schema
+        run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f migrations/001_assessment_records.sql
+
+      - run: npm run typecheck
+
+      - name: Unit, property and schema tests
+        run: npm test
+
+      # The coverage figure the README quotes is produced by the test run.
+      # A change that leaves it stale should be visible in the diff.
+      - name: Coverage report is current
+        run: git diff --exit-code docs/coverage.md
+
+      - uses: actions/cache@v4
+        id: playwright-cache
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - if: steps.playwright-cache.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps chromium
+
+      - name: End-to-end tests
+        run: npm run test:e2e
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
